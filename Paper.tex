@@ -2,9 +2,8 @@
 \usepackage{todonotes}
 \usepackage{amsmath}
 \usepackage{lipsum}
-\usepackage{pgfplots}
+\usepackage{svg}
 
-\pgfplotsset{compat=1.18}
 \begin{document}
 
 \tableofcontents
@@ -21,7 +20,7 @@ In truth, this possibility is taken advantage of to form the foundations of mode
 
 In modern computing, knowing the fundamental concepts and processes behind projecting a 3D image has been made unnecessary to know. With the release of many software solutions and libraries that aid in the development of appropriate visuals, the modern day developer does not need to grasp the underlying mechanics behind 3D Computer Graphics in order to produce satisfactory results. 
 
-However, the benefits of learning the fundamental process behind this widely used field are essential for those who wish to become true experts not tied down by any specific engine or library. Factors such as performance, scalability, and customizability are reasons that justify the process of learning the fundamentals. \todo{Add real-world examples of mentioned advantages} Above all else, those who understand are better equipped to take advantage of and develop graphical toolkits. As such, it is pertinent to understand the foundations that make up 3D Computer Graphics for those who wish to become true masters of the field.
+However, the benefits of learning the fundamental process behind this widely used field are essential for those who wish to become true experts not tied down by any specific engine or library. Factors such as performance, scalability, and customizability are reasons that justify the process of learning the fundamentals.\todo{Add real-world examples of mentioned advantages} Above all else, those who understand are better equipped to take advantage of and develop graphical toolkits. As such, it is pertinent to understand the foundations that make up 3D Computer Graphics for those who wish to become true masters of the field.
 
 \todo{Add limitations of this paper}
 
@@ -36,7 +35,39 @@ In order to represent a 3-dimensional space, we must first develop the tools use
 
 A \textbf{cartesian coordinate system} is a system of numerically representing space with a set of coordinates. 
 $n$-dimension spaces require $n$ sets of coordinates to represent. As such, a $3$-dimension cartesian coordinate system  requires $3$ sets of coordinates, commonly referred to as $x$, $y$, and $z$.
-A \textbf{point} is a single position in space, represented by a set of coordinates, and notated by $(C_{1} , C_{2}, C_{3}, ..., C_{n})$. A $3$D cartesian coordinate system places the center, or the origin point at $(0, 0, 0)$. Each dimension, referred to as an axis, has a direction: traveling towards the direction of an axis is known as traveling positively, while traveling against the direction of an axis is known as traveling negatively, with the corresponding coordinates increasing or decreasing appropriately.
 
+A \textbf{point} is a single position in space, represented by a set of coordinates, and notated by $(C_{1} , C_{2}, C_{3}, \ldots, C_{n})$. A $3$D cartesian coordinate system places the center, or the origin point at $(0, 0, 0)$. Each dimension, referred to as an axis, has a direction: traveling towards the direction of an axis is known as traveling positively, while traveling against the direction of an axis is known as traveling negatively, with the corresponding coordinates increasing or decreasing appropriately.
+
+\begin{figure}[htp]
+    \includesvg{Figure-1.svg}
+    \caption{The point (1, 1, 1) in a 3D cartesian coordinate system.}\label{figure:figure1}
+\end{figure}
+
+The directions of each axis in relation to each other can be remembered using the right hand rule.
+
+\begin{figure}[htp]
+    \includegraphics[scale=0.2]{Right-hand rule.png}
+    \caption{Right-hand rule}\label{figure:figure2}
+\end{figure}
+
+Axis configurations corresponding to the left hand also exist, however the right-handed system is more common.
+
+\newpage
+
+Vectors are the differences between points. Vectors can be used to represent many things, such as motion and direction. At its simplest, it can be intuitively thought of as a set of components that represent a certain magnitude of motion in a certain direction. It can also be thought of as the concept of a slope used in $2$D cartesian coordinate systems expanded for $n$-dimensions. Visually, it is a line connecting two points in space (Figure~\ref{figure:figure3}).
+
+\begin{figure}[htp]
+    \includesvg[scale=0.95]{Figure-3}
+    \caption{A vector from points $(0, 0, 0)$ to $(1, 1, 1)$}\label{figure:figure3}
+\end{figure}
+   
+$n$-dimension vectors can be notated as a set of $n$ components $(C_{1}, C_{2}, C_{3}, \ldots, \\ C_{n})$. Much like the slope of a line in $2$ dimensions, vectors can be thought of as the ratio between each of the components’ deltas (differences in magnitude). For example, take the $3$D vector $(1, 2, 3)$: when $x$ is increased by $1$, $y$ is increased by $2$, and $z$ is increased by $3$ (Figure~\ref{figure:figure4}).
+
+\begin{figure}[htp]
+    \includesvg[scale=0.95]{Figure-4.svg}
+    \caption{The vector $(1, 2, 3)$ broken down into its $x$, $y$, and $z$ components}\label{figure:figure4}
+\end{figure}
+
+Now that we have established a system of rules for representing space numerically, we can begin to lay the groundwork for projecting a $3$D space onto a $2$D one.
 
 \end{document}
