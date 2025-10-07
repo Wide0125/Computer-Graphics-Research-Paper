@@ -1,11 +1,20 @@
-\documentclass[a4paper]{amsart}
+\documentclass[a4paper]{article}
 \usepackage{todonotes}
 \usepackage{amsmath}
 \usepackage{lipsum}
 \usepackage{pgfplots}
 
+\pgfplotsset{compat=1.18}
 \begin{document}
-\se
+
+\tableofcontents
+\newpage
+
+\section{Abstract}
+
+\todo{Add abstract}
+
+\section{Introduction}
 When you look at the world through your eyes, you are seeing a 3-dimensional space. In contrast, the image that you see possesses only 2 dimensions, and yet, we recognize our view as a 3D one. Through this view, one can still perceive the depth of such an image, retrieving some of the information lost in the process of flattening the view into 2 dimensions. This phenomenon reveals the possibility of projecting a 3D space onto a 2D plane, allowing us to “emulate” the existence of a 3D space behind a 2D plane (much like looking through a window to look at the outside world; a detailed enough 2D image on the window would be indistinguishable from the outside view).
 
 In truth, this possibility is taken advantage of to form the foundations of modern computer graphics. When it comes to video games, computer generated imagery, or 3D animation, computers must simulate all the physical processes of the real world that produce the light and resulting image that reaches your eyes. Although the entirety of the physical world cannot possibly be simulated within the constraints of modern computing capabilities, mathematical and physical abstractions can be made in order to simplify this process and produce near true to life results. These abstractions form the basis of 3D Computer Graphics.
@@ -14,9 +23,20 @@ In modern computing, knowing the fundamental concepts and processes behind proje
 
 However, the benefits of learning the fundamental process behind this widely used field are essential for those who wish to become true experts not tied down by any specific engine or library. Factors such as performance, scalability, and customizability are reasons that justify the process of learning the fundamentals. \todo{Add real-world examples of mentioned advantages} Above all else, those who understand are better equipped to take advantage of and develop graphical toolkits. As such, it is pertinent to understand the foundations that make up 3D Computer Graphics for those who wish to become true masters of the field.
 
+\todo{Add limitations of this paper}
+
 This research paper sets out to document the process of learning the fundamentals of 3D Computer Graphics, with real code examples mapping out the learning process. As such, it aims to serve as a useful guide that directs readers to explore the barebones fundamentals of 3D Computer Graphics.
+
+\newpage
+\section{Ray Tracing}
+\subsection{Vectors and Coordinates}
 
 
 In order to represent a 3-dimensional space, we must first develop the tools used for defining a 3D space.
+
+A \textbf{cartesian coordinate system} is a system of numerically representing space with a set of coordinates. 
+$n$-dimension spaces require $n$ sets of coordinates to represent. As such, a $3$-dimension cartesian coordinate system  requires $3$ sets of coordinates, commonly referred to as $x$, $y$, and $z$.
+A \textbf{point} is a single position in space, represented by a set of coordinates, and notated by $(C_{1} , C_{2}, C_{3}, ..., C_{n})$. A $3$D cartesian coordinate system places the center, or the origin point at $(0, 0, 0)$. Each dimension, referred to as an axis, has a direction: traveling towards the direction of an axis is known as traveling positively, while traveling against the direction of an axis is known as traveling negatively, with the corresponding coordinates increasing or decreasing appropriately.
+
 
 \end{document}
