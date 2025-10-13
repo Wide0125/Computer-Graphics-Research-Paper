@@ -4,6 +4,8 @@
         "textMateRules": []
     },
     "cSpell.words": [
+        "Raylib",
         "toolkits"
-    ]
+    ],
+    "gitdoc.enabled": true
 }

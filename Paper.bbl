@@ -1,0 +1,223 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{Eldridge2023}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=91318231f2d7fd8fd1ffb4f24008a366}{%
+           family={Eldridge},
+           familyi={E\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{91318231f2d7fd8fd1ffb4f24008a366}
+      \strng{fullhash}{91318231f2d7fd8fd1ffb4f24008a366}
+      \strng{fullhashraw}{91318231f2d7fd8fd1ffb4f24008a366}
+      \strng{bibnamehash}{91318231f2d7fd8fd1ffb4f24008a366}
+      \strng{authorbibnamehash}{91318231f2d7fd8fd1ffb4f24008a366}
+      \strng{authornamehash}{91318231f2d7fd8fd1ffb4f24008a366}
+      \strng{authorfullhash}{91318231f2d7fd8fd1ffb4f24008a366}
+      \strng{authorfullhashraw}{91318231f2d7fd8fd1ffb4f24008a366}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Cartesian coordinates}
+      \field{urlday}{8}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.britannica.com/science/Cartesian-coordinates
+      \endverb
+      \verb{url}
+      \verb https://www.britannica.com/science/Cartesian-coordinates
+      \endverb
+    \endentry
+    \entry{BritannicaLine2009}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=275ce1eddad4dd1e5acb6aaec0821ee6}{%
+           family={Encyclopedia\bibnamedelima Britannica},
+           familyi={E\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={The\bibnamedelima Editors},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0,
+           prefix={of},
+           prefixi={o\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{275ce1eddad4dd1e5acb6aaec0821ee6}
+      \strng{fullhash}{275ce1eddad4dd1e5acb6aaec0821ee6}
+      \strng{fullhashraw}{275ce1eddad4dd1e5acb6aaec0821ee6}
+      \strng{bibnamehash}{275ce1eddad4dd1e5acb6aaec0821ee6}
+      \strng{authorbibnamehash}{275ce1eddad4dd1e5acb6aaec0821ee6}
+      \strng{authornamehash}{275ce1eddad4dd1e5acb6aaec0821ee6}
+      \strng{authorfullhash}{275ce1eddad4dd1e5acb6aaec0821ee6}
+      \strng{authorfullhashraw}{275ce1eddad4dd1e5acb6aaec0821ee6}
+      \field{extraname}{1}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{line}
+      \field{urlday}{8}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2009}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.britannica.com/science/line-mathematics
+      \endverb
+      \verb{url}
+      \verb https://www.britannica.com/science/line-mathematics
+      \endverb
+    \endentry
+    \entry{BritannicaVector2004}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=275ce1eddad4dd1e5acb6aaec0821ee6}{%
+           family={Encyclopedia\bibnamedelima Britannica},
+           familyi={E\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={The\bibnamedelima Editors},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0,
+           prefix={of},
+           prefixi={o\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{275ce1eddad4dd1e5acb6aaec0821ee6}
+      \strng{fullhash}{275ce1eddad4dd1e5acb6aaec0821ee6}
+      \strng{fullhashraw}{275ce1eddad4dd1e5acb6aaec0821ee6}
+      \strng{bibnamehash}{275ce1eddad4dd1e5acb6aaec0821ee6}
+      \strng{authorbibnamehash}{275ce1eddad4dd1e5acb6aaec0821ee6}
+      \strng{authornamehash}{275ce1eddad4dd1e5acb6aaec0821ee6}
+      \strng{authorfullhash}{275ce1eddad4dd1e5acb6aaec0821ee6}
+      \strng{authorfullhashraw}{275ce1eddad4dd1e5acb6aaec0821ee6}
+      \field{extraname}{2}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{vector}
+      \field{urlday}{8}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2004}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.britannica.com/science/vector-mathematics
+      \endverb
+      \verb{url}
+      \verb https://www.britannica.com/science/vector-mathematics
+      \endverb
+    \endentry
+    \entry{Gambetta2021}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1cf0f11213db40d088c94d74a6cb71b3}{%
+           family={Gambetta},
+           familyi={G\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {William Pollock}%
+      }
+      \strng{namehash}{1cf0f11213db40d088c94d74a6cb71b3}
+      \strng{fullhash}{1cf0f11213db40d088c94d74a6cb71b3}
+      \strng{fullhashraw}{1cf0f11213db40d088c94d74a6cb71b3}
+      \strng{bibnamehash}{1cf0f11213db40d088c94d74a6cb71b3}
+      \strng{authorbibnamehash}{1cf0f11213db40d088c94d74a6cb71b3}
+      \strng{authornamehash}{1cf0f11213db40d088c94d74a6cb71b3}
+      \strng{authorfullhash}{1cf0f11213db40d088c94d74a6cb71b3}
+      \strng{authorfullhashraw}{1cf0f11213db40d088c94d74a6cb71b3}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-7185-0077-8}
+      \field{title}{Computer Graphics From Scratch}
+      \field{year}{2021}
+    \endentry
+    \entry{raylib-cpp}{software}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4b9e4711c13fe8ab81b82e45bf0f7c27}{%
+           family={Loach},
+           familyi={L\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4b9e4711c13fe8ab81b82e45bf0f7c27}
+      \strng{fullhash}{4b9e4711c13fe8ab81b82e45bf0f7c27}
+      \strng{fullhashraw}{4b9e4711c13fe8ab81b82e45bf0f7c27}
+      \strng{bibnamehash}{4b9e4711c13fe8ab81b82e45bf0f7c27}
+      \strng{authorbibnamehash}{4b9e4711c13fe8ab81b82e45bf0f7c27}
+      \strng{authornamehash}{4b9e4711c13fe8ab81b82e45bf0f7c27}
+      \strng{authorfullhash}{4b9e4711c13fe8ab81b82e45bf0f7c27}
+      \strng{authorfullhashraw}{4b9e4711c13fe8ab81b82e45bf0f7c27}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{raylib-cpp}
+      \field{version}{5.5.0}
+      \verb{urlraw}
+      \verb https://github.com/robloach/raylib-cpp
+      \endverb
+      \verb{url}
+      \verb https://github.com/robloach/raylib-cpp
+      \endverb
+    \endentry
+    \entry{Raylib}{software}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8350db6a748619fbaf532016702f0dd4}{%
+           family={Santamaria},
+           familyi={S\bibinitperiod},
+           given={Ramon},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8350db6a748619fbaf532016702f0dd4}
+      \strng{fullhash}{8350db6a748619fbaf532016702f0dd4}
+      \strng{fullhashraw}{8350db6a748619fbaf532016702f0dd4}
+      \strng{bibnamehash}{8350db6a748619fbaf532016702f0dd4}
+      \strng{authorbibnamehash}{8350db6a748619fbaf532016702f0dd4}
+      \strng{authornamehash}{8350db6a748619fbaf532016702f0dd4}
+      \strng{authorfullhash}{8350db6a748619fbaf532016702f0dd4}
+      \strng{authorfullhashraw}{8350db6a748619fbaf532016702f0dd4}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Raylib}
+      \field{version}{5.5}
+      \verb{urlraw}
+      \verb https://www.raylib.com/
+      \endverb
+      \verb{url}
+      \verb https://www.raylib.com/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
