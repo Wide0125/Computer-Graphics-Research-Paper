@@ -126,7 +126,7 @@ Vectors are useful in that they allow us to easily define movement or position d
 \end{figure}
 
 \newpage
-A \textbf{line} is a collection of points arranged in a straight path, extending infinitely in opposing directions.\autocite{BritannicaLine2009} In $2$D, a line is most commonly defined as an equation conveying the relationship between the two coordinate variables $x$ and $y$ (\ref{equation:2dline}). Although this can be expanded to $3$ dimensions (\ref{equation:2dline}), a more convenient and commonly used definition utilizes vectors (\ref{equation:3dpara}). In this definition, every point $P$ along the line is defined by adding a multiple $t$ ($t \in \mathbb{R}$) of $\vec{V}$ to a point of origin $O$. Intuitively, it can be thought of as starting from an origin point $O$ and traveling $t$ amount in the direction of the vector component $\vec{V}$.
+A \textbf{line} is a collection of points arranged in a straight path, extending infinitely in opposing directions.\autocite{BritannicaLine2009} In $2$D, a line is most commonly defined as an equation conveying the relationship between the two coordinate variables $x$ and $y$ (\ref{equation:2dline}). Although this can be expanded to $3$ dimensions (\ref{equation:2dline}), a more convenient and commonly used definition utilizes vectors (\ref{equation:3dpara}). In this definition, every point $P$ along the line is defined by adding a multiple $t$ ($t \in \mathbb{R}$) of $\vec{D}$ to a point of origin $O$. Intuitively, it can be thought of as starting from an origin point $O$ and traveling $t$ amount in the direction of the vector component $\vec{D}$.
 
 Line definitions allow us to calculate intersections involving objects traveling in a straight path.
 
@@ -139,7 +139,7 @@ Line definitions allow us to calculate intersections involving objects traveling
 \end{equation}
 
 \begin{equation}\label{equation:3dvect}
-    P = O + t\vec{V}
+    P = O + t\vec{D}
 \end{equation}
 
 Now that we have established a system of rules for representing space numerically, we can begin to lay the groundwork for projecting a $3$D space onto a $2$D one.
@@ -333,9 +333,9 @@ Vector{xDistanceFromCenter, yDistanceFromCenter, 1}
 \end{minted}
 \end{code}
 
-With this, a ray going starting from the camera position point ($C_{p}$) and going in the direction of the camera to pixel vector ($\vec{V}$) can be derived.
+With this, a ray going starting from the camera position point ($C_{p}$) and going in the direction of the camera to pixel vector ($\vec{D}$) can be derived.
 \[
-P = C_{p} + t\vec{V} (t \geq 0)
+P = C_{p} + t\vec{D} (t \geq 0)
 \]
 This is our light ray for the pixel (Figure-\ref{figure:lightray}).
 
@@ -356,16 +356,18 @@ All that's left is to determine whether the light ray for our pixel and any poin
 By substituting the point on the surface of the sphere $P$ with the equation for our light ray, we can apply the discriminant to the resulting equation in order to determine if a solution $t$ such that the sphere and ray intersect exist.
 
 \[
-P = C_{p} + t\vec{V} (t \geq 0)
+P = C_{p} + t\vec{D} (t \geq 0)
 \]
 \[
 D(P, C) = r^{2}
 \]
 
 \begin{align*}
-    D(C_{p} + t\vec{V}, C) = r^{2} \\
-    {(C_{p} + t\vec{V}) - C} \cdot {(C_{p} + t\vec{V}) - C} = r^{2} \\
-    {t\vec{V} + (C_{p} - C)} \cdot {t\vec{V} + (C_{p} - C)} = r^{2} \\
+    D(C_{p} + t\vec{D}, C) = r^{2} \\
+    \{(C_{p} + t\vec{D}) - C\} \cdot \{(C_{p} + t\vec{D}) - C\} = r^{2} \\
+    \{t\vec{D} + (C_{p} - C)\} \cdot \{t\vec{D} + (C_{p} - C)\} = r^{2} \\
+    t\vec{D} \cdot \{t\vec{D} + (C_{p} - C)\} + (C_{p} - C) \cdot \{t\vec{D} + (C_{p} - C)\} = r^{2} \\
+    (t\vec{D})
 \end{align*}
 
 \todo{Continue with 2.3}
