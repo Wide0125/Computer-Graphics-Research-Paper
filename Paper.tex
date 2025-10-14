@@ -359,19 +359,19 @@ By substituting the point on the surface of the sphere $P$ with the equation for
 P = C_{p} + t\vec{D} (t \geq 0)
 \]
 \[
-D(P, C) = r^{2}
+distance(P, C) = r^{2}
 \]
 
 \begin{align*}
-    D(C_{p} + t\vec{D}, C) = r^{2} \\
-    \{(C_{p} + t\vec{D}) - C\} \cdot \{(C_{p} + t\vec{D}) - C\} = r^{2} \\
+    distance(C_{p} + t\vec{D}, C) = r^{2} \\
+    \{(C_{p} + t\vec{D}) - C\} \cdot \{(C_{p} + t\vec{D}) - C\} = r^{2}\label{equation:dotproductexpansion} \\
     \{t\vec{D} + (C_{p} - C)\} \cdot \{t\vec{D} + (C_{p} - C)\} = r^{2} \\
     t\vec{D} \cdot \{t\vec{D} + (C_{p} - C)\} + (C_{p} - C) \cdot \{t\vec{D} + (C_{p} - C)\} = r^{2} \\
     (t\vec{D} \cdot t\vec{D}) + \{t\vec{D} \cdot (C_{p} - C)\} + \{t\vec{D} \cdot (C_{p} - C)\} + \{(C_{p} - C) \cdot (C_{p} - C)\} = r^{2} \\
     (\vec{D} \cdot \vec{D})t^{2} + 2\{\vec{D} \cdot (C_{p} - C)\}t + (C_{p} - C) \cdot (C_{p} - C) - r^{2} = 0
 \end{align*}
 
-
+Taking advantage of the fact that the distance between two points is essentially 
 
 \todo{Continue with 2.3}
 
