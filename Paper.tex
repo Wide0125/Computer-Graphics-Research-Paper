@@ -66,34 +66,34 @@ A \textbf{point} is a single position in space, represented by a set of coordina
 
 \begin{figure}[htp]
     \includesvg{Figure-1.svg}
-    \caption{The point (1, 1, 1) in a 3D cartesian coordinate system}\label{figure:figure1}
+    \caption{The point (1, 1, 1) in a 3D cartesian coordinate system}\label{figure:point111}
 \end{figure}
 
-The directions of each axis in relation to each other can be remembered using the right hand rule (Figure-\ref{figure:figure2}).
+The directions of each axis in relation to each other can be remembered using the right hand rule (Figure-\ref{figure:righthandrule}).
 
 \begin{figure}[htp]
     \includegraphics[scale=0.2]{Right-hand rule.png}
-    \caption{Right-hand rule}\label{figure:figure2}
+    \caption{Right-hand rule}\label{figure:righthandrule}
 \end{figure}
 
 Axis configurations corresponding to the left hand also exist, however the right-handed system is more common.
 
 \newpage
 
-\textbf{Vector}s are the differences between points. Vectors can be used to represent many things, such as motion and direction. At its simplest, it can be intuitively thought of as a set of components that represent a certain magnitude of motion in a certain direction. It can also be thought of as the concept of a slope used in $2$D cartesian coordinate systems expanded for $n$-dimensions. Visually, it is a line connecting two points in space (Figure~\ref{figure:figure3}).
+\textbf{Vector}s are the differences between points. Vectors can be used to represent many things, such as motion and direction. At its simplest, it can be intuitively thought of as a set of components that represent a certain magnitude of motion in a certain direction. It can also be thought of as the concept of a slope used in $2$D cartesian coordinate systems expanded for $n$-dimensions. Visually, it is a line connecting two points in space (Figure~\ref{figure:v000to111}).
 
 \begin{figure}[htp]
     \includesvg[scale=0.95]{Figure-3}
-    \caption{A vector from point $(0, 0, 0)$ to $(1, 1, 1)$}\label{figure:figure3}
+    \caption{A vector from point $(0, 0, 0)$ to $(1, 1, 1)$}\label{figure:v000to111}
 \end{figure}
    
-$n$-dimension vectors can be notated as a set of $n$ components $\langle C_{1}, C_{2}, C_{3}, \ldots, \\ C_{n} \rangle$. Much like the slope of a line in $2$ dimensions, vectors can be thought of as the ratio between each of the components’ deltas (differences in magnitude). For example, take the $3$D vector $\langle 1, 2, 3 \rangle$: when $x$ is increased by $1$, $y$ is increased by $2$, and $z$ is increased by $3$ (Figure~\ref{figure:figure4}).\autocite{BritannicaVector2004}
+$n$-dimension vectors can be notated as a set of $n$ components $\langle C_{1}, C_{2}, C_{3}, \ldots, \\ C_{n} \rangle$. Much like the slope of a line in $2$ dimensions, vectors can be thought of as the ratio between each of the components’ deltas (differences in magnitude). For example, take the $3$D vector $\langle 1, 2, 3 \rangle$: when $x$ is increased by $1$, $y$ is increased by $2$, and $z$ is increased by $3$ (Figure~\ref{figure:vectorcomponents}).\autocite{BritannicaVector2004}
 
-Arithmetic operations can also be performed on vectors. Vector addition is done by summing together each respective component. For example, the resulting vector of adding vectors $\langle A_{x}, A_{y}, A_{z} \rangle$ and $\langle B_{x}, B_{y}, B_{z} \rangle$ together is vector $\langle A_{x} + B_{x}, A_{y} + B_{y}, A_{z} + B_{z} \rangle$. Additionally, two types of vector multiplication exist: the \textbf{dot product} and the \textbf{cross product}. The dot product (denoted as $\vec{A} \cdot \vec{B}$) is used to find how similar two vectors are to each other, and results in a scalar\footnote{A scalar is a value that possesses only magnitude. It differs from a vector value in that vectors possess both magnitude and direction.} value representing similarity. A vector dot product with itself produces a scalar square of its magnitude. The cross product (denoted as $\vec{A} \times \vec{B}$) by contrast is used to find a vector that is the most different to the vectors it operates on. The cross product of two vectors results in a vector perpendicular to the plane created by the two vectors (). Formulas for the dot product (\ref{equation:dotproduct}) and the cross product (\ref{equation:crossproduct}) are listed below.
+Arithmetic operations can also be performed on vectors. Vector addition is done by summing together each respective component. For example, the resulting vector of adding vectors $\langle A_{x}, A_{y}, A_{z} \rangle$ and $\langle B_{x}, B_{y}, B_{z} \rangle$ together is vector $\langle A_{x} + B_{x}, A_{y} + B_{y}, A_{z} + B_{z} \rangle$. Additionally, two types of vector multiplication exist: the \textbf{dot product} and the \textbf{cross product}. The dot product (denoted as $\vec{A} \cdot \vec{B}$) is used to find how similar two vectors are to each other, and results in a scalar\footnote{A scalar is a value that possesses only magnitude. It differs from a vector value in that vectors possess both magnitude and direction.} value representing similarity. A vector dot product with itself produces a scalar square of its magnitude. The cross product (denoted as $\vec{A} \times \vec{B}$) by contrast is used to find a vector that is the most different to the vectors it operates on. The cross product of two vectors results in a vector perpendicular to the plane created by the two vectors (Figure~\ref{v011&111crossproduct}). Formulas for the dot product (\ref{equation:dotproduct}) and the cross product (\ref{equation:crossproduct}) are listed below.
 
 \begin{figure}[htp]
     \includesvg[scale=0.95]{Figure-9}
-    \caption{The cross product of two vectors $\langle 0, 1, 1 \rangle$ and $\langle 1, 1, 1 \rangle$}
+    \caption{The cross product of two vectors $\langle 0, 1, 1 \rangle$ and $\langle 1, 1, 1 \rangle$}\label{v011&111crossproduct}
 \end{figure}
 
 \begin{equation}\label{equation:dotproduct}
@@ -113,7 +113,7 @@ Vectors are useful in that they allow us to easily define movement or position d
 
 \begin{figure}[htp]
     \includesvg[scale=0.95]{Figure-4.svg}
-    \caption{The vector $\langle 1, 2, 3 \rangle$ broken down into its $x$, $y$, and $z$ components}\label{figure:figure4}
+    \caption{The vector $\langle 1, 2, 3 \rangle$ broken down into its $x$, $y$, and $z$ components}\label{figure:vectorcomponents}
 \end{figure}
 
 \newpage
@@ -143,11 +143,11 @@ A person is looking out onto a landscape and would like to save this view onto a
 
 This metaphor is useful in that it can be applied to computers. Computers display images as a grid of square pixels, much like the square holes of the net used in the analogy.
 
-A rectangle referred to as the \textbf{viewport} is placed in the world space, the equivalent to the square net. Then a camera is placed behind the viewport, the equivalent to the person's eyes (Figure-\ref{figure:figure5}).
+A rectangle referred to as the \textbf{viewport} is placed in the world space, the equivalent to the square net. Then a camera is placed behind the viewport, the equivalent to the person's eyes (Figure-\ref{figure:viewport}).
 
 \begin{figure}[htp]
     \includesvg{Figure-5}
-    \caption{A viewport of a 16:9 screen with its center located at $(0, 0, 1)$}\label{figure:figure5}
+    \caption{A viewport of a 16:9 screen with its center located at $(0, 0, 1)$}\label{figure:viewport}
 \end{figure}
 
 In the net analogy, the color that reaches the person's eyes are certain wavelengths of photons that travel from an origin light source, bounce off reflective objects, and ultimately end up in their retinas. Although we could simulate photons traveling in all direction from a light source, that would be highly redundant as most of them would not end up hitting the camera. Instead, it is more efficient to trace in reverse: light \textbf{ray}s\footnote{A ray is a collection of points arranged in a straight path extending infinitely towards a single direction. Whereas a line extends infinitely in two opposing directions from a point, rays only extend in a single direction.} traveling outwards from the camera and into any objects.
@@ -156,7 +156,7 @@ In practice, this means that we compute shooting a light ray from the camera to 
 
 \begin{figure}[htp]
     \includesvg{Figure-6}
-    \caption{A vector from camera to pixel $(0, 0)$'s equivalent location on viewport}\label{figure:figure6}
+    \caption{A vector from camera to pixel $(0, 0)$'s equivalent location on viewport}\label{figure:raytopixelonviewport}
 \end{figure}
 
 Now that a system for projecting a $3$D space onto a $2$D plane has been established, what remains is to implement said system.
