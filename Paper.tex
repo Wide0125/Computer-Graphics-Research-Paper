@@ -345,13 +345,15 @@ The function $D(x, y)$ takes in two points as input and outputs the distance bet
 All that's left is to determine whether the light ray for our pixel and any point on the sphere intersect; if so, color in that pixel.
 
 By substituting the point on the surface of the sphere $P$ with the equation for our light ray, we can apply the discriminant to the resulting equation in order to determine if a solution $t$ such that the sphere and ray intersect exist.
+
 \[
-\begin{split}
-    P = C_{p} + t\vec{V} (t \geq 0) \\
-    D(P, C) = R \\
-    D(C_{p} + t\vec{V}, C) = R, (C - C_{p} + t\vec{V}) \cdot (C - C_{p} + t\vec{V}) = R
-\end{split}
+P = C_{p} + t\vec{V} (t \geq 0)
 \]
+D(P, C) = R \\
+
+\begin{multline}
+    D(C_{p} + t\vec{V}, C) = R, (C - C_{p} + t\vec{V}) \cdot (C - C_{p} + t\vec{V}) = R
+\end{multline}
 
 \todo{Continue with 2.3}
 
