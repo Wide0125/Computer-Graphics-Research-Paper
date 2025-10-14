@@ -42,36 +42,34 @@
 
 
 \section{Introduction}
-When you look at the world through your eyes, you are seeing a 3-dimensional space. In contrast, the image that you see possesses only 2 dimensions, and yet, we recognize our view as a 3D one. Through this view, one can still perceive the depth of such an image, retrieving some of the information lost in the process of flattening the view into 2 dimensions. This phenomenon reveals the possibility of projecting a 3D space onto a 2D plane, allowing us to “emulate” the existence of a 3D space behind a 2D plane (much like looking through a window to look at the outside world; a detailed enough 2D image on the window would be indistinguishable from the outside view).
+The world is $3$-dimensional. In contrast, visual perceptions of the world are $2$-dimensional, and yet, recognizable as of a $3$D space. Additionally, through this view, one can still perceive the depth of the image, retrieving some of the information lost in the process of flattening the view into $2$ dimensions. This phenomenon reveals the possibility of projecting a $3$D space onto a $2$D plane, allowing people to emulate the existence of a $3$D space behind a $2$D plane (much like looking through a window to look at the outside world; a detailed enough $2$D image on the window would be indistinguishable from a view of the outside).
 
-In truth, this possibility is taken advantage of to form the foundations of modern computer graphics. When it comes to video games, computer generated imagery, or 3D animation, computers must simulate all the physical processes of the real world that produce the light and resulting image that reaches your eyes. Although the entirety of the physical world cannot possibly be simulated within the constraints of modern computing capabilities, mathematical and physical abstractions can be made in order to simplify this process and produce near true to life results. These abstractions form the basis of 3D Computer Graphics.
+Furthermore, this possibility is taken advantage of to form the foundations of modern computer graphics. When it comes to video games, computer generated imagery, or $3$D animation, computers must simulate all the physical processes of the real world that produce the light and resulting image that reaches your eyes. Although the entirety of the physical world cannot possibly be simulated within the constraints of modern computing capabilities, mathematical and physical abstractions can be made in order to simplify this process and produce near true to life results. These abstractions form the basis of $3$D Computer Graphics.
 
-In modern computing, knowing the fundamental concepts and processes behind projecting a 3D image has been made unnecessary to know. With the release of many software solutions and libraries that aid in the development of appropriate visuals, the modern day developer does not need to grasp the underlying mechanics behind 3D Computer Graphics in order to produce satisfactory results. 
-
-However, the benefits of learning the fundamental process behind this widely used field are essential for those who wish to become true experts not tied down by any specific engine or library. Factors such as performance, scalability, and customizability are reasons that justify the process of learning the fundamentals.\todo{Add real-world examples of mentioned advantages} Above all else, those who understand are better equipped to take advantage of and develop graphical toolkits. As such, it is pertinent to understand the foundations that make up 3D Computer Graphics for those who wish to become true masters of the field.
+In modern computing, knowing the fundamental concepts and processes behind projecting a $3$D image has been made unnecessary to know. With the release of many software solutions and libraries that aid in the development of appropriate visuals, the modern day developer does not need to grasp the underlying mechanics behind $3$D Computer Graphics in order to produce satisfactory results. However, the benefits of learning the fundamental process behind this widespread field are essential for those who wish to become experts not tied down by any specific engine or library. Factors such as performance, scalability, and customizability are reasons that justify the process of learning the fundamentals.\todo{Add real-world examples of mentioned advantages} Above all else, those who understand are better equipped to take advantage of and develop graphical toolkits. As such, it is pertinent to understand the foundations that make up $3$D Computer Graphics for those who wish to become true masters of the field.
 
 \todo{Add limitations of this paper}
 
-This research paper sets out to document the process of learning the fundamentals of 3D Computer Graphics, with real code examples mapping out the learning process. As such, it aims to serve as a useful guide that directs readers to explore the bare-bones fundamentals of 3D Computer Graphics.
+This research paper sets out to document the process of learning the fundamentals of $3$D Computer Graphics, with real code examples mapping out the learning process. As such, it aims to serve as a useful guide that directs readers to explore the bare-bones fundamentals of $3$D Computer Graphics.
 
 \newpage
 \section{Ray Tracing}
 \subsection{Coordinates and Vectors}
 
 
-In order to represent a 3-dimensional space, we must first develop the tools used for defining a 3D space.
+In order to represent a $3$-dimensional space, we must first develop the tools used for defining a $3$D space.
 
 A \textbf{cartesian coordinate system} is a system of numerically representing space with a set of coordinates. 
-$n$-dimension spaces require $n$ sets of coordinates to represent. As such, a $3$-dimension cartesian coordinate system  requires $3$ sets of coordinates, commonly referred to as $x$, $y$, and $z$.
+$n$-dimension spaces require $n$ sets of coordinates to represent. As such, a $3$-dimension cartesian coordinate system requires $3$ sets of coordinates, commonly referred to as $x$, $y$, and $z$.
 
-A \textbf{point} is a single position in space, represented by a set of coordinates, and notated by $(C_{1} , C_{2}, C_{3}, \ldots, C_{n})$. A $3$D cartesian coordinate system places the center, or the origin point at $(0, 0, 0)$. Each dimension, referred to as an axis, has a direction: traveling towards the direction of an axis is known as traveling positively, while traveling against the direction of an axis is known as traveling negatively, with the corresponding coordinates increasing or decreasing appropriately.\autocite{Eldridge2023}
+A \textbf{point} is a single position in space, represented by a set of coordinates, and notated by $(C_{1} , C_{2}, C_{3}, \ldots, C_{n})$. A $3$D cartesian coordinate system places the center, or the origin point at $(0, 0, 0)$. Each dimension, represented through an axis, has a direction: traveling towards the direction of an axis is known as traveling positively, while traveling against the direction of an axis is known as traveling negatively, with the corresponding coordinates increasing or decreasing appropriately.\autocite{Eldridge2023}
 
 \begin{figure}[htp]
     \includesvg{Figure-1.svg}
     \caption{The point (1, 1, 1) in a 3D cartesian coordinate system}\label{figure:figure1}
 \end{figure}
 
-The directions of each axis in relation to each other can be remembered using the right hand rule.
+The directions of each axis in relation to each other can be remembered using the right hand rule (Figure-\ref{figure:figure2}).
 
 \begin{figure}[htp]
     \includegraphics[scale=0.2]{Right-hand rule.png}
@@ -86,28 +84,52 @@ Axis configurations corresponding to the left hand also exist, however the right
 
 \begin{figure}[htp]
     \includesvg[scale=0.95]{Figure-3}
-    \caption{A vector from points $(0, 0, 0)$ to $(1, 1, 1)$}\label{figure:figure3}
+    \caption{A vector from point $(0, 0, 0)$ to $(1, 1, 1)$}\label{figure:figure3}
 \end{figure}
    
-$n$-dimension vectors can be notated as a set of $n$ components $(C_{1}, C_{2}, C_{3}, \ldots, \\ C_{n})$. Much like the slope of a line in $2$ dimensions, vectors can be thought of as the ratio between each of the components’ deltas (differences in magnitude). For example, take the $3$D vector $(1, 2, 3)$: when $x$ is increased by $1$, $y$ is increased by $2$, and $z$ is increased by $3$ (Figure~\ref{figure:figure4}).\autocite{BritannicaVector2004}
+$n$-dimension vectors can be notated as a set of $n$ components $\langle C_{1}, C_{2}, C_{3}, \ldots, \\ C_{n} \rangle$. Much like the slope of a line in $2$ dimensions, vectors can be thought of as the ratio between each of the components’ deltas (differences in magnitude). For example, take the $3$D vector $\langle 1, 2, 3 \rangle$: when $x$ is increased by $1$, $y$ is increased by $2$, and $z$ is increased by $3$ (Figure~\ref{figure:figure4}).\autocite{BritannicaVector2004}
+
+Arithmetic operations can also be performed on vectors. Vector addition is done by summing together each respective component. For example, the resulting vector of adding vectors $\langle A_{x}, A_{y}, A_{z} \rangle$ and $\langle B_{x}, B_{y}, B_{z} \rangle$ together is vector $\langle A_{x} + B_{x}, A_{y} + B_{y}, A_{z} + B_{z} \rangle$. Additionally, two types of vector multiplication exist: the \textbf{dot product} and the \textbf{cross product}. The dot product (denoted as $\vec{A} \cdot \vec{B}$) is used to find how similar two vectors are to each other, and results in a scalar\footnote{A scalar is a value that possesses only magnitude. It differs from a vector value in that vectors possess both magnitude and direction.} value representing similarity. A vector dot product with itself produces a scalar square of its magnitude. The cross product (denoted as $\vec{A} \times \vec{B}$) by contrast is used to find a vector that is the most different to the vectors it operates on. The cross product of two vectors results in a vector perpendicular to the plane created by the two vectors (). Formulas for the dot product (\ref{equation:dotproduct}) and the cross product (\ref{equation:crossproduct}) are listed below.
+
+\begin{figure}
+    \includesvg{Figure-9}
+    \caption{The cross product of two vectors $\langle 0, 1, 1 \rangle$ and $\langle 1, 1, 1 \rangle$}
+\end{figure}
+
+\begin{equation}\label{equation:dotproduct}
+    \vec{A} \cdot \vec{B} = A_{x} \cdot B_{x} + A_{y} \cdot B_{y} + A_{z} \cdot B_{z}
+\end{equation}
+
+\begin{equation}\label{equation:crossproduct}
+    \begin{split}
+        \vec{A} \times \vec{B} = \langle 
+        A_{y} \cdot B_{z} - A_{z} \cdot B_{y}, \\
+        A_{z} \cdot B_{x} - A_{x} \cdot B_{z}, \\
+        A_{x} \cdot B_{y} - A_{y} \cdot B_{x} \rangle
+    \end{split}
+\end{equation}
+
+Vectors are useful in that they allow us to easily define movement or position differences in any direction.
 
 \begin{figure}[htp]
     \includesvg[scale=0.95]{Figure-4.svg}
-    \caption{The vector $(1, 2, 3)$ broken down into its $x$, $y$, and $z$ components}\label{figure:figure4}
+    \caption{The vector $\langle 1, 2, 3 \rangle$ broken down into its $x$, $y$, and $z$ components}\label{figure:figure4}
 \end{figure}
 
 \newpage
-A \textbf{line} is a collection of points arranged in a straight path, extending infinitely in opposing directions.\autocite{BritannicaLine2009} In $2$D, a line is most commonly defined as an equation conveying the relationship between the two coordinate variables $x$ and $y$ (\ref{equation:equation1}). Although this can be expanded to $3$ dimensions (\ref{equation:equation2}), a more convenient and commonly used definition utilizes vectors (\ref{equation:equation3}). In this definition, every point $P$ along the line is defined by adding a multiple $t$ ($t \in \mathbb{R}$) of $\vec{V}$ to a point of origin $O$. Intuitively, it can be thought of as starting from an origin point $O$ and traveling $t$ amount in the direction of the vector component $\vec{V}$.
+A \textbf{line} is a collection of points arranged in a straight path, extending infinitely in opposing directions.\autocite{BritannicaLine2009} In $2$D, a line is most commonly defined as an equation conveying the relationship between the two coordinate variables $x$ and $y$ (\ref{equation:2dline}). Although this can be expanded to $3$ dimensions (\ref{equation:2dline}), a more convenient and commonly used definition utilizes vectors (\ref{equation:3dpara}). In this definition, every point $P$ along the line is defined by adding a multiple $t$ ($t \in \mathbb{R}$) of $\vec{V}$ to a point of origin $O$. Intuitively, it can be thought of as starting from an origin point $O$ and traveling $t$ amount in the direction of the vector component $\vec{V}$.
 
-\begin{equation}\label{equation:equation1}
+Line definitions allow us to calculate intersections involving objects traveling in a straight path.
+
+\begin{equation}\label{equation:2dline}
     y = mx + b
 \end{equation}
 
-\begin{equation}\label{equation:equation2}
+\begin{equation}\label{equation:3dpara}
     \frac{x - x_{0}}{a} = \frac{y - y_{0}}{b} = \frac{z - z_{0}}{c}
 \end{equation}
 
-\begin{equation}\label{equation:equation3}
+\begin{equation}\label{equation:3dvect}
     P = O + t\vec{V}
 \end{equation}
 
@@ -117,18 +139,18 @@ Now that we have established a system of rules for representing space numericall
 \subsection{Viewports and Rays}
 The process of projecting a $3$D view onto a $2$D plane can be inspired by how vision and perspective works in the real world. Vision in the real world is essentially a $2$D image of a $3$D landscape.
 
-Imagine you are looking onto a landscape and would like to save this view onto a canvas. An artist could simply paint the view, however you lack the skills required. Cleverly, you set up a net the same size as the canvas in a position that captures the view. Looking through a square hole of the net, you average out the color that you can see through that hole and paint the location corresponding to that hole on the canvas with that color. Repeating this step for every single hole results in an accurate sketch of the landscape.\autocite{Gambetta2021}
+A person is looking out onto a landscape and would like to save this view onto a canvas. An artist could simply paint the view, however this person lack the skills required. Cleverly, they set up a net the same size as the canvas in a position that captures the desired view. Looking through a square hole of the net, the person averages out the color that they can see through that hole and paints the location corresponding to that hole on the canvas with that color. Repeating this step for every single hole results in an accurate sketch of the landscape.\autocite{Gambetta2021}
 
 This metaphor is useful in that it can be applied to computers. Computers display images as a grid of square pixels, much like the square holes of the net used in the analogy.
 
-A rectangle referred to as the \textbf{viewport} is placed in the world space, the equivalent to the square net. Then a camera is placed behind the viewport, the equivalent to your eyes (Figure-\ref{figure:figure5}).
+A rectangle referred to as the \textbf{viewport} is placed in the world space, the equivalent to the square net. Then a camera is placed behind the viewport, the equivalent to the person's eyes (Figure-\ref{figure:figure5}).
 
 \begin{figure}[htp]
     \includesvg{Figure-5}
     \caption{A viewport of a 16:9 screen with its center located at $(0, 0, 1)$}\label{figure:figure5}
 \end{figure}
 
-In the net analogy, the color that reaches your eyes are certain wavelengths of photons that travel from an origin light source, bounce off reflective objects, and ultimately end up in your retinas. Although we could simulate photons traveling in all direction from a light source, that would be highly redundant as most of them would not end up in your eyes. Instead, it is more efficient to trace in reverse: light \textbf{ray}s\footnote{A ray is a collection of points arranged in a straight path extending infinitely towards a single direction. Whereas a line extends infinitely in two opposing directions from a point, rays only extend in a single direction.} traveling outwards from your eyes and into any objects.
+In the net analogy, the color that reaches the person's eyes are certain wavelengths of photons that travel from an origin light source, bounce off reflective objects, and ultimately end up in their retinas. Although we could simulate photons traveling in all direction from a light source, that would be highly redundant as most of them would not end up hitting the camera. Instead, it is more efficient to trace in reverse: light \textbf{ray}s\footnote{A ray is a collection of points arranged in a straight path extending infinitely towards a single direction. Whereas a line extends infinitely in two opposing directions from a point, rays only extend in a single direction.} traveling outwards from the camera and into any objects.
 
 In practice, this means that we compute shooting a light ray from the camera to a pixel's equivalent location on the viewport, and if it intersects with an object, color in that pixel on the screen with the color of the object. We repeat this for every pixel until every pixel on the screen is correctly colored in. This technique is known as \textbf{ray tracing}.
 

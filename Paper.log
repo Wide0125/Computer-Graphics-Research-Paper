@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.1)  14 OCT 2025 12:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.1)  14 OCT 2025 19:59
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -806,7 +806,8 @@ Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 ))
 \@quotelevel=\count482
 \@quotereset=\count483
- (./Paper.aux)
+
+No file Paper.aux.
 \openout1 = `Paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
@@ -827,7 +828,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
- (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count484
 \scratchdimen=\dimen284
@@ -845,18 +846,25 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-))
+)) (|'inkscape' -V )
+
+Package svg Warning: No version of Inkscape was detected by invoking
+(svg)                `inkscape -V'
+(svg)                so the Inkscape export will fail quite sure as the
+(svg)                command is probably unknown to your OS. You could set
+(svg)                `inkscapeversion=<version>' manually but this is very
+(svg)                unlikely to work on input line 31.
+
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 31.
- (./Paper.out) (./Paper.out)
 \@outlinefile=\write6
 \openout6 = `Paper.out'.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+(/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -878,7 +886,8 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 36.
- (./Paper.toc)
+
+No file Paper.toc.
 \tf@toc=\write7
 \openout7 = `Paper.toc'.
 
@@ -893,50 +902,131 @@ LaTeX Warning: Marginpar on page 2 moved.
 
 
 [2]
-Package svg Info: Last page of `./svg-inkscape/Figure-1_svg-tex.pdf' is 1 on input line 70.
+Package svg Info: Last page of `./svg-inkscape/Figure-1_svg-tex.pdf' is 1 on input line 68.
  (./svg-inkscape/Figure-1_svg-tex.pdf_tex
-<./svg-inkscape/Figure-1_svg-tex.pdf, id=54, page=1, 281.56392pt x 281.56392pt>
+<./svg-inkscape/Figure-1_svg-tex.pdf, id=29, page=1, 281.56392pt x 281.56392pt>
 File: ./svg-inkscape/Figure-1_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Figure-1_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Figure-1_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 281.5639pt x 281.56322pt.
 )
-<Right-hand rule.png, id=55, 1606.0pt x 1328.965pt>
+
+LaTeX Warning: Reference `figure:figure2' on page 3 undefined on input line 72.
+
+<Right-hand rule.png, id=30, 1606.0pt x 1328.965pt>
 File: Right-hand rule.png Graphic file (type png)
 <use Right-hand rule.png>
-Package pdftex.def Info: Right-hand rule.png  used on input line 77.
+Package pdftex.def Info: Right-hand rule.png  used on input line 75.
 (pdftex.def)             Requested size: 321.19432pt x 265.78828pt.
 
 
 [3 <./svg-inkscape/Figure-1_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/Figure-3_svg-tex.pdf' is 1 on input line 88.
- (./svg-inkscape/Figure-3_svg-tex.pdf_tex
-<./svg-inkscape/Figure-3_svg-tex.pdf, id=104, page=1, 281.56392pt x 281.56392pt>
+
+LaTeX Warning: Reference `figure:figure3' on page 4 undefined on input line 83.
+
+Package svg Info: Last page of `./svg-inkscape/Figure-3_svg-tex.pdf' is 1 on input line 86.
+(./svg-inkscape/Figure-3_svg-tex.pdf_tex
+<./svg-inkscape/Figure-3_svg-tex.pdf, id=81, page=1, 281.56392pt x 281.56392pt>
 File: ./svg-inkscape/Figure-3_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Figure-3_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Figure-3_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 267.48485pt x 267.48419pt.
 )
-Package svg Info: Last page of `./svg-inkscape/Figure-4_svg-tex.pdf' is 1 on input line 95.
- (./svg-inkscape/Figure-4_svg-tex.pdf_tex
-<./svg-inkscape/Figure-4_svg-tex.pdf, id=109, page=1, 281.56392pt x 281.56392pt>
+
+LaTeX Warning: Reference `figure:figure4' on page 4 undefined on input line 90.
+
+
+LaTeX Warning: Reference `equation:dotproduct' on page 4 undefined on input line 92.
+
+
+LaTeX Warning: Reference `equation:crossproduct' on page 4 undefined on input line 92.
+
+
+
+[4 <./Right-hand rule.png>]
+Package svg Info: Calling Inkscape on input line 95.
+runsystem(inkscape "Figure-9.svg" -D --export-latex --export-filename="Figure-9_svg-tex.pdf")...executed.
+
+runsystem(inkscape "Figure-9.svg" -D --export-latex \relax --without-gui --export-pdf="Figure-9_svg-tex.pdf")...executed.
+
+
+
+/Users/brianpark/Documents/Math Research Paper/Paper.tex:95: Package svg Error: Inkscape version not detected.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95     \includesvg{Figure-9}
+                              
+It was tried to invoke `inkscape'
+for file "Figure-9.svg"
+but no result was produced. Check the log file
+and set `inkscapeversion=<version>' manually.
+
+runsystem(inkscape "Figure-9.svg" -D --export-latex --export-filename="Figure-9_svg-tex.pdf")...executed.
+
+
+Package svg Warning: The export with Inkscape failed for file
+(svg)                `Figure-9.svg'
+(svg)                Troubleshooting: Please check in the log file how
+(svg)                the invocation of Inkscape took place and try to
+(svg)                execute it yourself in the terminal on input line 95.
+
+
+/Users/brianpark/Documents/Math Research Paper/Paper.tex:95: Package svg Error: File `Figure-9_svg-tex.pdf' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95     \includesvg{Figure-9}
+                              
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/Figure-9_svg-tex.pdf'
+although `Figure-9.svg' was found.
+
+
+/Users/brianpark/Documents/Math Research Paper/Paper.tex:95: Package svg Error: File `Figure-9_svg-tex.pdf_tex' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95     \includesvg{Figure-9}
+                              
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/Figure-9_svg-tex.pdf_tex'
+although `Figure-9.svg' was found.
+
+Package svg Info: Last page of `./svg-inkscape/Figure-4_svg-tex.pdf' is 1 on input line 115.
+(./svg-inkscape/Figure-4_svg-tex.pdf_tex
+<./svg-inkscape/Figure-4_svg-tex.pdf, id=96, page=1, 281.56392pt x 281.56392pt>
 File: ./svg-inkscape/Figure-4_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Figure-4_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Figure-4_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 267.48485pt x 267.48419pt.
 )
 
-[4 <./Right-hand rule.png>]
+[5 <./svg-inkscape/Figure-3_svg-tex.pdf>]
 
-[5 <./svg-inkscape/Figure-3_svg-tex.pdf> <./svg-inkscape/Figure-4_svg-tex.pdf
+LaTeX Warning: Reference `equation:2dline' on page 6 undefined on input line 120.
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Figure-4_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
 
-[6]
-Package svg Info: Last page of `./svg-inkscape/Figure-5_svg-tex.pdf' is 1 on input line 127.
- (./svg-inkscape/Figure-5_svg-tex.pdf_tex
-<./svg-inkscape/Figure-5_svg-tex.pdf, id=250, page=1, 281.56392pt x 281.56392pt>
+LaTeX Warning: Reference `equation:2dline' on page 6 undefined on input line 120.
+
+
+LaTeX Warning: Reference `equation:3dpara' on page 6 undefined on input line 120.
+
+
+
+[6 <./svg-inkscape/Figure-4_svg-tex.pdf>]
+
+LaTeX Warning: Reference `figure:figure5' on page 7 undefined on input line 146.
+
+Package svg Info: Last page of `./svg-inkscape/Figure-5_svg-tex.pdf' is 1 on input line 149.
+(./svg-inkscape/Figure-5_svg-tex.pdf_tex
+<./svg-inkscape/Figure-5_svg-tex.pdf, id=228, page=1, 281.56392pt x 281.56392pt>
 File: ./svg-inkscape/Figure-5_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Figure-5_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Figure-5_svg-tex.pdf , page1 used on input line 56.
@@ -944,9 +1034,9 @@ Package pdftex.def Info: ./svg-inkscape/Figure-5_svg-tex.pdf , page1 used on inp
 )
 
 [7 <./svg-inkscape/Figure-5_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/Figure-6_svg-tex.pdf' is 1 on input line 136.
+Package svg Info: Last page of `./svg-inkscape/Figure-6_svg-tex.pdf' is 1 on input line 158.
  (./svg-inkscape/Figure-6_svg-tex.pdf_tex
-<./svg-inkscape/Figure-6_svg-tex.pdf, id=302, page=1, 281.56392pt x 281.56392pt>
+<./svg-inkscape/Figure-6_svg-tex.pdf, id=281, page=1, 281.56392pt x 281.56392pt>
 File: ./svg-inkscape/Figure-6_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Figure-6_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Figure-6_svg-tex.pdf , page1 used on input line 56.
@@ -954,14 +1044,14 @@ Package pdftex.def Info: ./svg-inkscape/Figure-6_svg-tex.pdf , page1 used on inp
 )
 
 [8 <./svg-inkscape/Figure-6_svg-tex.pdf>]
-Package hyperref Info: bookmark level for unknown listing defaults to 0 on input line 148.
+Package hyperref Info: bookmark level for unknown listing defaults to 0 on input line 170.
 \pydata@fh@_D0A662A5235ECDE30739FE50CF0DE830.data.minted=\write8
 \openout8 = `_D0A662A5235ECDE30739FE50CF0DE830.data.minted'.
 
-runsystem(latexminted config  --timestamp 20251014123553 D0A662A5235ECDE30739FE50CF0DE830)...executed.
+runsystem(latexminted config  --timestamp 20251014195959 D0A662A5235ECDE30739FE50CF0DE830)...executed.
 
  (./_D0A662A5235ECDE30739FE50CF0DE830.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20251014123553 D0A662A5235ECDE30739FE50CF0DE830)...executed.
+runsystem(latexminted cleanconfig  --timestamp 20251014195959 D0A662A5235ECDE30739FE50CF0DE830)...executed.
 
  (./_minted/default.style.minted) (./_minted/2E18966486BB5C399EB228B2D3958454.highlight.minted
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
@@ -972,23 +1062,30 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 
 [10]) (./_minted/D5BE64E7A895399B3ABE55B841FCF8C1.highlight.minted)
 
+LaTeX Warning: Reference `figure:figure7' on page 11 undefined on input line 303.
+
+
+
 [11]
-Package svg Info: Last page of `./svg-inkscape/Figure-7_svg-tex.pdf' is 1 on input line 284.
+Package svg Info: Last page of `./svg-inkscape/Figure-7_svg-tex.pdf' is 1 on input line 306.
  (./svg-inkscape/Figure-7_svg-tex.pdf_tex
-<./svg-inkscape/Figure-7_svg-tex.pdf, id=390, page=1, 438.134pt x 230.30058pt>
+<./svg-inkscape/Figure-7_svg-tex.pdf, id=369, page=1, 438.134pt x 230.30058pt>
 File: ./svg-inkscape/Figure-7_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Figure-7_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Figure-7_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 350.50851pt x 184.24422pt.
 )
-Overfull \hbox (5.50851pt too wide) in paragraph at lines 284--285
+Overfull \hbox (5.50851pt too wide) in paragraph at lines 306--307
 [][] 
  []
 
 (./_minted/56C3B5155CB7CE9B8A768CC7B2EC603A.highlight.minted) (./_minted/D7B72B8176D9CD0B326A66FF6DB22B73.highlight.minted) (./_minted/FF8B8C75829C19A6E05E39C459663FB0.highlight.minted) (./_minted/60F9645C1CEEA75B2A9ACAF5AED626DB.highlight.minted)
-Package svg Info: Last page of `./svg-inkscape/Figure-8_svg-tex.pdf' is 1 on input line 313.
- (./svg-inkscape/Figure-8_svg-tex.pdf_tex
-<./svg-inkscape/Figure-8_svg-tex.pdf, id=393, page=1, 281.56392pt x 281.56392pt>
+
+LaTeX Warning: Reference `figure:figure8' on page 12 undefined on input line 331.
+
+Package svg Info: Last page of `./svg-inkscape/Figure-8_svg-tex.pdf' is 1 on input line 335.
+(./svg-inkscape/Figure-8_svg-tex.pdf_tex
+<./svg-inkscape/Figure-8_svg-tex.pdf, id=371, page=1, 281.56392pt x 281.56392pt>
 File: ./svg-inkscape/Figure-8_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Figure-8_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Figure-8_svg-tex.pdf , page1 used on input line 56.
@@ -998,36 +1095,59 @@ Package pdftex.def Info: ./svg-inkscape/Figure-8_svg-tex.pdf , page1 used on inp
 [12 <./svg-inkscape/Figure-7_svg-tex.pdf>] (./_minted/0178347C88C89359C6EBED93CF290878.highlight.minted)
 
 [13 <./svg-inkscape/Figure-8_svg-tex.pdf>]
-Overfull \hbox (3.17722pt too wide) in paragraph at lines 331--331
+Overfull \hbox (3.17722pt too wide) in paragraph at lines 353--353
 [][]\OT1/cmr/m/n/10 Eldridge, Stephen. \OT1/cmr/m/it/10 Carte-sian co-or-di-nates\OT1/cmr/m/n/10 . 2023. \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : [][]$\OT1/cmtt/m/n/10 https : / / www . britannica .
  []
 
 
 
-[14] (./Paper.aux)
+[14]
+\openout8 = `_D0A662A5235ECDE30739FE50CF0DE830.data.minted'.
+
+runsystem(latexminted clean  --timestamp 20251014195959 D0A662A5235ECDE30739FE50CF0DE830)...executed.
+
+ (./Paper.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `Paper.out' has not changed.
-(rerunfilecheck)             Checksum: 608B8390950AB3FB5DB5A79AC224B95C;736.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `Paper.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Paper.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  608B8390950AB3FB5DB5A79AC224B95C;736.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                Paper
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'Paper.run.xml'.
 \openout1 = `Paper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34849 strings out of 473190
- 714172 string characters out of 5715800
- 1710441 words of memory out of 5000000
- 57487 multiletter control sequences out of 15000+600000
+ 34839 strings out of 473190
+ 714273 string characters out of 5715800
+ 1708497 words of memory out of 5000000
+ 57478 multiletter control sequences out of 15000+600000
  569119 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,10n,121p,891b,2038s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,16n,121p,1320b,2039s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Paper.pdf (14 pages, 509866 bytes).
+Output written on Paper.pdf (14 pages, 512521 bytes).
 PDF statistics:
- 601 PDF objects out of 1000 (max. 8388607)
- 426 compressed objects within 5 object streams
- 55 named destinations out of 1000 (max. 500000)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 578 PDF objects out of 1000 (max. 8388607)
+ 403 compressed objects within 5 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 88 words of extra memory for PDF output out of 10000 (max. 10000000)
 
