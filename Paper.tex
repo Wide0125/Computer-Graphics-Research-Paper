@@ -336,9 +336,9 @@ This is our light ray for the pixel (Figure-\ref{figure:lightray}).
     \caption{}\label{figure:lightray}
 \end{figure}
 
-Now that a method for obtaining the light ray has been determined, we can begin to define objects to display. For this early implementation, a sphere will be used as it is mathematically simple. A sphere is defined as a collection of points that are the same distance away from a single point. Every point $P$ along the surface of a sphere with center $C$ and radius $R$ can be defined as such:
+Now that a method for obtaining the light ray has been determined, we can begin to define objects to display. For this early implementation, a sphere will be used as it is mathematically simple. A sphere is defined as a collection of points that are the same distance away from a single point. Every point $P$ along the surface of a sphere with center $C$ and radius $r$ can be defined as such:
 \[
-D(P, C) = R
+D(P, C) = r^{2}
 \]
 The function $D(x, y)$ takes in two points as input and outputs the distance between the two points.
 
@@ -350,12 +350,12 @@ By substituting the point on the surface of the sphere $P$ with the equation for
 P = C_{p} + t\vec{V} (t \geq 0)
 \]
 \[
-D(P, C) = R
+D(P, C) = r^{2}
 \]
 
 \begin{align*}
-    D(C_{p} + t\vec{V}, C) = R \\
-    (C - C_{p} + t\vec{V}) \cdot (C - C_{p} + t\vec{V}) = R
+    D(C_{p} + t\vec{V}, C) = r^{2} \\
+    (C - C_{p} + t\vec{V}) \cdot (C - C_{p} + t\vec{V}) = r^{2}
 \end{align*}
 
 \todo{Continue with 2.3}
