@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber Paper"] 1760399514.38276 "Paper.bcf" "Paper.bbl" "Paper" 1760399546.84981 0
-  "Paper.bcf" 1760399546.72908 108763 2a24dfbee9b7027b19f92cd76c52e54c "pdflatex"
+["biber Paper"] 1760399514.38276 "Paper.bcf" "Paper.bbl" "Paper" 1760412956.95162 0
+  "Paper.bcf" 1760412956.83013 108763 2a24dfbee9b7027b19f92cd76c52e54c "pdflatex"
   "references.bib" 1760399514.02458 1070 607fe01d7e56893bf53efe59dff3e6ca ""
   (generated)
   "Paper.bbl"
   "Paper.blg"
   (rewritten before read)
-["pdflatex"] 1760399543.84816 "/Users/brianpark/Documents/Math Research Paper/Paper.tex" "Paper.pdf" "Paper" 1760399546.85016 0
-  "/Users/brianpark/Documents/Math Research Paper/Paper.tex" 1760399514.02229 16106 e24a8ee11160e1118f477d5adcc94a4d ""
+["pdflatex"] 1760412953.82846 "/Users/brianpark/Documents/Math Research Paper/Paper.tex" "Paper.pdf" "Paper" 1760412956.952 0
+  "/Users/brianpark/Documents/Math Research Paper/Paper.tex" 1760412950.57114 16131 84acfd96b6755aa533116ee788762860 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -234,12 +234,12 @@
   "Figure-6.svg" 1760399514.01388 155901 cddd1882d7f497fec7166b1094dbaa6e ""
   "Figure-7.svg" 1760399514.0143 7035 1f42938af997e1818a6cc12a239186d8 ""
   "Figure-8.svg" 1760399514.015 169600 6756b84a48399eaafae27fca8d6bf494 ""
-  "Paper.aux" 1760399546.72422 5800 b1fd738e18806b9a71f1aeee4498a7cd "pdflatex"
+  "Paper.aux" 1760412956.825 6033 84345f39f252f33e49fd639c0fd9f608 "pdflatex"
   "Paper.bbl" 1760399539.45454 8517 4ebc39637862e2dd7c43cf656afb3653 "biber Paper"
-  "Paper.out" 1760399546.72559 736 608b8390950ab3fb5db5a79ac224b95c "pdflatex"
-  "Paper.run.xml" 1760399546.73003 2320 db47b2dbcab92bfacef59f9d142562ef "pdflatex"
-  "Paper.tex" 1760399514.02229 16106 e24a8ee11160e1118f477d5adcc94a4d ""
-  "Paper.toc" 1760399546.73013 401 bbf7a27ac699fd7efc4b159cb2d9a202 "pdflatex"
+  "Paper.out" 1760412956.82648 736 608b8390950ab3fb5db5a79ac224b95c "pdflatex"
+  "Paper.run.xml" 1760412956.831 2320 db47b2dbcab92bfacef59f9d142562ef "pdflatex"
+  "Paper.tex" 1760412950.57114 16131 84acfd96b6755aa533116ee788762860 ""
+  "Paper.toc" 1760412956.83109 401 bbf7a27ac699fd7efc4b159cb2d9a202 "pdflatex"
   "Right-hand rule.png" 1760316513.49636 197057 521c53eeeef72e2c893702133a3df14e ""
   "_minted/0178347C88C89359C6EBED93CF290878.highlight.minted" 1760399514.02287 856 2f3518e87952bab5ab5a7d8e77728afa ""
   "_minted/2E18966486BB5C399EB228B2D3958454.highlight.minted" 1760399514.02302 894 af9659e0a084f7ab97bf050d539a49ff ""
