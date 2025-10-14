@@ -326,21 +326,28 @@ Vector{xDistanceFromCenter, yDistanceFromCenter, 1}
 
 With this, a ray going starting from the camera position point ($C$) and going in the direction of the camera to pixel vector ($\vec{V}$) can be derived.
 \[
-P = C + t\vec{V}
+P = C + t\vec{V} (t \geq 0)
 \]
 This is our light ray for the pixel (Figure-\ref{figure:lightray}).
 
 
-\begin{figure}[htp]
+\begin{figure}[t]
     \includesvg{Figure-8.svg}
     \caption{}\label{figure:lightray}
 \end{figure}
 
+Now that a method for obtaining the light ray has been determined, we can begin to define objects to display. For this early implementation, a sphere will be used as it is mathematically simple. A sphere is defined as a collection of points that are the same distance away from a single point. Every point $P$ along the surface of a sphere with center $C$ and radius $R$ can be defined as such:
+\[
+D(P, C) = R
+\]
+The function $D(x, y)$ takes in two points as input and outputs the distance between the two points.
+
+All that's left is to determine whether the light ray for our pixel and any point on the sphere intersect; if so, color in that pixel.
 
 
 \todo{Continue with 2.3}
 
 
 \newpage
-\printbibliography
+\printbibliography{}
 \end{document}
