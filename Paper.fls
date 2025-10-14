@@ -528,9 +528,6 @@ INPUT ./svg-inkscape/Figure-8_svg-tex.pdf
 INPUT ./svg-inkscape/Figure-8_svg-tex.pdf_tex
 INPUT ./svg-inkscape/Figure-8_svg-tex.pdf
 INPUT ./svg-inkscape/Figure-8_svg-tex.pdf
-INPUT ./_minted/0178347C88C89359C6EBED93CF290878.highlight.minted
-INPUT ./_minted/0178347C88C89359C6EBED93CF290878.highlight.minted
-INPUT _minted/0178347C88C89359C6EBED93CF290878.highlight.minted
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT Paper.aux

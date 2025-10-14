@@ -328,25 +328,18 @@ With this, a ray going starting from the camera position point ($C$) and going i
 \[
 P = C + t\vec{V}
 \]
-This is our light ray for the pixel (Figure-\ref{figure:figure8}).
+This is our light ray for the pixel (Figure-\ref{figure:lightray}).
 
 
-\begin{figure}[t]
+\begin{figure}[htp]
     \includesvg{Figure-8.svg}
-    \caption{}\label{figure:figure8}
+    \caption{}\label{figure:lightray}
 \end{figure}
 
-\newpage
-Operations on each pixel can be achieved through the use of a nested for loop.
-\begin{minted}{cpp}
-for (int pixelX {0}; pixelX < 1920; ++pixelX) {
-    for (int pixelY {0}; pixelY < 1080; ++pixelY) {
-        <operation>
-    }
-}
-\end{minted}
+
 
 \todo{Continue with 2.3}
+
 
 \newpage
 \printbibliography
