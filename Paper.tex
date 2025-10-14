@@ -347,9 +347,9 @@ This is our light ray for the pixel (Figure-\ref{figure:lightray}).
 
 Now that a method for obtaining the light ray has been determined, we can begin to define objects to display. For this early implementation, a sphere will be used as it is mathematically simple. A sphere is defined as a collection of points that are the same distance away from a single point. Every point $P$ along the surface of a sphere with center $C$ and radius $r$ can be defined as such:
 \[
-D(P, C) = r^{2}
+distance(P, C) = r^{2}
 \]
-The function $D(x, y)$ takes in two points as input and outputs the distance between the two points.
+The function $distance(x, y)$ takes in two points as input and outputs the distance between the two points.
 
 All that's left is to determine whether the light ray for our pixel and any point on the sphere intersect; if so, color in that pixel.
 
