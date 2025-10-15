@@ -46,14 +46,12 @@ The world is $3$-dimensional. In contrast, visual perceptions of the world are $
 
 Furthermore, this possibility is taken advantage of to form the foundations of modern computer graphics. When it comes to video games, computer generated imagery, or $3$D animation, computers must simulate all the physical processes of the real world that produce the light and resulting image that reaches your eyes. Although the entirety of the physical world cannot possibly be simulated within the constraints of modern computing capabilities, mathematical and physical abstractions can be made in order to simplify this process and produce near true to life results. These abstractions form the basis of $3$D Computer Graphics.
 
-In modern computing, knowing the fundamental concepts and processes behind projecting a $3$D image has been made unnecessary to know. With the release of many software solutions and libraries that aid in the development of appropriate visuals, the modern day developer does not need to grasp the underlying mechanics behind $3$D Computer Graphics in order to produce satisfactory results. However, the benefits of learning the fundamental process behind this widespread field are essential for those who wish to become experts not tied down by any specific engine or library. Factors such as performance, scalability, and customizability are reasons that justify the process of learning the fundamentals.\todo{Add real-world examples of mentioned advantages} Above all else, those who understand are better equipped to take advantage of and develop graphical toolkits. As such, it is pertinent to understand the foundations that make up $3$D Computer Graphics for those who wish to become true masters of the field.
+In modern computing, knowing the fundamental concepts and processes behind projecting a $3$D image has been made unnecessary to know. With the release of many software solutions and libraries that aid in the development of appropriate visuals, the modern day developer does not need to grasp the underlying mechanics behind $3$D Computer Graphics in order to produce satisfactory results. However, the benefits of learning the fundamental process behind this widespread field are essential for those who wish to become experts not tied down by any specific engine or library. Factors such as performance, scalability, and customizability are reasons that justify the process of learning the fundamentals.\todo{Add real-world examples of mentioned advantages} Above all else, those who understand are better equipped to take advantage of and develop graphical toolkits. As such, it is imperative to understand the foundations that make up $3$D Computer Graphics for those who wish to become true masters of the field.
 
-\todo{Add limitations of this paper}
-
-This research paper sets out to document the process of learning the fundamentals of $3$D Computer Graphics, with real code examples mapping out the learning process. As such, it aims to serve as a useful guide that directs readers to explore the bare-bones fundamentals of $3$D Computer Graphics.
+This research paper sets out to document the process of learning the fundamentals of $3$D Computer Graphics, with real code examples mapping out the learning process. As such, it aims to serve as a useful guide that directs readers to explore the bare-bones fundamentals of $3$D Computer Graphics. However, it will not contribute anything of substantial originality to the field, and will be written from the perspective of a novice learner.
 
 \newpage
-\section{Ray Tracing}
+\section{3 Dimensional Space}
 \subsection{Coordinates and Vectors}
 
 
@@ -87,12 +85,17 @@ Axis configurations corresponding to the left hand also exist, however the right
     \caption{A vector from point $(0, 0, 0)$ to $(1, 1, 1)$}\label{figure:v000to111}
 \end{figure}
    
-$n$-dimension vectors can be notated as a set of $n$ components $\langle C_{1}, C_{2}, C_{3}, \ldots, \\ C_{n} \rangle$. Much like the slope of a line in $2$ dimensions, vectors can be thought of as the ratio between each of the components’ deltas (differences in magnitude). For example, take the $3$D vector $\langle 1, 2, 3 \rangle$: when $x$ is increased by $1$, $y$ is increased by $2$, and $z$ is increased by $3$ (Figure~\ref{figure:vectorcomponents}).\autocite{BritannicaVector2004}
+$n$-dimension vectors can be notated as a set of $n$ components $ \vec{C} = \langle C_{1}, C_{2}, \\C_{3}, \ldots, C_{n} \rangle$. Much like the slope of a line in $2$ dimensions, vectors can be thought of as the ratio between each of the components’ deltas (differences in magnitude). For example, take the $3$D vector $\langle 1, 2, 3 \rangle$: when $x$ is increased by $1$, $y$ is increased by $2$, and $z$ is increased by $3$ (Figure~\ref{figure:vectorcomponents}).\autocite{BritannicaVector2004}
+
+\begin{figure}[htp]
+    \includesvg[scale=0.95]{Figure-4.svg}
+    \caption{The vector $\langle 1, 2, 3 \rangle$ broken down into its $x$, $y$, and $z$ components}\label{figure:vectorcomponents}
+\end{figure}
 
 Arithmetic operations can also be performed on vectors. Vector addition is done by summing together each respective component. For example, the resulting vector of adding vectors $\langle A_{x}, A_{y}, A_{z} \rangle$ and $\langle B_{x}, B_{y}, B_{z} \rangle$ together is vector $\langle A_{x} + B_{x}, A_{y} + B_{y}, A_{z} + B_{z} \rangle$. Additionally, two types of vector multiplication exist: the \textbf{dot product} and the \textbf{cross product}. The dot product (denoted as $\vec{A} \cdot \vec{B}$) is used to find how similar two vectors are to each other, and results in a scalar\footnote{A scalar is a value that possesses only magnitude. It differs from a vector value in that vectors possess both magnitude and direction.} value representing similarity. A vector dot product with itself produces a scalar square of its magnitude. The cross product (denoted as $\vec{A} \times \vec{B}$) by contrast is used to find a vector that is the most different to the vectors it operates on. The cross product of two vectors results in a vector perpendicular to the plane created by the two vectors (Figure~\ref{v011&111crossproduct}). Formulas for the dot product (\ref{equation:dotproduct}) and the cross product (\ref{equation:crossproduct}) are listed below.
 
 \begin{figure}[htp]
-    \includesvg[scale=0.95]{Figure-9}
+    \includesvg{Figure-9}
     \caption{The cross product of two vectors $\langle 0, 1, 1 \rangle$ and $\langle 1, 1, 1 \rangle$}\label{v011&111crossproduct}
 \end{figure}
 
@@ -118,12 +121,13 @@ Notably, the dot product is nothing more than the sum of the products of each of
 (\vec{A} + \vec{B}) \cdot \vec{C} = \vec{A} \cdot \vec{C} + \vec{B} \cdot \vec{C}
 \]
 
-Vectors are useful in that they allow us to easily define movement or position differences in any direction.
+Scalar multiplication of vectors is also possible.
 
-\begin{figure}[htp]
-    \includesvg[scale=0.95]{Figure-4.svg}
-    \caption{The vector $\langle 1, 2, 3 \rangle$ broken down into its $x$, $y$, and $z$ components}\label{figure:vectorcomponents}
-\end{figure}
+\[
+t\vec{V} = \langle tV_{x}, tV_{y}, tV_{z} \rangle
+\]
+
+Vectors are useful in that they allow us to easily define movement or position differences in any direction.
 
 \newpage
 A \textbf{line} is a collection of points arranged in a straight path, extending infinitely in opposing directions.\autocite{BritannicaLine2009} In $2$D, a line is most commonly defined as an equation conveying the relationship between the two coordinate variables $x$ and $y$ (\ref{equation:2dline}). Although this can be expanded to $3$ dimensions (\ref{equation:2dline}), a more convenient and commonly used definition utilizes vectors (\ref{equation:3dpara}). In this definition, every point $P$ along the line is defined by adding a multiple $t$ ($t \in \mathbb{R}$) of $\vec{D}$ to a point of origin $O$. Intuitively, it can be thought of as starting from an origin point $O$ and traveling $t$ amount in the direction of the vector component $\vec{D}$.
@@ -142,13 +146,14 @@ Line definitions allow us to calculate intersections involving objects traveling
     P = O + t\vec{D}
 \end{equation}
 
-Now that we have established a system of rules for representing space numerically, we can begin to lay the groundwork for projecting a $3$D space onto a $2$D one.
+Now that we have established a system of rules for representing space numerically, we can begin to lay the groundwork for projecting a $3$D space onto a $2$D plane.
 
 \newpage
+\section{Ray Tracing}
 \subsection{Viewports and Rays}
 The process of projecting a $3$D view onto a $2$D plane can be inspired by how vision and perspective works in the real world. Vision in the real world is essentially a $2$D image of a $3$D landscape.
 
-A person is looking out onto a landscape and would like to save this view onto a canvas. An artist could simply paint the view, however this person lack the skills required. Cleverly, they set up a net the same size as the canvas in a position that captures the desired view. Looking through a square hole of the net, the person averages out the color that they can see through that hole and paints the location corresponding to that hole on the canvas with that color. Repeating this step for every single hole results in an accurate sketch of the landscape.\autocite{Gambetta2021}
+A person is looking out onto a landscape and would like to save this view onto a canvas. An artist could simply paint the view, however this person lacks the skills required. Cleverly, they set up a net the same size as the canvas in a position that captures the desired view. Looking through a square hole of the net, the person averages out the color that they can see through that hole and paints the location corresponding to that hole on the canvas with that color. Repeating this step for every single hole results in an accurate sketch of the landscape.\autocite{Gambetta2021}
 
 This metaphor is useful in that it can be applied to computers. Computers display images as a grid of square pixels, much like the square holes of the net used in the analogy.
 
@@ -175,138 +180,20 @@ Now that a system for projecting a $3$D space onto a $2$D plane has been establi
 With a ray tracing system defined, an implementation can be programmed. The implementation in this paper will be coded in the \CC{} language, and the Raylib graphics library with the raylib-cpp wrapper will be used for drawing pixels onto a window.\autocite{Raylib}\autocite{raylib-cpp}
 
 First, we must define a point, vector, and camera object (\CC{} class type).
+
 \begin{code}
-\caption{point.hpp}
-\begin{minted}[breaklines]{cpp}
-#ifndef POINT_H
-#define POINT_H
-
-struct Point {
-    double x {};
-    double y {};
-    double z {};
-};
-
-static constexpr Point ORIGIN {0, 0, 0};
-
-#endif
-\end{minted}
+    \caption{point.hpp}
+    \inputminted{cpp}{point.hpp}
 \end{code}
 
 \begin{code}
 \caption{vector.hpp}
-\begin{minted}[breaklines]{cpp}
-#ifndef VECTOR_H
-#define VECTOR_H
-#include "point.hpp"
-
-struct Vector {
-    double x {};
-    double y {};
-    double z {};
-};
-
-inline constexpr Vector operator+(const Vector& vector1, const Vector& vector2) {
-    return {vector1.x + vector2.x,
-            vector1.y + vector2.y,
-            vector1.z + vector2.z};
-}
-
-inline constexpr Vector operator+(const Point& point, const Vector& vector) {
-    return {point.x + vector.x,
-            point.y + vector.y,
-            point.z + vector.z};
-}
-
-inline constexpr Vector& operator+=(Vector& vector1, const Vector& vector2) {
-    vector1 = {
-            vector1.x + vector2.x,
-            vector1.y + vector2.y,
-            vector1.z + vector2.z
-        };
-    return vector1;
-}
-
-inline constexpr Vector operator-(const Vector& vector1, const Vector& vector2) {
-    return {vector1.x - vector2.x,
-            vector1.y - vector2.y,
-            vector1.z - vector2.z};
-}
-
-inline constexpr Vector operator-(const Vector& vector) {
-    return {-vector.x,
-            -vector.y,
-            -vector.z};
-}
-
-inline constexpr Vector operator-(const Point& point1, const Point& point2) {
-    return {point1.x - point2.x, 
-            point1.y - point2.y,
-            point1.z - point2.z};
-}
-
-inline constexpr Vector operator*(double multiple, const Vector& vector) {
-    return {multiple * vector.x,
-            multiple * vector.y,
-            multiple * vector.z};
-}
-
-inline constexpr double dotProduct(const Vector& vector1, const Vector& vector2) {
-    return vector1.x * vector2.x +
-    vector1.y * vector2.y +
-    vector1.z * vector2.z;
-}
-
-inline constexpr Vector crossProduct(const Vector& vector1, const Vector& vector2) {
-    double a1 = vector1.x;
-    double a2 = vector1.y;
-    double a3 = vector1.z;
-
-    double b1 = vector2.x;
-    double b2 = vector2.y;
-    double b3 = vector2.z;
-
-    return Vector{a2 * b3 - a3 * b2, a3 * b1 - a1 * b3, a1 * b2 - a2 * b1};
-}
-
-#endif
-\end{minted}
+\inputminted[breaklines]{cpp}{vector.hpp}
 \end{code}
 
 \begin{code}
 \caption{camera.hpp}
-\begin{minted}[breaklines]{cpp}
-#ifndef CUSTOMCAMERA_H
-#define CUSTOMCAMERA_H
-#include <cmath>
-#include "vector.hpp"
-
-namespace Custom {
-    class Camera {
-        public:
-            constexpr const Vector& cameraToViewportCenter() const {return m_cameraToViewportCenter;}
-
-            constexpr const Point& pos() const {return m_pos;}
-
-            constexpr double viewportWidth() const {return m_viewportWidth;}
-            constexpr double viewportHeight() const {return m_viewportHeight;}
-
-            constexpr int screenWidth() const {return m_screenWidth;}
-            constexpr int screenHeight() const {return m_screenHeight;}
-
-        private:
-            Point m_pos {0, 0, 0};
-            int m_screenWidth {960};
-            int m_screenHeight {540};
-            
-            double m_viewportDistanceFromCamera {1};
-            double m_viewportHeight {1};
-            double m_viewportWidth {m_viewportHeight/m_screenHeight * m_screenWidth};
-    };
-}
-
-#endif
-\end{minted}
+\inputminted[breaklines]{cpp}{camera.hpp}
 \end{code}
 
 Next, we must define a function to convert pixel coordinates to equivalent in-world coordinates on the viewport. For now, we will assume the viewport center to be at $(0, 0, 1)$ and the camera to be at the origin $(0, 0, 0)$ for the sake of simplicity. Pixels on the screen are usually represented with a $2$D cartesian coordinate system with an inverted Y-Axis (Figure-\ref{figure:figure7}).
@@ -317,14 +204,12 @@ Next, we must define a function to convert pixel coordinates to equivalent in-wo
 \end{figure}
 
 For each pixel on the screen, its horizontal ($x$) distance from the center and vertical ($y$) distance from the center can be calculated.
-
 \begin{code}
 \begin{minted}[breaklines]{cpp}
 double xDistanceFromCenter {camera.viewportWidth()/camera.screenWidth() * -(pixelX - camera.screenWidth()/2)};
 double yDistanceFromCenter {camera.viewportHeight()/camera.screenHeight() * -(pixelY - camera.screenHeight()/2)}; 
 \end{minted}
 \end{code}
-
 Adding \mintinline{cpp}{xDistanceFromCenter} and \mintinline{cpp}{yDistanceFromCenter} to the $x$ and $y$ components of the vector going from camera to viewport center $(0, 0, 1)$ respectively results in a vector from the camera to the pixel's equivalent location on the viewport.
 
 \begin{code}
@@ -362,16 +247,27 @@ P = C_{p} + t\vec{D} (t \geq 0)
 distance(P, C) = r^{2}
 \]
 
-\begin{align*}
+\begin{align}
     distance(C_{p} + t\vec{D}, C) = r^{2} \\
     \{(C_{p} + t\vec{D}) - C\} \cdot \{(C_{p} + t\vec{D}) - C\} = r^{2}\label{equation:dotproductexpansion} \\
     \{t\vec{D} + (C_{p} - C)\} \cdot \{t\vec{D} + (C_{p} - C)\} = r^{2} \\
-    t\vec{D} \cdot \{t\vec{D} + (C_{p} - C)\} + (C_{p} - C) \cdot \{t\vec{D} + (C_{p} - C)\} = r^{2} \\
-    (t\vec{D} \cdot t\vec{D}) + \{t\vec{D} \cdot (C_{p} - C)\} + \{t\vec{D} \cdot (C_{p} - C)\} + \{(C_{p} - C) \cdot (C_{p} - C)\} = r^{2} \\
+    t\vec{D} \cdot \{t\vec{D} + (C_{p} - C)\} + (C_{p} - C) \cdot \{t\vec{D} + (C_{p} - C)\} = r^{2}\label{equation:distributivedot1} \\
+    (t\vec{D} \cdot t\vec{D}) + \{t\vec{D} \cdot (C_{p} - C)\} + \{t\vec{D} \cdot (C_{p} - C)\} + \{(C_{p} - C) \cdot (C_{p} - C)\} = r^{2}\label{equation:distributivedot2} \\
     (\vec{D} \cdot \vec{D})t^{2} + 2\{\vec{D} \cdot (C_{p} - C)\}t + (C_{p} - C) \cdot (C_{p} - C) - r^{2} = 0
-\end{align*}
+\end{align}
 
-Taking advantage of the fact that the distance between two points is essentially the magnitude of the vector from one point to the other, the $distance$ function can then be expanded to the dot product of $\{(C_{p} + t\vec{D}) - C\}$ with itself.
+Taking advantage of the fact that the distance between two points is essentially the magnitude of the vector from one point to the other, the $distance$ function can then be expanded to the dot product of $\{(C_{p} + t\vec{D}) - C\}$ with itself (\ref{equation:dotproductexpansion}). Using the distributive property of dot products, the equation can then futher be expanded to (\ref{equation:distributivedot1}) and (\ref{equation:distributivedot2}). Variable $t$ can be extracted from the dot product to form a quadratic equation. To check that a value of $t$ exists such that the equation holds, the discriminant can be applied to the equation.
+
+\[
+{[2\{\vec{D} \cdot (C_{p} - C)\}]}^{2} - 4(\vec{D} \cdot \vec{D})\{(C_{p} - C) \cdot (C_{p} - C) - r^{2}\} \geq 0
+\]
+
+A function that takes in a light ray and sphere object and outputs whether they intersect can be implemented as such:
+
+\begin{code}
+    \inputminted[breaklines]{cpp}{rayIntersectWithSphere.cpp}
+\end{code}
+
 
 \todo{Continue with 2.3}
 

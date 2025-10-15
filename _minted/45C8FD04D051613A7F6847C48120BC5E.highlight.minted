@@ -43,7 +43,7 @@
 \PYG{p}{\PYGZcb{}}
 
 \PYG{k+kr}{inline}\PYG{+w}{ }\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{Vector}\PYG{+w}{ }\PYG{k}{operator}\PYG{o}{\PYGZhy{}}\PYG{p}{(}\PYG{k}{const}\PYG{+w}{ }\PYG{n}{Point}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{point1}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{n}{Point}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{point2}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{    }\PYG{k}{return}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{point1}\PYG{p}{.}\PYG{n}{x}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{point2}\PYG{p}{.}\PYG{n}{x}\PYG{p}{,}
+\PYG{+w}{    }\PYG{k}{return}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{point1}\PYG{p}{.}\PYG{n}{x}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{point2}\PYG{p}{.}\PYG{n}{x}\PYG{p}{,}\PYG{+w}{ }
 \PYG{+w}{            }\PYG{n}{point1}\PYG{p}{.}\PYG{n}{y}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{point2}\PYG{p}{.}\PYG{n}{y}\PYG{p}{,}
 \PYG{+w}{            }\PYG{n}{point1}\PYG{p}{.}\PYG{n}{z}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{point2}\PYG{p}{.}\PYG{n}{z}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
 \PYG{p}{\PYGZcb{}}

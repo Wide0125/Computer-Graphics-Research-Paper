@@ -7,8 +7,6 @@
 \PYG{k}{namespace}\PYG{+w}{ }\PYG{n+nn}{Custom}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
 \PYG{+w}{    }\PYG{k}{class}\PYG{+w}{ }\PYG{n+nc}{Camera}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
 \PYG{+w}{        }\PYG{k}{public}\PYG{o}{:}
-\PYG{+w}{            }\PYG{k}{constexpr}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{n}{Vector}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{cameraToViewportCenter}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{+w}{ }\PYG{n}{m\PYGZus{}cameraToViewportCenter}\PYG{p}{;}\PYG{p}{\PYGZcb{}}
-
 \PYG{+w}{            }\PYG{k}{constexpr}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{n}{Point}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{pos}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{+w}{ }\PYG{n}{m\PYGZus{}pos}\PYG{p}{;}\PYG{p}{\PYGZcb{}}
 
 \PYG{+w}{            }\PYG{k}{constexpr}\PYG{+w}{ }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{viewportWidth}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{+w}{ }\PYG{n}{m\PYGZus{}viewportWidth}\PYG{p}{;}\PYG{p}{\PYGZcb{}}
@@ -21,7 +19,7 @@
 \PYG{+w}{            }\PYG{n}{Point}\PYG{+w}{ }\PYG{n}{m\PYGZus{}pos}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
 \PYG{+w}{            }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{m\PYGZus{}screenWidth}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{960}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
 \PYG{+w}{            }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{m\PYGZus{}screenHeight}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{540}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
-
+\PYG{+w}{            }
 \PYG{+w}{            }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{m\PYGZus{}viewportDistanceFromCamera}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{1}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
 \PYG{+w}{            }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{m\PYGZus{}viewportHeight}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{1}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
 \PYG{+w}{            }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{m\PYGZus{}viewportWidth}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{m\PYGZus{}viewportHeight}\PYG{o}{/}\PYG{n}{m\PYGZus{}screenHeight}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{m\PYGZus{}screenWidth}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
