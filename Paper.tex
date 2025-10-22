@@ -27,9 +27,9 @@
 
 
 \author{Saehim Park}
-\title{Research Paper on the Fundamentals of 3D Perspective Projection In Computer Graphics}
+\title{Fundamentals of 3D Perspective Projection In Computer Graphics}
 \begin{document}
-
+ 
 \maketitle
 
 \begin{abstract}
@@ -46,9 +46,9 @@ The world is $3$-dimensional. In contrast, visual perceptions of the world are $
 
 Furthermore, this possibility is taken advantage of to form the foundations of modern computer graphics. When it comes to video games, computer generated imagery, or $3$D animation, computers must simulate all the physical processes of the real world that produce the light and resulting image that reaches your eyes. Although the entirety of the physical world cannot possibly be simulated within the constraints of modern computing capabilities, mathematical and physical abstractions can be made in order to simplify this process and produce near true to life results. These abstractions form the basis of $3$D Computer Graphics.
 
-In modern computing, knowing the fundamental concepts and processes behind projecting a $3$D image has been made unnecessary to know. With the release of many software solutions and libraries that aid in the development of appropriate visuals, the modern day developer does not need to grasp the underlying mechanics behind $3$D Computer Graphics in order to produce satisfactory results. However, the benefits of learning the fundamental process behind this widespread field are essential for those who wish to become experts not tied down by any specific engine or library. Factors such as performance, scalability, and customizability are reasons that justify the process of learning the fundamentals.\todo{Add real-world examples of mentioned advantages} Above all else, those who understand are better equipped to take advantage of and develop graphical toolkits. As such, it is imperative to understand the foundations that make up $3$D Computer Graphics for those who wish to become true masters of the field.
+In modern computing, it is unnecessary to know the fundamental concepts and processes behind projecting a $3$D image; with the release of many software solutions and libraries that aid in the development of appropriate visuals, the modern day developer does not need to grasp the underlying mechanics behind $3$D Computer Graphics in order to produce satisfactory results. However, the benefits of learning the fundamental process behind this widespread field are essential for those who wish to become experts not tied down by any specific engine or library. Factors such as performance, scalability, and customizability justify the process of learning the fundamentals.\todo{Add real-world examples of mentioned advantages} Above all else, those who understand are better equipped to take advantage of and develop graphical toolkits. As such, it is imperative to understand the foundations that make up $3$D Computer Graphics for those who wish to become true masters of the field.
 
-This research paper sets out to document the process of learning the fundamentals of $3$D Computer Graphics, with real code examples mapping out the learning process. As such, it aims to serve as a useful guide that directs readers to explore the bare-bones fundamentals of $3$D Computer Graphics. However, it will not contribute anything of substantial originality to the field, and will be written from the perspective of a novice learner.
+This paper sets out to document the process of learning the fundamentals of $3$D Computer Graphics, with real code examples mapping out the learning process. As such, it aims to serve as a useful guide that directs readers to explore the bare-bones fundamentals of $3$D Computer Graphics. However, it will not contribute anything of substantial originality to the field, and will be written from the perspective of a novice learner.
 
 \newpage
 \section{3 Dimensional Space}
@@ -67,18 +67,16 @@ A \textbf{point} is a single position in space, represented by a set of coordina
     \caption{The point (1, 1, 1) in a 3D cartesian coordinate system}\label{figure:point111}
 \end{figure}
 
-The directions of each axis in relation to each other can be remembered using the right hand rule (Figure-\ref{figure:righthandrule}).
-
+The directions of each axis in relation to each other can be remembered using the right hand rule (Figure~\ref{figure:righthandrule}).
 \begin{figure}[htp]
     \includegraphics[scale=0.2]{Right-hand rule.png}
     \caption{Right-hand rule}\label{figure:righthandrule}
 \end{figure}
-
 Axis configurations corresponding to the left hand also exist, however the right-handed system is more common.
 
 \newpage
 
-\textbf{Vector}s are the differences between points. Vectors can be used to represent many things, such as motion and direction. At its simplest, it can be intuitively thought of as a set of components that represent a certain magnitude of motion in a certain direction. It can also be thought of as the concept of a slope used in $2$D cartesian coordinate systems expanded for $n$-dimensions. Visually, it is a line connecting two points in space (Figure~\ref{figure:v000to111}).
+\textbf{Vector}s are the differences between points. Vectors can be used to represent many things, such as motion and direction. At its simplest, a vector can be intuitively thought of as a set of components that represent a certain magnitude of motion in a certain direction. It can also be thought of as the concept of a slope used in $2$D cartesian coordinate systems expanded for $n$-dimensions. Visually, it is a line connecting two points in space (Figure~\ref{figure:v000to111}).
 
 \begin{figure}[htp]
     \includesvg[scale=0.95]{Figure-3}
@@ -151,7 +149,7 @@ Now that we have established a system of rules for representing space numericall
 \newpage
 \section{Ray Tracing}
 \subsection{Viewports and Rays}
-The process of projecting a $3$D view onto a $2$D plane can be inspired by how vision and perspective works in the real world. Vision in the real world is essentially a $2$D image of a $3$D landscape.
+The process of projecting a $3$D view onto a $2$D plane is inspired by how vision and perspective works in the real world. Vision in the real world is essentially a $2$D image of a $3$D landscape.
 
 A person is looking out onto a landscape and would like to save this view onto a canvas. An artist could simply paint the view, however this person lacks the skills required. Cleverly, they set up a net the same size as the canvas in a position that captures the desired view. Looking through a square hole of the net, the person averages out the color that they can see through that hole and paints the location corresponding to that hole on the canvas with that color. Repeating this step for every single hole results in an accurate sketch of the landscape.\autocite{Gambetta2021}
 
@@ -164,7 +162,9 @@ A rectangle referred to as the \textbf{viewport} is placed in the world space, t
     \caption{A viewport of a 16:9 screen with its center located at $(0, 0, 1)$}\label{figure:viewport}
 \end{figure}
 
-In the net analogy, the color that reaches the person's eyes are certain wavelengths of photons that travel from an origin light source, bounce off reflective objects, and ultimately end up in their retinas. Although we could simulate photons traveling in all direction from a light source, that would be highly redundant as most of them would not end up hitting the camera. Instead, it is more efficient to trace in reverse: light \textbf{ray}s\footnote{A ray is a collection of points arranged in a straight path extending infinitely towards a single direction. Whereas a line extends infinitely in two opposing directions from a point, rays only extend in a single direction.} traveling outwards from the camera and into any objects.
+In the net analogy, the colors that reach the person's eyes are certain wavelengths of photons that travel from an origin light source, bounce off reflective objects, and ultimately end up in their retinas. Although we could simulate photons traveling in all direction from a light source, that would be highly redundant as most of them would not end up hitting the camera. Instead, it is more efficient to trace in reverse: light rays traveling outwards from the camera and into any objects.
+
+A \textbf{ray} is a collection of points arranged in a straight path extending infinitely towards a single direction. Whereas a line extends infinitely in two opposing directions from a point, rays only extend in a single direction.
 
 In practice, this means that we compute shooting a light ray from the camera to a pixel's equivalent location on the viewport, and if it intersects with an object, color in that pixel on the screen with the color of the object. We repeat this for every pixel until every pixel on the screen is correctly colored in. This technique is known as \textbf{ray tracing}.
 
@@ -213,9 +213,7 @@ double yDistanceFromCenter {camera.viewportHeight()/camera.screenHeight() * -(pi
 Adding \mintinline{cpp}{xDistanceFromCenter} and \mintinline{cpp}{yDistanceFromCenter} to the $x$ and $y$ components of the vector going from camera to viewport center $(0, 0, 1)$ respectively results in a vector from the camera to the pixel's equivalent location on the viewport.
 
 \begin{code}
-\begin{minted}[breaklines]{cpp}
-Vector{xDistanceFromCenter, yDistanceFromCenter, 1}
-\end{minted}
+    \inputminted[breaklines]{cpp}{getPixelLine.cpp}
 \end{code}
 
 With this, a ray going starting from the camera position point ($C_{p}$) and going in the direction of the camera to pixel vector ($\vec{D}$) can be derived.
@@ -253,24 +251,39 @@ distance(P, C) = r^{2}
     \{t\vec{D} + (C_{p} - C)\} \cdot \{t\vec{D} + (C_{p} - C)\} = r^{2} \\
     t\vec{D} \cdot \{t\vec{D} + (C_{p} - C)\} + (C_{p} - C) \cdot \{t\vec{D} + (C_{p} - C)\} = r^{2}\label{equation:distributivedot1} \\
     (t\vec{D} \cdot t\vec{D}) + \{t\vec{D} \cdot (C_{p} - C)\} + \{t\vec{D} \cdot (C_{p} - C)\} + \{(C_{p} - C) \cdot (C_{p} - C)\} = r^{2}\label{equation:distributivedot2} \\
-    (\vec{D} \cdot \vec{D})t^{2} + 2\{\vec{D} \cdot (C_{p} - C)\}t + (C_{p} - C) \cdot (C_{p} - C) - r^{2} = 0
+    (\vec{D} \cdot \vec{D})t^{2} + 2\{\vec{D} \cdot (C_{p} - C)\}t + (C_{p} - C) \cdot (C_{p} - C) - r^{2} = 0\label{equation:textraction}
 \end{align}
 
-Taking advantage of the fact that the distance between two points is essentially the magnitude of the vector from one point to the other, the $distance$ function can then be expanded to the dot product of $\{(C_{p} + t\vec{D}) - C\}$ with itself (\ref{equation:dotproductexpansion}). Using the distributive property of dot products, the equation can then futher be expanded to (\ref{equation:distributivedot1}) and (\ref{equation:distributivedot2}). Variable $t$ can be extracted from the dot product to form a quadratic equation. To check that a value of $t$ exists such that the equation holds, the discriminant can be applied to the equation.
-
+Taking advantage of the fact that the distance between two points is essentially the magnitude of the vector from one point to the other, the $distance$ function can then be expanded to the dot product of $\{(C_{p} + t\vec{D}) - C\}$ with itself (\ref{equation:dotproductexpansion}). Using the distributive property of dot products, the equation can then futher be expanded to (\ref{equation:distributivedot1}) and (\ref{equation:distributivedot2}). Variable $t$ can be extracted from the dot product to form a quadratic equation (\ref{equation:textraction}). To check that a value of $t$ exists such that the equation holds, the discriminant can be applied to the equation.
 \[
 {[2\{\vec{D} \cdot (C_{p} - C)\}]}^{2} - 4(\vec{D} \cdot \vec{D})\{(C_{p} - C) \cdot (C_{p} - C) - r^{2}\} \geq 0
 \]
-
 A function that takes in a light ray and sphere object and outputs whether they intersect can be implemented as such:
+
+\begin{code}
+    \inputminted[breaklines]{cpp}{sphere.hpp}
+\end{code}
 
 \begin{code}
     \inputminted[breaklines]{cpp}{rayIntersectWithSphere.cpp}
 \end{code}
 
+Using a nested for loop, the operations pipeline of obtaining a light ray for the pixel and determining if the ray intersects with the sphere can be applied for every pixel on the screen.
+
+\begin{code}
+    \inputminted[breaklines]{cpp}{displaySphere.cpp}
+\end{code}
+
+A main function is used to tie in all the functions:
+\begin{code}
+    \inputminted[breaklines]{cpp}{main.cpp}
+\end{code}
+We have successfully ray traced a sphere to a $2$D screen.
+\begin{figure}
+    \includegraphics[scale=0.33]{First Sphere Render.png}
+\end{figure}
 
 \todo{Continue with 2.3}
-
 
 \newpage
 \printbibliography{}

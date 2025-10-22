@@ -14,12 +14,6 @@ inline constexpr Vector operator+(const Vector& vector1, const Vector& vector2) 
             vector1.z + vector2.z};
 }
 
-inline constexpr Vector operator+(const Point& point, const Vector& vector) {
-    return {point.x + vector.x,
-            point.y + vector.y,
-            point.z + vector.z};
-}
-
 inline constexpr Vector& operator+=(Vector& vector1, const Vector& vector2) {
     vector1 = {
             vector1.x + vector2.x,

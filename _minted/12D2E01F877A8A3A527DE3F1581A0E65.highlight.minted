@@ -1,0 +1,9 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{inline}\PYG{+w}{ }\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{Line}\PYG{+w}{ }\PYG{n+nf}{getPixelLine}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{pixelX}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{pixelY}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{n}{Custom}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Camera}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{camera}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+
+\PYG{+w}{    }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{xDistanceFromCenter}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{camera}\PYG{p}{.}\PYG{n}{viewportWidth}\PYG{p}{(}\PYG{p}{)}\PYG{o}{/}\PYG{n}{camera}\PYG{p}{.}\PYG{n}{screenWidth}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{p}{(}\PYG{n}{pixelX}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{camera}\PYG{p}{.}\PYG{n}{screenWidth}\PYG{p}{(}\PYG{p}{)}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{p}{)}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{yDistanceFromCenter}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{camera}\PYG{p}{.}\PYG{n}{viewportHeight}\PYG{p}{(}\PYG{p}{)}\PYG{o}{/}\PYG{n}{camera}\PYG{p}{.}\PYG{n}{screenHeight}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{p}{(}\PYG{n}{pixelY}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{camera}\PYG{p}{.}\PYG{n}{screenHeight}\PYG{p}{(}\PYG{p}{)}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{p}{)}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{k}{return}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{camera}\PYG{p}{.}\PYG{n}{pos}\PYG{p}{(}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{xDistanceFromCenter}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{yDistanceFromCenter}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{\PYGZcb{}}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{c+c1}{// get vector from origin to pixel\PYGZsq{}s equivalent location on viewport}
+\end{MintedVerbatim}

@@ -1,0 +1,11 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{inline}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{displaySphere}\PYG{p}{(}\PYG{k}{const}\PYG{+w}{ }\PYG{n}{Custom}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Camera}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{camera}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{n}{Sphere}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{sphere}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{pixelY}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{0}\PYG{p}{\PYGZcb{}}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{pixelY}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{camera}\PYG{p}{.}\PYG{n}{screenHeight}\PYG{p}{(}\PYG{p}{)}\PYG{p}{;}\PYG{+w}{ }\PYG{o}{+}\PYG{o}{+}\PYG{n}{pixelY}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{pixelX}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{0}\PYG{p}{\PYGZcb{}}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{pixelX}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{camera}\PYG{p}{.}\PYG{n}{screenWidth}\PYG{p}{(}\PYG{p}{)}\PYG{p}{;}\PYG{+w}{ }\PYG{o}{+}\PYG{o}{+}\PYG{n}{pixelX}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{k}{if}\PYG{p}{(}\PYG{n}{rayIntersectWithSphere}\PYG{p}{(}\PYG{n}{getPixelLine}\PYG{p}{(}\PYG{n}{pixelX}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{pixelY}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{camera}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{sphere}\PYG{p}{)}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                }\PYG{n}{DrawPixel}\PYG{p}{(}\PYG{n}{pixelX}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{pixelY}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{sphere}\PYG{p}{.}\PYG{n}{color}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{            }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{MintedVerbatim}
