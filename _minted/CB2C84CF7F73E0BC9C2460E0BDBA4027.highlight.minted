@@ -1,8 +1,12 @@
 \begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}}\PYG{c+cp}{include}\PYG{+w}{ }\PYG{c+cpf}{\PYGZlt{}raylib\PYGZhy{}cpp.hpp\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}}\PYG{c+cp}{include}\PYG{+w}{ }\PYG{c+cpf}{\PYGZdq{}camera.hpp\PYGZdq{}}
+\PYG{c+cp}{\PYGZsh{}}\PYG{c+cp}{include}\PYG{+w}{ }\PYG{c+cpf}{\PYGZdq{}sphere.hpp\PYGZdq{}}
+
 \PYG{k+kt}{int}\PYG{+w}{ }\PYG{n+nf}{main}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
 \PYG{+w}{    }\PYG{n}{Custom}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Camera}\PYG{+w}{ }\PYG{n}{camera}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
 \PYG{+w}{    }\PYG{n}{raylib}\PYG{o}{:}\PYG{o}{:}\PYG{n}{InitWindow}\PYG{p}{(}\PYG{n}{camera}\PYG{p}{.}\PYG{n}{screenWidth}\PYG{p}{(}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{camera}\PYG{p}{.}\PYG{n}{screenHeight}\PYG{p}{(}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{3D Render Playground}\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{;}
-\PYG{+w}{    }\PYG{n}{Sphere}\PYG{+w}{ }\PYG{n}{sphere}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{p}{\PYGZcb{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.5}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{raylib}\PYG{o}{:}\PYG{o}{:}\PYG{n}{GREEN}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{n}{Sphere}\PYG{+w}{ }\PYG{n}{sphere}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{p}{\PYGZcb{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.5}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{raylib}\PYG{o}{:}\PYG{o}{:}\PYG{n}{GREEN}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
 \PYG{+w}{    }\PYG{n}{DisableCursor}\PYG{p}{(}\PYG{p}{)}\PYG{p}{;}
 \PYG{+w}{    }
 \PYG{+w}{    }\PYG{k}{while}\PYG{+w}{ }\PYG{p}{(}\PYG{o}{!}\PYG{n}{WindowShouldClose}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}

@@ -42,7 +42,7 @@
 
 
 \section{Introduction}
-The world is $3$-dimensional. In contrast, visual perceptions of the world are $2$-dimensional, and yet, recognizable as of a $3$D space. Additionally, through this view, one can still perceive the depth of the image, retrieving some of the information lost in the process of flattening the view into $2$ dimensions. This phenomenon reveals the possibility of projecting a $3$D space onto a $2$D plane, allowing people to emulate the existence of a $3$D space behind a $2$D plane (much like looking through a window to look at the outside world; a detailed enough $2$D image on the window would be indistinguishable from a view of the outside).
+The world is $3$-dimensional. In contrast, visual perceptions of the world are $2$-dimensional, and yet, recognizable as of a $3$D space. Additionally, through this view, one can still perceive the depth of the image, retrieving some of the information lost in the process of flattening the view into $2$ dimensions. This phenomenon reveals the possibility of projecting a $3$D space onto a $2$D plane, allowing us to emulate the existence of a $3$D space behind a $2$D plane (much like looking through a window to look at the outside world; a detailed enough $2$D image on the window would be indistinguishable from a view of the outside).
 
 Furthermore, this possibility is taken advantage of to form the foundations of modern computer graphics. When it comes to video games, computer generated imagery, or $3$D animation, computers must simulate all the physical processes of the real world that produce the light and resulting image that reaches your eyes. Although the entirety of the physical world cannot possibly be simulated within the constraints of modern computing capabilities, mathematical and physical abstractions can be made in order to simplify this process and produce near true to life results. These abstractions form the basis of $3$D Computer Graphics.
 
@@ -175,7 +175,6 @@ In practice, this means that we compute shooting a light ray from the camera to 
 
 Now that a system for projecting a $3$D space onto a $2$D plane has been established, what remains is to implement said system.
 
-\newpage
 \subsection{A Ray Tracer Implementation}
 With a ray tracing system defined, an implementation can be programmed. The implementation in this paper will be coded in the \CC{} language, and the Raylib graphics library with the raylib-cpp wrapper will be used for drawing pixels onto a window.\autocite{Raylib}\autocite{raylib-cpp}
 
@@ -279,11 +278,19 @@ A main function is used to tie in all the functions:
     \inputminted[breaklines]{cpp}{main.cpp}
 \end{code}
 We have successfully ray traced a sphere to a $2$D screen.
-\begin{figure}
+\begin{figure}[htp]
     \includegraphics[scale=0.33]{First Sphere Render.png}
 \end{figure}
+Source code for this version can be found at \url{https://github.com/Wide0125/Raytracer-Version-1}.
 
-\todo{Continue with 2.3}
+\newpage
+\subsection{Camera Movement}
+Our implementation allows us to render a sphere, but the calculations presume a viewport location at $(0, 0, 1)$. We will further refine our program to work for any viewport position.
+
+The position of the viewport is always a fixed distance away from the camera. As such, two angles are used to define all possible positions of the viewport, azimuth and elevation.
+
+
+
 
 \newpage
 \printbibliography{}

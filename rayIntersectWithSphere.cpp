@@ -1,4 +1,4 @@
-bool rayIntersectWithSphere(const Line& ray, const Sphere& sphere) {
+inline constexpr bool rayIntersectWithSphere(const Line& ray, const Sphere& sphere) {
     const auto a {dotProduct(ray.direction, ray.direction)};
     const auto b {2 * dotProduct(ray.origin - sphere.center, ray.direction)};
     const auto c {dotProduct(ray.origin - sphere.center, ray.origin - sphere.center) - pow(sphere.radius, 2)};

@@ -1,7 +1,6 @@
 #ifndef CUSTOMCAMERA_H
 #define CUSTOMCAMERA_H
-#include <cmath>
-#include "vector.hpp"
+#include "line.hpp"
 
 namespace Custom {
     class Camera {

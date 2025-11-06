@@ -25,8 +25,6 @@ ax.quiver(0, 0, 0, 0, 1, 1, arrow_length_ratio=0.1)
 ax.quiver(0, 0, 0, 1, 1, 1, arrow_length_ratio=0.1)
 ax.quiver(0, 0, 0, 0, 1, -1, arrow_length_ratio=0.1, color='red')
 
-
-
 ax.set_axis_off()
 
 plt.savefig('Figure-9.svg', bbox_inches='tight')
