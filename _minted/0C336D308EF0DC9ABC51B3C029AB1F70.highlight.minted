@@ -1,0 +1,59 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}}\PYG{c+cp}{include}\PYG{+w}{ }\PYG{c+cpf}{\PYGZlt{}cmath\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}}\PYG{c+cp}{include}\PYG{+w}{ }\PYG{c+cpf}{\PYGZlt{}numbers\PYGZgt{}}
+
+\PYG{k}{class}\PYG{+w}{ }\PYG{n+nc}{Degree}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{public}\PYG{o}{:}
+\PYG{+w}{        }\PYG{n}{Degree}\PYG{p}{(}\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{degree}\PYG{p}{)}
+\PYG{+w}{            }\PYG{o}{:}\PYG{+w}{ }\PYG{n}{m\PYGZus{}angle}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{degree}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{p}{\PYGZob{}}\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{        }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{add}\PYG{p}{(}\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{amount}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{n}{m\PYGZus{}angle}\PYG{+w}{ }\PYG{o}{+}\PYG{o}{=}\PYG{+w}{ }\PYG{n}{amount}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{m\PYGZus{}angle}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{fmod}\PYG{p}{(}\PYG{n}{m\PYGZus{}angle}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{360}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{            }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{m\PYGZus{}angle}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{m\PYGZus{}angle}\PYG{+w}{ }\PYG{o}{+}\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{360}\PYG{p}{;}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{        }\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{Degree}\PYG{+w}{ }\PYG{n}{plus}\PYG{p}{(}\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{amount}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{ret}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{m\PYGZus{}angle}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{amount}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{ret}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{fmod}\PYG{p}{(}\PYG{n}{m\PYGZus{}angle}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{360}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{            }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{ret}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{ret}\PYG{+w}{ }\PYG{o}{+}\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{360}\PYG{p}{;}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{            }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{Degree}\PYG{p}{\PYGZob{}}\PYG{n}{ret}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{        }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{set}\PYG{p}{(}\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{angle}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{n}{angle}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{fmod}\PYG{p}{(}\PYG{n}{angle}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{360}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{            }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{angle}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{angle}\PYG{+w}{ }\PYG{o}{+}\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{360}\PYG{p}{;}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{            }\PYG{n}{m\PYGZus{}angle}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{angle}\PYG{p}{;}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{        }\PYG{k}{constexpr}\PYG{+w}{ }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{get}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{m\PYGZus{}angle}\PYG{p}{;}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{        }\PYG{k}{constexpr}\PYG{+w}{ }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{radians}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{m\PYGZus{}angle}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{numbers}\PYG{o}{:}\PYG{o}{:}\PYG{n}{pi}\PYG{o}{/}\PYG{l+m+mi}{180}\PYG{p}{;}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{        }\PYG{k}{friend}\PYG{+w}{ }\PYG{k+kr}{inline}\PYG{+w}{ }\PYG{k}{constexpr}\PYG{+w}{ }\PYG{k}{auto}\PYG{+w}{ }\PYG{k}{operator}\PYG{o}{*}\PYG{p}{(}\PYG{k}{const}\PYG{+w}{ }\PYG{n}{Degree}\PYG{o}{\PYGZam{}}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{k}{auto}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{friend}\PYG{+w}{ }\PYG{k+kr}{inline}\PYG{+w}{ }\PYG{k}{constexpr}\PYG{+w}{ }\PYG{k}{auto}\PYG{+w}{ }\PYG{k}{operator}\PYG{o}{*}\PYG{p}{(}\PYG{k}{const}\PYG{+w}{ }\PYG{k}{auto}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{n}{Degree}\PYG{o}{\PYGZam{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{        }
+\PYG{+w}{        }\PYG{k}{friend}\PYG{+w}{ }\PYG{k+kr}{inline}\PYG{+w}{ }\PYG{k}{constexpr}\PYG{+w}{ }\PYG{k}{auto}\PYG{+w}{ }\PYG{k}{operator}\PYG{o}{+}\PYG{p}{(}\PYG{k}{const}\PYG{+w}{ }\PYG{n}{Degree}\PYG{o}{\PYGZam{}}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{n}{Degree}\PYG{o}{\PYGZam{}}\PYG{p}{)}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{k}{private}\PYG{o}{:}
+\PYG{+w}{        }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{m\PYGZus{}angle}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{0}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+
+\PYG{k+kr}{inline}\PYG{+w}{ }\PYG{k}{constexpr}\PYG{+w}{ }\PYG{k}{auto}\PYG{+w}{ }\PYG{k}{operator}\PYG{o}{*}\PYG{p}{(}\PYG{k}{const}\PYG{+w}{ }\PYG{n}{Degree}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{degree}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{k}{auto}\PYG{+w}{ }\PYG{n}{multiple}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{+w}{ }\PYG{n}{degree}\PYG{p}{.}\PYG{n}{m\PYGZus{}angle}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{multiple}\PYG{p}{;}\PYG{p}{\PYGZcb{}}
+\PYG{k+kr}{inline}\PYG{+w}{ }\PYG{k}{constexpr}\PYG{+w}{ }\PYG{k}{auto}\PYG{+w}{ }\PYG{k}{operator}\PYG{o}{*}\PYG{p}{(}\PYG{k}{const}\PYG{+w}{ }\PYG{k}{auto}\PYG{+w}{ }\PYG{n}{multiple}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{n}{Degree}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{degree}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{+w}{ }\PYG{n}{degree}\PYG{p}{.}\PYG{n}{m\PYGZus{}angle}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{multiple}\PYG{p}{;}\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kr}{inline}\PYG{+w}{ }\PYG{k}{constexpr}\PYG{+w}{ }\PYG{k}{auto}\PYG{+w}{ }\PYG{k}{operator}\PYG{o}{+}\PYG{p}{(}\PYG{k}{const}\PYG{+w}{ }\PYG{n}{Degree}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{degree1}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{n}{Degree}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{degree2}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{+w}{ }\PYG{n}{degree1}\PYG{p}{.}\PYG{n}{plus}\PYG{p}{(}\PYG{n}{degree2}\PYG{p}{.}\PYG{n}{m\PYGZus{}angle}\PYG{p}{)}\PYG{p}{;}\PYG{p}{\PYGZcb{}}
+\PYG{k+kr}{inline}\PYG{+w}{ }\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{Degree}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{k}{operator}\PYG{o}{+}\PYG{o}{=}\PYG{p}{(}\PYG{n}{Degree}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{degree1}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{amount}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{degree1}\PYG{p}{.}\PYG{n}{add}\PYG{p}{(}\PYG{n}{amount}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{degree1}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kr}{inline}\PYG{+w}{ }\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{Degree}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{k}{operator}\PYG{o}{+}\PYG{o}{=}\PYG{p}{(}\PYG{n}{Degree}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{degree1}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{n}{Degree}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{degree2}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{degree1}\PYG{p}{.}\PYG{n}{add}\PYG{p}{(}\PYG{n}{degree2}\PYG{p}{.}\PYG{n}{get}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{degree1}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{MintedVerbatim}

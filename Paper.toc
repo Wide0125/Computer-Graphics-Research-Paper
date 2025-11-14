@@ -5,3 +5,4 @@
 \contentsline {subsection}{\numberline {3.1}Viewports and Rays}{8}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}A Ray Tracer Implementation}{9}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Camera Movement}{17}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Rasterization}{22}{section.4}%

@@ -9,6 +9,38 @@ ax = fig.add_subplot(projection="3d")
 ax.view_init(elev=-21, azim=153, roll=-79.5)
 ax.set_box_aspect((1, 1, 1), zoom=1.5)
 
+# --- Rectangle parameters ---
+rectLength = 16/9
+rectWidth = 1
+
+# --- Define rectangle centered at origin ---
+x = np.array([np.linspace(-rectLength/2, rectLength/2, 1920)] * 1080)
+y = np.rot90(np.array([np.linspace(-rectWidth/2, rectWidth/2, 1080)] * 1920))
+z = np.zeros_like(x)
+
+# --- Apply existing offset tilt (around x-axis) ---
+offsetTheta = np.pi/6
+x_tilt = x * np.cos(offsetTheta)
+z_tilt = z + x * np.sin(-offsetTheta)
+
+# --- Rotate around x-axis by theta_x (through origin) ---
+theta_x = np.radians(-60)  # adjust this as desired
+y_rot = y * np.cos(theta_x) - z_tilt * np.sin(theta_x)
+z_rot = y * np.sin(theta_x) + z_tilt * np.cos(theta_x)
+
+# --- Compute target position for rectangle center ---
+x0 = np.cos(np.pi/3) * np.sin(np.pi/2 - np.pi/3)
+y0 = np.sin(np.pi/3)
+z0 = np.cos(np.pi/3) * np.cos(np.pi/2 - np.pi/3)
+
+# --- Translate rectangle to target position ---
+x_final = x_tilt + x0
+y_final = y_rot + y0
+z_final = z_rot + z0
+
+# --- Plot positioned rectangle ---
+ax.plot_surface(x_final, y_final, z_final, color='gray', rcount=1, ccount=1, alpha=1, zorder=0.0000000000001)
+
 ax.set_xlim3d(-1, 2)
 ax.set_ylim3d(-1, 2)
 ax.set_zlim3d(-1, 2)
@@ -74,19 +106,6 @@ ax.plot_surface(x_fill, y_fill, z_fill, color='black', alpha=1, zorder=3)
 ax.text3D(0.1, 0, 0.3, "azimuth", (0, 0, 1))
 ax.text3D(0.1, 0.2, 0.2, "elevation", (np.cos(np.pi/3) * np.sin(offsetTheta), np.cos(np.pi/3), np.cos(np.pi/3) * np.cos(offsetTheta)))
 
-rectLength = 1/9*16
-rectWidth = 1
-x = np.array([np.linspace(-rectLength/2, rectLength/2, 1920)] * 1080)
-y = np.rot90(np.array([np.linspace(-rectWidth/2, rectWidth/2, 1080)] * 1920))
-z = np.full((1080, 1920), 1)
-
-x *= np.cos(offsetTheta)
-z = z + x * np.sin(-offsetTheta)
-
-y *= np.cos(-np.pi/3)
-z = z + y * np.sin(-np.pi/3)
-
-ax.plot_surface(x, y, z, color='gray', rcount=1, ccount=1, alpha=1, zorder=1)
 
 ax.set_axis_off()
 

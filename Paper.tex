@@ -289,8 +289,98 @@ Our implementation allows us to render a sphere, but the calculations presume a 
 
 The position of the viewport is always a fixed distance away from the camera. As such, two angles are used to define all possible positions of the viewport, azimuth and elevation.
 
+\todo{add figure visualizing azimuth and elevation.}
 
+By increasing or decreasing either of these angles, we can essentially `turn' the camera to face any possible direction. Using sine and cosine values, we can then obtain the vector pointing from the camera to the center of the viewport. Afterwards, adjusting our functions to account for a dynamic camera-to-viewport-center vector makes facing different directions with the camera possible.
 
+First, we create a \mintinline{cpp}|Degree| class object.
+
+\begin{code}\caption{degree.hpp}
+    \inputminted[breaklines]{cpp}{degree.hpp}
+\end{code}
+
+Then, we can add \mintinline{cpp}|xztheta| (azimuth) and \mintinline{cpp}|yztheta| (elevation) as new member variables of the camera class. Additionally, the vector denoting the direction from the camera to the viewport center is initialized as well.
+\begin{code}
+    \begin{minted}[breaklines]{cpp}
+        Degree m_xzTheta {90};
+        Degree m_yzTheta {0};
+        Vector m_cameraToViewportCenter {
+            m_viewportDistanceFromCamera * cos(m_yzTheta.radians()) * cos(m_xzTheta.radians()),
+            m_viewportDistanceFromCamera * sin(m_yzTheta.radians()), 
+            m_viewportDistanceFromCamera * cos(m_yzTheta.radians()) * sin(m_xzTheta.radians())};
+    \end{minted}
+\end{code}
+Two more member functions are added that enable changing the direction the camera is facing, updating the appropriate angle and vector variables.
+\begin{code}
+    \begin{minted}[breaklines]{cpp}
+        void addAzimuth(double amount) {
+            m_xzTheta += amount; // base of the right triangle with a hypotenuse of m_viewportDistanceFromCamera and angle yzTheta    
+            double yTriangleBase = m_viewportDistanceFromCamera * cos(m_yzTheta.radians());
+            m_cameraToViewportCenter.x = yTriangleBase * cos(m_xzTheta.radians());
+            m_cameraToViewportCenter.z = yTriangleBase * sin(m_xzTheta.radians());
+        }
+        void addElevation(double amount) {
+            m_yzTheta += amount;
+
+            if (m_yzTheta.get() > 90 and m_yzTheta.get() < 180) {m_yzTheta.set(90);}
+            if (m_yzTheta.get() > 180 and m_yzTheta.get() < 270) {m_yzTheta.set(270);} // limit the range of the elevation (it doesn't make sense to be able to look up and then backwards)
+
+            m_cameraToViewportCenter.y = m_viewportDistanceFromCamera * sin(m_yzTheta.radians());
+            double yTriangleBase = m_viewportDistanceFromCamera * cos(m_yzTheta.radians()); // base of the right triangle with a hypotenuse of m_viewportDistanceFromCamera and angle yzTheta
+            m_cameraToViewportCenter.x = yTriangleBase * cos(m_xzTheta.radians());
+            m_cameraToViewportCenter.z = yTriangleBase * sin(m_xzTheta.radians());
+        }
+    \end{minted}
+\end{code}
+\todo{add figure visualizing the camera-to-viewport-center vector}
+
+Our \mintinline{cpp}|getPixelLine| function also needs updating to account for different viewport positions. Instead of offsetting the line vector from the camera-to-viewport-center vector by  \mintinline{cpp}|DistanceFromCenter| in a fixed direction, now that the camera-to-viewport-center vector is dynamic, we must dynamically adjust the offset direction based on the direction of the camera-to-viewport-center vector. As the viewport is a rectangle, and the pixel positions map to a grid formation on the viewport, the offset vectors can be defined as illustrated below.
+\todo{add figure visualizing the offset vectors}
+It can be noted that the \mintinline{cpp}|xVector| is orthogonal to the camera-to-viewport-center vector and the $y$ axis, and the \mintinline{cpp}|yVector| is orthogonal to the \mintinline{cpp}|xVector| and the camera-to-viewport-center vector.
+
+\mintinline{cpp}|getPixelLine| can be updated as such:
+\begin{code}
+    \begin{minted}[breaklines]{cpp}
+        inline constexpr Line getPixelLine(int pixelX, int pixelY, const Custom::Camera& camera) {
+
+            double xDistanceFromCenter {camera.viewportWidth()/camera.screenWidth() *
+                                        -(pixelX - camera.screenWidth()/2)};
+            double yDistanceFromCenter {camera.viewportHeight()/camera.screenHeight() *
+                                        -(pixelY - camera.screenHeight()/2)};
+            
+            Vector cameraToViewportCenter {camera.cameraToViewportCenter()};
+            Vector xVector {crossProduct(cameraToViewportCenter, {0, -1, 0})};
+            Vector yVector {crossProduct(cameraToViewportCenter, xVector)};
+            
+            double xMultiple {xDistanceFromCenter/sqrt(dotProduct(xVector, xVector))};
+            double yMultiple {yDistanceFromCenter/sqrt(dotProduct(yVector, yVector))};
+
+            return {camera.pos(), camera.cameraToViewportCenter() + xMultiple * xVector + yMultiple * yVector};
+        } // get vector from origin to pixel's equivalent location on viewport
+    \end{minted}
+\end{code}
+
+Lastly, code is added to the \mintinline{cpp}|main| function that maps mouse movement to camera movement.
+
+\begin{code}
+    \begin{minted}[breaklines]{cpp}
+        Vector2 mouseMovement {GetMouseDelta()};
+        camera.addAzimuth(mouseMovement.x/50); 
+        camera.addElevation(-mouseMovement.y/50); 
+        //down is +yDelta, up is -yDelta so mouse movement is inverted
+    \end{minted}
+\end{code}
+
+As no more functions require further updating, our upgraded raytracer implementation is now complete. Source code for this version can be found at \url{https://github.com/Wide0125/Raytracer-Version-2}.
+
+\begin{figure}[htp]
+    \includegraphics[scale=0.33]{Moving Camera Sphere Render.png}
+\end{figure}
+
+\todo{expand on raytracer section by either adding more content or adding a transition section that evaluates the effectiveness of ray tracing and how it compares to rasterization.}
+
+\newpage
+\section{Rasterization}
 
 \newpage
 \printbibliography{}
