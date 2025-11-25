@@ -377,10 +377,17 @@ As no more functions require further updating, our upgraded raytracer implementa
     \includegraphics[scale=0.33]{Moving Camera Sphere Render.png}
 \end{figure}
 
-\todo{expand on raytracer section by either adding more content or adding a transition section that evaluates the effectiveness of ray tracing and how it compares to rasterization.}
+Although ray tracing is useful in allowing us to represent 3-dimensional objects in a mathematically accurate manner, it comes at the cost of scalability and performance. It is easy enough to ray trace mathematically simple objects such as spheres (as demonstrated); however, attempting to ray trace objects other than spheres proves to be more difficult. Although not impossible, as it is possible to approximate 3D shapes using  2D polygons and trace each polygon separately, the core obstacle lies in performance: it is simply too costly to compute every single ray-object interaction for every pixel. Therefore, a different method, one optimized for drawing polygons that is more performant at the cost of quality and accuracy, is needed for applications that require high framerates.
 
 \newpage
 \section{Rasterization}
+
+Rasterization is a technique that involves approximating any 3D object into a collection of 2D polygons, normally triangles. Triangles are commonly used as they are the simplest $n$-sided polygon, which every other polygon can be split into.
+
+\begin{figure}[htp]
+    \includegraphics[scale = 0.5]{Dolphin_triangle_mesh.png}\autocite{DolphinMesh}
+    \caption{A 3D model approximated into triangles}
+\end{figure}
 
 \newpage
 \printbibliography{}
