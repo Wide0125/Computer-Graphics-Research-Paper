@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber Paper"] 1764742254.82703 "Paper.bcf" "Paper.bbl" "Paper" 1764743233.7934 0
-  "Paper.bcf" 1764743233.57449 108977 d7665fa3fe23669f557e3a77d9984df7 "pdflatex"
+["biber Paper"] 1764742254.82703 "Paper.bcf" "Paper.bbl" "Paper" 1764743534.96003 0
+  "Paper.bcf" 1764743534.72864 108977 d7665fa3fe23669f557e3a77d9984df7 "pdflatex"
   "references.bib" 1764742096.78399 1919 dd24e47bce5dc6c75a9772d8413b6732 ""
   (generated)
   "Paper.bbl"
   "Paper.blg"
   (rewritten before read)
-["pdflatex"] 1764743229.71813 "/Users/brianpark/Documents/Math Research Paper/Paper.tex" "Paper.pdf" "Paper" 1764743233.79376 0
-  "/Users/brianpark/Documents/Math Research Paper/Paper.tex" 1764743228.8755 31291 2fe14baa0c8c94789e6b437401831db4 ""
+["pdflatex"] 1764743530.83434 "/Users/brianpark/Documents/Math Research Paper/Paper.tex" "Paper.pdf" "Paper" 1764743534.96045 0
+  "/Users/brianpark/Documents/Math Research Paper/Paper.tex" 1764743530.57987 31300 080662bfc23a273509a30ca3c16c51c0 ""
   "/Users/brianpark/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/labx0500.tfm" 1764129934.93239 3320 a430f046d61f34970b99e53711dc6a65 ""
   "/Users/brianpark/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/labx0900.tfm" 1764129895.35728 3308 0e40fe47c68a93146385123973edfb65 ""
   "/Users/brianpark/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/labx1000.tfm" 1764129907.13505 3300 6abb8e321227ead2a8e929e5abc72bd3 ""
@@ -271,12 +271,12 @@
   "First Sphere Render.png" 1761113827.76186 344446 3ae4999bbd387f7b81da086e50cae416 ""
   "Moving Camera Sphere Render.png" 1762925175.29036 344794 899e8174fc92863e4a0bf83ee57af5a8 ""
   "PP.svg" 1764674844.2265 27176 81bde7c696f4cfc78d911d76c02622bc ""
-  "Paper.aux" 1764743233.5682 9639 8946fe267f5062bcff500c116e85e828 "pdflatex"
+  "Paper.aux" 1764743534.72259 9458 1bafcee981e61c754c08b26b3af7a245 "pdflatex"
   "Paper.bbl" 1764742256.87764 12602 5850d9b533c32780d4d9151b66671bdd "biber Paper"
-  "Paper.out" 1764743233.57086 1273 845a4336d3cc45c7f0acfed315a03e52 "pdflatex"
-  "Paper.run.xml" 1764743233.57541 2351 99ce50ed3d46f4104ad8edaa9349d32f "pdflatex"
-  "Paper.tex" 1764743228.8755 31291 2fe14baa0c8c94789e6b437401831db4 ""
-  "Paper.toc" 1764743233.57549 743 9e0b70952b525bec36643bfddc8f6f2a "pdflatex"
+  "Paper.out" 1764743534.72512 1273 845a4336d3cc45c7f0acfed315a03e52 "pdflatex"
+  "Paper.run.xml" 1764743534.72948 2351 99ce50ed3d46f4104ad8edaa9349d32f "pdflatex"
+  "Paper.tex" 1764743530.57987 31300 080662bfc23a273509a30ca3c16c51c0 ""
+  "Paper.toc" 1764743534.72956 743 9e0b70952b525bec36643bfddc8f6f2a "pdflatex"
   "Polygon Triangulation.svg" 1764116547.10442 12037 4e08dccd95cdf7655f9b12e422253052 ""
   "Right-hand rule.png" 1760316513.49636 197057 521c53eeeef72e2c893702133a3df14e ""
   "_minted/0A0E65E04083F19A081762CA2C6479DE.highlight.minted" 1762924526.85448 81 dbf2b8fb1383baa5afb891b44ed714eb ""
@@ -299,13 +299,14 @@
   "_minted/C01009A45FCC86D46A5C24C69327D212.highlight.minted" 1762924248.14369 3509 f01d12b661692f1f5793ec31175d374b ""
   "_minted/CB2C84CF7F73E0BC9C2460E0BDBA4027.highlight.minted" 1761714227.07879 2012 cb624ac2b02bff501e4895e8fea4e24e ""
   "_minted/CDF798AFE4E9983F0061192E199DB52F.highlight.minted" 1761111366.0333 8173 0ce9a6c72d7f6a918f34ace4e0b6c8bc ""
+  "_minted/D40DA061D06B2EB71EFAD4BF8F7208DB.highlight.minted" 1764743495.78164 83 0d863ac4af0c0a07ff7a3faf3114178a ""
   "_minted/D7B72B8176D9CD0B326A66FF6DB22B73.highlight.minted" 1760399514.02389 94 a892a8391bbe1a639b2ea187a403cff9 ""
   "_minted/DDF33B3FE04ACC9B2E0E6E2B6FB444F1.highlight.minted" 1764740751.09329 1263 204c70b031fdf42d19ef135b5e8d8dc5 ""
   "_minted/E42C306714D7E0EFA7600D2F4A1FDE07.highlight.minted" 1762923986.93941 82 096cc76ff16fcee72662cb5506a92bf0 ""
   "_minted/EC2517E6CC938E751EE09197605C3730.highlight.minted" 1762924746.03597 1402 0aa85bb55b1d0711652af36ffbcf173e ""
   "_minted/F3E0AD891DE32AA326754CF6973266E0.highlight.minted" 1762923608.06054 93 a7b4e2e8d8d93ae9aed45be576769e0c ""
   "_minted/FF8B8C75829C19A6E05E39C459663FB0.highlight.minted" 1760399514.02405 94 709697faa89c95510abac30b961f1770 ""
-  "_minted/_D0A662A5235ECDE30739FE50CF0DE830.index.minted" 1764743114.14982 1688 b28da0edbeabb7e18e1a3b3941639e6e ""
+  "_minted/_D0A662A5235ECDE30739FE50CF0DE830.index.minted" 1764743496.21746 1745 9c14653becd5557a828f15471ad99963 ""
   "_minted/default.style.minted" 1760399514.02441 6426 e1fb43a91491f41b33310478eee48cdb ""
   "camera.hpp" 1761714314.40175 822 530a7f82a969322327a155c20f69a30c ""
   "degree.hpp" 1762922414.98385 1749 ca7f294f9c3d044187254eabafbb5f0b ""
