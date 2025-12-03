@@ -438,7 +438,7 @@ To draw a triangle, we must first figure out how to connect two screen space coo
 \[
     y - A_{y} = \frac{B_{y} - A_{y}}{B_{x} - A_{x}} (x - A_{x})
 \]
-And implementation of a line drawing algorithm starts starts at $A$, and for every $x$ coordinate between $A_{x}$ and $B_{x}$, draws a pixel at the corresponding $y$ coordinate. The $y$ coordinate can be obtained by adding the slope of the line each time we iterate over a pixel.
+An implementation of a line drawing algorithm starts at $A$, and for every $x$ coordinate between $A_{x}$ and $B_{x}$, draws a pixel at the corresponding $y$ coordinate. The $y$ coordinate can be obtained by adding the slope of the line each time we iterate over a pixel.
 
 \begin{minted}[breaklines]{cpp}
     double slope {(y2 - y1) / static_cast<double>((x2 - x1))};
@@ -449,6 +449,8 @@ And implementation of a line drawing algorithm starts starts at $A$, and for eve
         y += slope;
     }
 \end{minted}
+
+However, a problem occurs when the slope of the line is greater than $1$. Since we are drawing one pixel for every $x$ coordinate, the algorithm results in disconnected lines.
 
 \newpage
 \printbibliography{}
