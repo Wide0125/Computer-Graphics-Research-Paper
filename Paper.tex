@@ -440,8 +440,14 @@ To draw a triangle, we must first figure out how to connect two screen space coo
 \]
 And implementation of a line drawing algorithm starts starts at $A$, and for every $x$ coordinate between $A_{x}$ and $B_{x}$, draws a pixel at the corresponding $y$ coordinate. The $y$ coordinate can be obtained by adding the slope of the line each time we iterate over a pixel.
 
-\begin{minted}{cpp}
-    
+\begin{minted}[breaklines]{cpp}
+    double slope {(y2 - y1) / static_cast<double>((x2 - x1))};
+    double y {static_cast<double>(x1)};
+
+    for (int x {x1}; x <= x2; ++x) {
+        DrawPixel(x, y);
+        y += slope;
+    }
 \end{minted}
 
 \newpage
