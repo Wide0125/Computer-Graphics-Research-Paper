@@ -482,6 +482,31 @@ As such, for lines with a slope greater than 1, instead of drawing 1 pixel for e
 \end{code}
 For a point $(i, d)$ on the line, \mintinline{cpp}|retarray|[$i$] = $d$.
 
+When the slope is greater than 1, $y$ becomes the independent variable:
+
+\begin{code}
+\begin{minted}[breaklines]{cpp}
+void drawLine(int x1, int y1, int x2, int y2, raylib::Color color = BLACK) {
+    std::vector<double> lineArray {};
+
+    if (x2 - x1 > y2 - y1) {
+        lineArray = interpolate(x1, y1, x2, y2);
+
+        for (int x {x1}; x <= x2; ++x) {
+            DrawPixel(x, lineArray[x - x1], color);
+        }
+    }
+    else {
+        lineArray = interpolate(y1, x1, y2, x2);
+
+        for (int y {y1}; y <= y2; ++y) {
+            DrawPixel(lineArray[y - y1], y, color);
+        }
+    }
+}   
+\end{minted}
+\end{code}
+
 \newpage
 \printbibliography{}
 \end{document}
