@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber Paper"] 1764743631.56656 "Paper.bcf" "Paper.bbl" "Paper" 1764761423.84288 0
-  "Paper.bcf" 1764761423.6129 108977 d7665fa3fe23669f557e3a77d9984df7 "pdflatex"
+["biber Paper"] 1764743631.56656 "Paper.bcf" "Paper.bbl" "Paper" 1764761492.29667 0
+  "Paper.bcf" 1764761492.06143 108977 d7665fa3fe23669f557e3a77d9984df7 "pdflatex"
   "references.bib" 1764742096.78399 1919 dd24e47bce5dc6c75a9772d8413b6732 ""
   (generated)
   "Paper.bbl"
   "Paper.blg"
   (rewritten before read)
-["pdflatex"] 1764761419.87852 "/Users/brianpark/Documents/Math Research Paper/Paper.tex" "Paper.pdf" "Paper" 1764761423.84322 0
-  "/Users/brianpark/Documents/Math Research Paper/Paper.tex" 1764761415.89133 33688 b95d2fc6e3e170f7c5c2ebabcd37138a ""
+["pdflatex"] 1764761488.13151 "/Users/brianpark/Documents/Math Research Paper/Paper.tex" "Paper.pdf" "Paper" 1764761492.29705 0
+  "/Users/brianpark/Documents/Math Research Paper/Paper.tex" 1764761487.84338 33698 6d599b2154401e0ea6cbc21ddde4d336 ""
   "/Users/brianpark/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/labx0500.tfm" 1764129934.93239 3320 a430f046d61f34970b99e53711dc6a65 ""
   "/Users/brianpark/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/labx0900.tfm" 1764129895.35728 3308 0e40fe47c68a93146385123973edfb65 ""
   "/Users/brianpark/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/labx1000.tfm" 1764129907.13505 3300 6abb8e321227ead2a8e929e5abc72bd3 ""
@@ -271,12 +271,12 @@
   "First Sphere Render.png" 1761113827.76186 344446 3ae4999bbd387f7b81da086e50cae416 ""
   "Moving Camera Sphere Render.png" 1762925175.29036 344794 899e8174fc92863e4a0bf83ee57af5a8 ""
   "PP.svg" 1764674844.2265 27176 81bde7c696f4cfc78d911d76c02622bc ""
-  "Paper.aux" 1764761423.60694 9458 8f54aa2fad057757cf7af1912e087602 "pdflatex"
+  "Paper.aux" 1764761492.05524 9458 8f54aa2fad057757cf7af1912e087602 "pdflatex"
   "Paper.bbl" 1764743634.01541 12602 5850d9b533c32780d4d9151b66671bdd "biber Paper"
-  "Paper.out" 1764761423.60931 1273 845a4336d3cc45c7f0acfed315a03e52 "pdflatex"
-  "Paper.run.xml" 1764761423.61386 2351 99ce50ed3d46f4104ad8edaa9349d32f "pdflatex"
-  "Paper.tex" 1764761415.89133 33688 b95d2fc6e3e170f7c5c2ebabcd37138a ""
-  "Paper.toc" 1764761423.61395 743 9e0b70952b525bec36643bfddc8f6f2a "pdflatex"
+  "Paper.out" 1764761492.05786 1273 845a4336d3cc45c7f0acfed315a03e52 "pdflatex"
+  "Paper.run.xml" 1764761492.06295 2351 99ce50ed3d46f4104ad8edaa9349d32f "pdflatex"
+  "Paper.tex" 1764761487.84338 33698 6d599b2154401e0ea6cbc21ddde4d336 ""
+  "Paper.toc" 1764761492.06305 743 9e0b70952b525bec36643bfddc8f6f2a "pdflatex"
   "Polygon Triangulation.svg" 1764116547.10442 12037 4e08dccd95cdf7655f9b12e422253052 ""
   "Right-hand rule.png" 1760316513.49636 197057 521c53eeeef72e2c893702133a3df14e ""
   "_minted/0A0E65E04083F19A081762CA2C6479DE.highlight.minted" 1762924526.85448 81 dbf2b8fb1383baa5afb891b44ed714eb ""
