@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.1)  3 DEC 2025 14:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.1)  3 DEC 2025 14:29
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -969,4 +969,440 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@publisher=\count465
 \c@savedpublisher=\count466
 \c@language=\count467
-\c@savedlang
+\c@savedlanguage=\count468
+\c@origlanguage=\count469
+\c@savedoriglanguage=\count470
+\c@pageref=\count471
+\c@savedpageref=\count472
+\shorthandwidth=\skip67
+\shortjournalwidth=\skip68
+\shortserieswidth=\skip69
+\shorttitlewidth=\skip70
+\shortauthorwidth=\skip71
+\shorteditorwidth=\skip72
+\locallabelnumberwidth=\skip73
+\locallabelalphawidth=\skip74
+\localshorthandwidth=\skip75
+\localshortjournalwidth=\skip76
+\localshortserieswidth=\skip77
+\localshorttitlewidth=\skip78
+\localshortauthorwidth=\skip79
+\localshorteditorwidth=\skip80
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+\c@textcitecount=\count473
+\c@textcitetotal=\count474
+\c@textcitemaxnames=\count475
+\c@biburlbigbreakpenalty=\count476
+\c@biburlbreakpenalty=\count477
+\c@biburlnumpenalty=\count478
+\c@biburlucpenalty=\count479
+\c@biburllcpenalty=\count480
+\biburlbigskip=\muskip19
+\biburlnumskip=\muskip20
+\biburlucskip=\muskip21
+\biburllcskip=\muskip22
+\c@smartand=\count481
+)
+Package biblatex Info: Trying to load bibliography style 'authortitle'...
+Package biblatex Info: ... file 'authortitle.bbx' found.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/authortitle.bbx
+File: authortitle.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count482
+\c@bbx:relatedtotal=\count483
+))
+Package biblatex Info: Trying to load citation style 'authortitle'...
+Package biblatex Info: ... file 'authortitle.cbx' found.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/cbx/authortitle.cbx
+File: authortitle.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2025-01-18 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (/usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
+))
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count484
+\@quotereset=\count485
+(./Paper.aux)
+\openout1 = `Paper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+ (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count486
+\scratchdimen=\dimen285
+\scratchbox=\box74
+\nofMPsegments=\count487
+\nofMParguments=\count488
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count489
+\MPscratchDim=\dimen286
+\MPnumerator=\count490
+\makeMPintoPDFobject=\count491
+\everyMPtoPDFconversion=\toks40
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+LaTeX Info: Redefining \th on input line 33.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring ON on input line 33.
+ (./Paper.out) (./Paper.out)
+\@outlinefile=\write6
+\openout6 = `Paper.out'.
+
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'russian'...
+Package biblatex Info: ... file 'russian.lbx' found.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/russian.lbx
+File: russian.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout5 = `Paper.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'Paper.bbl' found.
+ (./Paper.bbl)
+Package biblatex Info: Reference section=0 on input line 33.
+Package biblatex Info: Reference segment=0 on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 38.
+ (./Paper.toc)
+\tf@toc=\write7
+\openout7 = `Paper.toc'.
+
+
+
+[1
+
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
+
+[2]
+Package svg Info: Last page of `./svg-inkscape/Figure-1_svg-tex.pdf' is 1 on input line 68.
+ (./svg-inkscape/Figure-1_svg-tex.pdf_tex
+<./svg-inkscape/Figure-1_svg-tex.pdf, id=69, page=1, 281.56392pt x 281.56392pt>
+File: ./svg-inkscape/Figure-1_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/Figure-1_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/Figure-1_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 281.5639pt x 281.56322pt.
+)
+<Right-hand rule.png, id=71, 1606.0pt x 1328.965pt>
+File: Right-hand rule.png Graphic file (type png)
+<use Right-hand rule.png>
+Package pdftex.def Info: Right-hand rule.png  used on input line 74.
+(pdftex.def)             Requested size: 321.19432pt x 265.78828pt.
+
+
+[3 <./svg-inkscape/Figure-1_svg-tex.pdf>]
+Package svg Info: Last page of `./svg-inkscape/Figure-3_svg-tex.pdf' is 1 on input line 84.
+ (./svg-inkscape/Figure-3_svg-tex.pdf_tex
+<./svg-inkscape/Figure-3_svg-tex.pdf, id=123, page=1, 281.56392pt x 281.56392pt>
+File: ./svg-inkscape/Figure-3_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/Figure-3_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/Figure-3_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 267.48485pt x 267.48419pt.
+)
+Package svg Info: Last page of `./svg-inkscape/Figure-4_svg-tex.pdf' is 1 on input line 91.
+ (./svg-inkscape/Figure-4_svg-tex.pdf_tex
+<./svg-inkscape/Figure-4_svg-tex.pdf, id=128, page=1, 281.56392pt x 281.56392pt>
+File: ./svg-inkscape/Figure-4_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/Figure-4_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/Figure-4_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 267.48485pt x 267.48419pt.
+)
+
+[4 <./Right-hand rule.png>]
+
+[5 <./svg-inkscape/Figure-3_svg-tex.pdf> <./svg-inkscape/Figure-4_svg-tex.pdf
+
+pdfTeX warning: pdflatex (file ./svg-inkscape/Figure-4_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Package svg Info: Last page of `./svg-inkscape/Figure-9_svg-tex.pdf' is 1 on input line 98.
+ (./svg-inkscape/Figure-9_svg-tex.pdf_tex
+<./svg-inkscape/Figure-9_svg-tex.pdf, id=255, page=1, 281.56392pt x 281.56392pt>
+File: ./svg-inkscape/Figure-9_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/Figure-9_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/Figure-9_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 281.5639pt x 281.56322pt.
+)
+
+[6 <./svg-inkscape/Figure-9_svg-tex.pdf>]
+
+[7]
+Package svg Info: Last page of `./svg-inkscape/Figure-5_svg-tex.pdf' is 1 on input line 163.
+ (./svg-inkscape/Figure-5_svg-tex.pdf_tex
+<./svg-inkscape/Figure-5_svg-tex.pdf, id=340, page=1, 281.56392pt x 281.56392pt>
+File: ./svg-inkscape/Figure-5_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/Figure-5_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/Figure-5_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 281.5639pt x 281.56322pt.
+)
+
+[8 <./svg-inkscape/Figure-5_svg-tex.pdf>]
+Package svg Info: Last page of `./svg-inkscape/Figure-6_svg-tex.pdf' is 1 on input line 174.
+ (./svg-inkscape/Figure-6_svg-tex.pdf_tex
+<./svg-inkscape/Figure-6_svg-tex.pdf, id=390, page=1, 281.56392pt x 281.56392pt>
+File: ./svg-inkscape/Figure-6_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/Figure-6_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/Figure-6_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 281.5639pt x 281.56322pt.
+)
+
+[9 <./svg-inkscape/Figure-6_svg-tex.pdf>]
+Package hyperref Info: bookmark level for unknown listing defaults to 0 on input line 186.
+\pydata@fh@_D0A662A5235ECDE30739FE50CF0DE830.data.minted=\write8
+\openout8 = `_D0A662A5235ECDE30739FE50CF0DE830.data.minted'.
+
+runsystem(latexminted config  --timestamp 20251203142910 D0A662A5235ECDE30739FE50CF0DE830)...executed.
+
+ (./_D0A662A5235ECDE30739FE50CF0DE830.config.minted)
+runsystem(latexminted cleanconfig  --timestamp 20251203142910 D0A662A5235ECDE30739FE50CF0DE830)...executed.
+
+ (./_minted/default.style.minted) (./_minted/BBB88CEC1029BE750D3C1947FACF7310.highlight.minted
+LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 1.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
+File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 5.
+) (./_minted/CDF798AFE4E9983F0061192E199DB52F.highlight.minted
+
+[10])
+
+[11] (./_minted/0A74576F41E90F4F9AE24F19608F29A0.highlight.minted)
+Package svg Info: Last page of `./svg-inkscape/Figure-7_svg-tex.pdf' is 1 on input line 203.
+ (./svg-inkscape/Figure-7_svg-tex.pdf_tex
+<./svg-inkscape/Figure-7_svg-tex.pdf, id=473, page=1, 438.134pt x 230.30058pt>
+File: ./svg-inkscape/Figure-7_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/Figure-7_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/Figure-7_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 350.50851pt x 184.24422pt.
+)
+Overfull \hbox (5.50851pt too wide) in paragraph at lines 203--204
+[][] 
+ []
+
+(./_minted/56C3B5155CB7CE9B8A768CC7B2EC603A.highlight.minted) (./_minted/D7B72B8176D9CD0B326A66FF6DB22B73.highlight.minted) (./_minted/FF8B8C75829C19A6E05E39C459663FB0.highlight.minted)
+
+[12] (./_minted/12D2E01F877A8A3A527DE3F1581A0E65.highlight.minted)
+Package svg Info: Last page of `./svg-inkscape/Figure-8_svg-tex.pdf' is 1 on input line 228.
+ (./svg-inkscape/Figure-8_svg-tex.pdf_tex
+<./svg-inkscape/Figure-8_svg-tex.pdf, id=482, page=1, 281.56392pt x 281.56392pt>
+File: ./svg-inkscape/Figure-8_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/Figure-8_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/Figure-8_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 281.5639pt x 281.56322pt.
+)
+
+[13{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./svg-inkscape/Figure-7_svg-tex.pdf>]
+
+[14 <./svg-inkscape/Figure-8_svg-tex.pdf>] (./_minted/BD05B50835EA31028BE9667701502A02.highlight.minted) (./_minted/620F6371635B972B12B2C6DCB417F414.highlight.minted
+
+[15]) (./_minted/7129D5B0D2D0EFFD7B0A1A9719C75899.highlight.minted) (./_minted/CB2C84CF7F73E0BC9C2460E0BDBA4027.highlight.minted)
+<First Sphere Render.png, id=584, 1076.02pt x 686.565pt>
+File: First Sphere Render.png Graphic file (type png)
+<use First Sphere Render.png>
+Package pdftex.def Info: First Sphere Render.png  used on input line 284.
+(pdftex.def)             Requested size: 355.0877pt x 226.56715pt.
+
+Overfull \hbox (10.0877pt too wide) in paragraph at lines 284--285
+[][] 
+ []
+
+
+
+[16] (./_minted/0A0E65E04083F19A081762CA2C6479DE.highlight.minted) (./_minted/0C336D308EF0DC9ABC51B3C029AB1F70.highlight.minted
+
+[17 <./First Sphere Render.png>]
+
+[18]) (./_minted/185917754DEC27E3A314BC56DC5375CB.highlight.minted) (./_minted/3CF7209DAE88807730950E85A93FCA0D.highlight.minted) (./_minted/EC2517E6CC938E751EE09197605C3730.highlight.minted) (./_minted/8B91DCE917976F3C3F91FD4F6D1CB1B9.highlight.minted
+
+[19]) (./_minted/41ACF3A079F31B9A3E2E9D29731B319F.highlight.minted) (./_minted/F3E0AD891DE32AA326754CF6973266E0.highlight.minted) (./_minted/E42C306714D7E0EFA7600D2F4A1FDE07.highlight.minted) (./_minted/3775556CE90A9D5B546787AAFB2FFF7F.highlight.minted) (./_minted/E42C306714D7E0EFA7600D2F4A1FDE07.highlight.minted)
+
+LaTeX Warning: Marginpar on page 20 moved.
+
+(./_minted/41ACF3A079F31B9A3E2E9D29731B319F.highlight.minted) (./_minted/C01009A45FCC86D46A5C24C69327D212.highlight.minted
+Overfull \hbox (17.16156pt too wide) in paragraph at lines 5--5
+[]\T2A/cmtt/m/n/10 camera.screenWidth()[]/[][]2[])};|  
+ []
+
+
+Overfull \hbox (22.41028pt too wide) in paragraph at lines 7--7
+[]\T2A/cmtt/m/n/10 camera.screenHeight()[]/[][]2[])};|  
+ []
+
+) (./_minted/7213D07E629A10E562EA0697D62F7C9D.highlight.minted) (./_minted/1A4E3E4DEB734D8C34DCCE056DA841EB.highlight.minted
+
+[20])
+<Moving Camera Sphere Render.png, id=621, 1076.02pt x 686.565pt>
+File: Moving Camera Sphere Render.png Graphic file (type png)
+<use Moving Camera Sphere Render.png>
+Package pdftex.def Info: Moving Camera Sphere Render.png  used on input line 379.
+(pdftex.def)             Requested size: 355.0877pt x 226.56715pt.
+
+Overfull \hbox (10.0877pt too wide) in paragraph at lines 379--380
+[][] 
+ []
+
+
+
+[21 <./Moving Camera Sphere Render.png>]
+<Dolphin_triangle_mesh.png, id=628, 636.3775pt x 392.46625pt>
+File: Dolphin_triangle_mesh.png Graphic file (type png)
+<use Dolphin_triangle_mesh.png>
+Package pdftex.def Info: Dolphin_triangle_mesh.png  used on input line 390.
+(pdftex.def)             Requested size: 318.18797pt x 196.23264pt.
+Package svg Info: Last page of `./svg-inkscape/Polygon Triangulation_svg-tex.pdf' is 1 on input line 396.
+ (./svg-inkscape/Polygon Triangulation_svg-tex.pdf_tex
+<./svg-inkscape/Polygon Triangulation_svg-tex.pdf, id=632, page=1, 66.57945pt x 122.48912pt>
+File: ./svg-inkscape/Polygon Triangulation_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/Polygon Triangulation_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/Polygon Triangulation_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 99.86916pt x 183.73508pt.
+)
+
+[22 <./Dolphin_triangle_mesh.png (PNG copy)> <./svg-inkscape/Polygon Triangulation_svg-tex.pdf>]
+Package svg Info: Last page of `./svg-inkscape/PP_svg-tex.pdf' is 1 on input line 405.
+ (./svg-inkscape/PP_svg-tex.pdf_tex
+<./svg-inkscape/PP_svg-tex.pdf, id=646, page=1, 281.56392pt x 281.56392pt>
+File: ./svg-inkscape/PP_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/PP_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/PP_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 281.5639pt x 281.56322pt.
+)
+
+[23 <./svg-inkscape/PP_svg-tex.pdf>]
+Package svg Info: Last page of `./svg-inkscape/projection_svg-tex.pdf' is 3 on input line 434.
+ (./svg-inkscape/projection_svg-tex.pdf_tex
+<./svg-inkscape/projection_svg-tex.pdf, id=693, page=1, 418.517pt x 365.2164pt>
+File: ./svg-inkscape/projection_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/projection_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/projection_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 313.88776pt x 273.91719pt.
+<./svg-inkscape/projection_svg-tex.pdf, id=694, page=2, 418.517pt x 365.2164pt>
+File: ./svg-inkscape/projection_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/projection_svg-tex.pdf, page 2>
+Package pdftex.def Info: ./svg-inkscape/projection_svg-tex.pdf , page2 used on input line 60.
+(pdftex.def)             Requested size: 313.88776pt x 273.91719pt.
+<./svg-inkscape/projection_svg-tex.pdf, id=695, page=3, 418.517pt x 365.2164pt>
+File: ./svg-inkscape/projection_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/projection_svg-tex.pdf, page 3>
+Package pdftex.def Info: ./svg-inkscape/projection_svg-tex.pdf , page3 used on input line 63.
+(pdftex.def)             Requested size: 313.88776pt x 273.91719pt.
+)
+
+[24 <./svg-inkscape/projection_svg-tex.pdf> <./svg-inkscape/projection_svg-tex.pdf
+
+pdfTeX warning: pdflatex (file ./svg-inkscape/projection_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/projection_svg-tex.pdf
+
+pdfTeX warning: pdflatex (file ./svg-inkscape/projection_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Overfull \hbox (3.09361pt too wide) in paragraph at lines 438--438
+[][]\T2A/cmr/m/n/10 Eldridge, Stephen. \T2A/cmr/m/it/10 Carte-sian co-or-di-nates\T2A/cmr/m/n/10 . 2023. \T2A/cmr/m/sc/10 url\T2A/cmr/m/n/10 : [][]$\T2A/cmtt/m/n/10 https : / / www . britannica .
+ []
+
+
+
+[25] (./Paper.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+Package rerunfilecheck Info: File `Paper.out' has not changed.
+(rerunfilecheck)             Checksum: 347AC60F4054539A4D79C6D255DDC519;1123.
+Package logreq Info: Writing requests to 'Paper.run.xml'.
+\openout1 = `Paper.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 37203 strings out of 473190
+ 755535 string characters out of 5715800
+ 1839345 words of memory out of 5000000
+ 59678 multiletter control sequences out of 15000+600000
+ 580261 words of font info for 83 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 117i,16n,121p,1353b,2166s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist, replaced by a fixed one
+
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on Paper.pdf (25 pages, 1073713 bytes).
+PDF statistics:
+ 866 PDF objects out of 1000 (max. 8388607)
+ 619 compressed objects within 7 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 217 words of extra memory for PDF output out of 10000 (max. 10000000)
+
