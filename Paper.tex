@@ -451,10 +451,10 @@ An implementation of a line drawing algorithm starts at $A$, and for every $x$ c
 \end{minted}
 
 However, a problem occurs when the slope of the line is greater than $1$. Since we are drawing one pixel for every $x$ coordinate, the algorithm results in disconnected lines.
-
 \begin{figure}[htp]
-    \includegraphics[scale=0.5]{Disconnected Lines.jpg}\autocite{DisconnectedLines}
+    \includegraphics[scale=0.5]{Disconnected Lines.jpg}
 \end{figure}
+As such, for lines with a slope greater than 1, we instead switch to drawing 1 pixel for every y coordinate 
 
 \newpage
 \printbibliography{}

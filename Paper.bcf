@@ -2379,7 +2379,6 @@
     <bcf:citekey order="7" intorder="1">DolphinMesh</bcf:citekey>
     <bcf:citekey order="8" intorder="1">PolygonTriangulation</bcf:citekey>
     <bcf:citekey order="9" intorder="1">TriangleProjection</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">DisconnectedLines</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
