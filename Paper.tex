@@ -454,11 +454,33 @@ However, a problem occurs when the slope of the line is greater than $1$. Since 
 \begin{figure}[htp]
     \includegraphics[scale=0.5]{Disconnected Lines.jpg}\caption{Disconnected lines}\label{figure:disconnectedlines}
 \end{figure}
-As such, for lines with a slope greater than 1, instead of drawing 1 pixel for every $x$ coordinate, we draw 1 pixel for every $y$ coordinate, filling in the gaps. This process can be generalized by designating an independent variable $i$ and a dependent variable $d$. A linear interpolation function that returns an array of points on a line connecting two points, $(i1, d1)$, $(i2, d2)$, in 2D space can be implemented as such:
+As such, for lines with a slope greater than 1, instead of drawing 1 pixel for every $x$ coordinate, we draw 1 pixel for every $y$ coordinate, filling in the gaps. This process can be generalized by designating an independent variable $i$ and a dependent variable $d$. A linear interpolation function that returns an array of points of a line connecting two points, $(i1, d1)$, $(i2, d2)$, in 2D space can be implemented as such:
 
-\begin{minted}{cpp}
-    
+\begin{code}\caption{The function returns an array of $d$ variables, with each variable}
+\begin{minted}[breaklines]{cpp}
+    std::vector<double> interpolate(int i1, int d1, int i2, int d2) {
+        if (i1 == i2) {
+            return {static_cast<double>(d1)};
+        }
+
+        if (i2 < i1) {
+            std::swap(i1, i2);
+            std::swap(d1, d2);
+        }
+
+        std::vector<double> retArray (i2 - i1 + 1);
+        double slope {(d2 - d1) / static_cast<double>((i2 - i1))};
+        double d {static_cast<double>(d1)};
+
+        for (int i {i1}; i <= i2; ++i) {
+            retArray[i - i1] = d;
+            d += slope;
+        }
+        
+        return retArray;
+    }
 \end{minted}
+\end{code}
 
 \newpage
 \printbibliography{}
