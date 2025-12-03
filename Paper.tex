@@ -419,10 +419,12 @@ $P'_{x}$ is able to be derived in a similar fashion, except this time from the v
 
 We can convert the world space coordinates of $P'$ into screen space coordinate with the formula below (where $V_{w}$ and $V_{h}$ refer to viewport width and height respectively, while ):
 
-\begin{multline}
+\[
     P'_{cx} = \frac{P'_{x}}{V_{w}} \cdot S_{w}
+\]
+\[
     P'_{cy} = \frac{P'_{y}}{V_{h}} \cdot S_{h}
-\end{multline}
+\]
 
 Now that we have a method to obtain the $P'$ coordinate of every point on the triangle $P$, all that is left is to fill in the rest of the triangle onto the screen. It can be noted that straight lines in 3D space remain straight even when projected onto a 2D surface, therefore connecting the three points drawn onto the screen results in the correctly projected triangle.
 
