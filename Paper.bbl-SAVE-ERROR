@@ -19,6 +19,37 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
+    \entry{DolphinMesh}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a4e53fdffddb806ab2b58cd48ffe0004}{%
+           family={Chrschn},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a4e53fdffddb806ab2b58cd48ffe0004}
+      \strng{fullhash}{a4e53fdffddb806ab2b58cd48ffe0004}
+      \strng{fullhashraw}{a4e53fdffddb806ab2b58cd48ffe0004}
+      \strng{bibnamehash}{a4e53fdffddb806ab2b58cd48ffe0004}
+      \strng{authorbibnamehash}{a4e53fdffddb806ab2b58cd48ffe0004}
+      \strng{authornamehash}{a4e53fdffddb806ab2b58cd48ffe0004}
+      \strng{authorfullhash}{a4e53fdffddb806ab2b58cd48ffe0004}
+      \strng{authorfullhashraw}{a4e53fdffddb806ab2b58cd48ffe0004}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dolphin triangle mesh.png}
+      \field{urlday}{25}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2007}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://upload.wikimedia.org/wikipedia/commons/f/fb/Dolphin_triangle_mesh.png
+      \endverb
+      \verb{url}
+      \verb https://upload.wikimedia.org/wikipedia/commons/f/fb/Dolphin_triangle_mesh.png
+      \endverb
+    \endentry
     \entry{Eldridge2023}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=91318231f2d7fd8fd1ffb4f24008a366}{%
@@ -215,6 +246,37 @@
       \endverb
       \verb{url}
       \verb https://www.raylib.com/
+      \endverb
+    \endentry
+    \entry{PolygonTriangulation}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=90a4dd348efb27d26e7690bfe0fba2bd}{%
+           family={Tosha},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{90a4dd348efb27d26e7690bfe0fba2bd}
+      \strng{fullhash}{90a4dd348efb27d26e7690bfe0fba2bd}
+      \strng{fullhashraw}{90a4dd348efb27d26e7690bfe0fba2bd}
+      \strng{bibnamehash}{90a4dd348efb27d26e7690bfe0fba2bd}
+      \strng{authorbibnamehash}{90a4dd348efb27d26e7690bfe0fba2bd}
+      \strng{authornamehash}{90a4dd348efb27d26e7690bfe0fba2bd}
+      \strng{authorfullhash}{90a4dd348efb27d26e7690bfe0fba2bd}
+      \strng{authorfullhashraw}{90a4dd348efb27d26e7690bfe0fba2bd}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Триангуляция.svg}
+      \field{urlday}{26}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://upload.wikimedia.org/wikipedia/commons/e/e0/%D0%A2%D1%80%D0%B8%D0%B0%D0%BD%D0%B3%D1%83%D0%BB%D1%8F%D1%86%D0%B8%D1%8F.svg
+      \endverb
+      \verb{url}
+      \verb https://upload.wikimedia.org/wikipedia/commons/e/e0/%D0%A2%D1%80%D0%B8%D0%B0%D0%BD%D0%B3%D1%83%D0%BB%D1%8F%D1%86%D0%B8%D1%8F.svg
       \endverb
     \endentry
   \enddatalist

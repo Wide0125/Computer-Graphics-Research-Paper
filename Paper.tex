@@ -4,6 +4,8 @@
 \usepackage{amsfonts}
 \usepackage{lipsum}
 \usepackage{svg}
+\usepackage[russian, english]{babel}
+\usepackage[T1, T2A]{fontenc}
 
 \usepackage{caption}
 \usepackage[newfloat]{minted}
@@ -382,12 +384,38 @@ Although ray tracing is useful in allowing us to represent 3-dimensional objects
 \newpage
 \section{Rasterization}
 
-Rasterization is a technique that involves approximating any 3D object into a collection of 2D polygons, normally triangles. Triangles are commonly used as they are the simplest $n$-sided polygon, which every other polygon can be split into.
+Rasterization is a technique that involves approximating any 3D object into a collection of 2D polygons, commonly triangles. Triangles are commonly used as they are the simplest $n$-sided polygon, which every other polygon can be split into.
 
 \begin{figure}[htp]
     \includegraphics[scale = 0.5]{Dolphin_triangle_mesh.png}\autocite{DolphinMesh}
     \caption{A 3D model approximated into triangles}
 \end{figure}
+
+\begin{figure}[htp]
+    \centering
+    \includesvg[scale = 1.5]{Polygon Triangulation.svg}\autocite{PolygonTriangulation}
+    \caption{A demonstration of polygon triangulation}
+\end{figure}
+
+Approximating models into triangles is convenient, as all we have to figure out is how to properly display a triangle in 3D space onto a 2D plane, and repeat that process for every single triangle in the scene.
+
+The next step is to determine a method to render a triangle suspended in 3D space onto a 2D plane. Focusing on a single point on the triangle, and assuming a viewport center position of $(0, 0, 1)$ for simplicity, a side view of the point in relation to the viewport reveals 2 triangles, $\triangle OPA$ and $\triangle OP'A'$.
+
+\begin{figure}
+    \includesvg{PP.svg}\caption{A side ($yz$ plane) view of an arbitrary point $P$}
+\end{figure}
+
+As with ray tracing, we take advantage of the fact that light travels in a straight line, meaning that $P'$ is where we must draw $P$ on the viewport. Thus, the task at hand is to calculate the position of $P'$ of an arbitrary point $P$. It can be noted that point $A$ is designated so that $\angle PAO$ is a right angle. Therefore, $\triangle OPA \sim \triangle OP'A'$, and as such, $\overline{A'P'} : \overline{AP} = \overline{OP'} : \overline{OP} = \overline{OA'} : \overline{OA}$. The coordinates of point $P$ are given, point $A$ is able to derived from point $P$ by taking its $z$ coordinate, and point $A'$ and the $z$ coordinate of $P'$ are constants. Therfore, the only variable, the $y$ coordinate of point $P$, is able to be derived:
+
+\[
+    P'_{y} = \frac{\overline{PA}}{\overline{OA}} \cdot \overline{OA'} = \frac{P_{y}}{P_{z}} \cdot 1
+\]
+
+$P'_{x}$ is able to be derived in a similar fashion, except this time from the view of the $xy$ plane.
+
+\[
+    P'_{x} = \frac{P_{x}}{P_{z}} \cdot 1
+\]
 
 \newpage
 \printbibliography{}
