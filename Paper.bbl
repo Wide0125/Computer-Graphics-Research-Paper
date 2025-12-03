@@ -188,6 +188,32 @@
       \field{title}{Computer Graphics From Scratch}
       \field{year}{2021}
     \endentry
+    \entry{TriangleProjection}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=91c6bc75875c7dd5e874ec20dde4eee7}{%
+           family={imagecomputing.net},
+           familyi={i\bibinitperiod}}}%
+      }
+      \strng{namehash}{91c6bc75875c7dd5e874ec20dde4eee7}
+      \strng{fullhash}{91c6bc75875c7dd5e874ec20dde4eee7}
+      \strng{fullhashraw}{91c6bc75875c7dd5e874ec20dde4eee7}
+      \strng{bibnamehash}{91c6bc75875c7dd5e874ec20dde4eee7}
+      \strng{authorbibnamehash}{91c6bc75875c7dd5e874ec20dde4eee7}
+      \strng{authornamehash}{91c6bc75875c7dd5e874ec20dde4eee7}
+      \strng{authorfullhash}{91c6bc75875c7dd5e874ec20dde4eee7}
+      \strng{authorfullhashraw}{91c6bc75875c7dd5e874ec20dde4eee7}
+      \field{sortinit}{i}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Project vertices of triangles}
+      \verb{urlraw}
+      \verb https://imagecomputing.net/old_storage/old_website2/teaching/2019_2020/semester_1/INF630_refresher/class/content/014_projection_rasterization/projection.svg
+      \endverb
+      \verb{url}
+      \verb https://imagecomputing.net/old_storage/old_website2/teaching/2019_2020/semester_1/INF630_refresher/class/content/014_projection_rasterization/projection.svg
+      \endverb
+    \endentry
     \entry{raylib-cpp}{software}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=4b9e4711c13fe8ab81b82e45bf0f7c27}{%
