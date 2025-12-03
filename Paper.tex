@@ -438,7 +438,7 @@ To draw a triangle, we must first figure out how to connect two screen space coo
 \[
     y - A_{y} = \frac{B_{y} - A_{y}}{B_{x} - A_{x}} (x - A_{x})
 \]
-Computer screens approximate images with pixels, so drawing a mathematically accurate line is not possible. However, an approximation is possible by rounding to the nearest integer. For every $x$ coordinate of a pixel on the screen, the pixel's $y$ coordinate can be derived by plugging the value of $x$ into our formula for the line. After that, the y value is rounded to the nearest integer to color in the pixel closest to the given $x$ and $y$ coordinates. To draw a line between two pixel coordinates, a \mintinline{cpp}|for| loop that iterates over every integer $x$ value is used. Every iteration, the $y$ coordinate for that pixel is derived, and the pixel is colored in. An optimization can be made here by instead adding the slope of the line to the $y$ coordinate every iteration instead of recalculating, as multiplication is simply repeated addition.
+Computer screens approximate images with pixels, so drawing a mathematically accurate line is not possible. However, an approximation is possible by rounding to the nearest integer. For every $x$ coordinate of a pixel on the screen, the pixel's $y$ coordinate can be derived by plugging the value of $x$ into our formula for the line. After that, the y value is rounded to the nearest integer to color in the pixel closest to the given $x$ and $y$ coordinates. To draw a line between two pixel coordinates, a \mintinline{cpp}|for| loop that iterates over every integer $x$ value is used. Every iteration, the $y$ coordinate for that pixel is derived, and the pixel is colored in. An optimization can be made here by adding the slope of the line to the $y$ coordinate every iteration instead of recalculating, as multiplication is simply repeated addition.
 
 \begin{minted}[breaklines]{cpp}
     double slope {(y2 - y1) / static_cast<double>((x2 - x1))};
@@ -454,7 +454,7 @@ However, a problem occurs when the slope of the line is greater than $1$. Since 
 \begin{figure}[htp]
     \includegraphics[scale=0.5]{Disconnected Lines.jpg}\caption{Disconnected lines}\label{figure:disconnectedlines}
 \end{figure}
-This happens because screen spaces are integer approximations of real numbers. As such, for lines with a slope greater than 1, instead of drawing 1 pixel for every $x$ coordinate, we need to draw 1 pixel for every $y$ coordinate, filling in the gaps. This process can be generalized by designating an independent variable $i$, the variable we choose values for, and a dependent variable $d$, the variable whose values depend on $i$. A linear interpolation function that returns an array of the dependent coordinates of a line connecting two points, $(i1, d1)$, $(i2, d2)$, in 2D space can be implemented as such:
+This happens because screen spaces are integer approximations of real numbers, and . As such, for lines with a slope greater than 1, instead of drawing 1 pixel for every $x$ coordinate, we need to draw 1 pixel for every $y$ coordinate, filling in the gaps. This process can be generalized by designating an independent variable $i$, the variable we choose values for, and a dependent variable $d$, the variable whose values depend on $i$. A linear interpolation function that returns an array of the dependent coordinates of a line connecting two points, $(i1, d1)$, $(i2, d2)$, in 2D space can be implemented as such:
 \begin{code}
 \begin{minted}[breaklines]{cpp}
     std::vector<double> interpolate(int i1, int d1, int i2, int d2) {
