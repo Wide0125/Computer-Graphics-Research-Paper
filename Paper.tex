@@ -438,7 +438,7 @@ To draw a triangle, we must first figure out how to connect two screen space coo
 \[
     y - A_{y} = \frac{B_{y} - A_{y}}{B_{x} - A_{x}} (x - A_{x})
 \]
-An implementation of a line drawing algorithm starts at $A$, and for every $x$ coordinate between $A_{x}$ and $B_{x}$, draws a pixel at the corresponding $y$ coordinate. The $y$ coordinate can be obtained by adding the slope of the line each time we iterate over a pixel.
+Computer screens approximate images with pixels, so drawing a mathematically accurate line is not possible. However, an approximation is possible by rounding to the nearest integer. 
 
 \begin{minted}[breaklines]{cpp}
     double slope {(y2 - y1) / static_cast<double>((x2 - x1))};
