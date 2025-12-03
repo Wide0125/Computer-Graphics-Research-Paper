@@ -384,6 +384,8 @@ Although ray tracing is useful in allowing us to represent 3-dimensional objects
 \newpage
 \section{Rasterization}
 
+\subsection{Polygon Projection}
+
 Rasterization is a technique that involves approximating any 3D object into a collection of 2D polygons, commonly triangles. Triangles are commonly used as they are the simplest $n$-sided polygon, which every other polygon can be split into.
 
 \begin{figure}[htp]
@@ -428,11 +430,12 @@ We can convert the world space coordinates of $P'$ into screen space coordinate 
 
 Now that we have a method to obtain the $P'$ coordinate of every point on the triangle $P$, all that is left is to fill in the rest of the triangle onto the screen. It can be noted that straight lines in 3D space remain straight even when projected onto a 2D surface; therefore, connecting the three points drawn onto the screen results in the correctly projected triangle.
 
-
-
 \begin{figure}[htp]
-    \includesvg[scale=0.75]{projection.svg}\footcite{TriangleProjection}
+    \includesvg[scale=0.75]{projection.svg}\autocite{TriangleProjection}
+    \caption{Projection of a 3D triangle onto a 2D viewport}
 \end{figure}
+
+
 
 \newpage
 \printbibliography{}
