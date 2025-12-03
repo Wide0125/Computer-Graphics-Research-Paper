@@ -454,7 +454,11 @@ However, a problem occurs when the slope of the line is greater than $1$. Since 
 \begin{figure}[htp]
     \includegraphics[scale=0.5]{Disconnected Lines.jpg}\caption{Disconnected lines}\label{figure:disconnectedlines}
 \end{figure}
-As such, for lines with a slope greater than 1, we instead switch to drawing 1 pixel for every y coordinate.
+As such, for lines with a slope greater than 1, instead of drawing 1 pixel for every $x$ coordinate, we draw 1 pixel for every $y$ coordinate, filling in the gaps. This process can be generalized by designating an independent variable $i$ and a dependent variable $d$. A linear interpolation function that returns an array of points on a line connecting two points, $(i1, d1)$, $(i2, d2)$, in 2D space can be implemented as such:
+
+\begin{minted}{cpp}
+    
+\end{minted}
 
 \newpage
 \printbibliography{}
