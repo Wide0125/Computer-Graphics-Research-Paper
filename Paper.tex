@@ -511,6 +511,10 @@ void drawLine(int x1, int y1, int x2, int y2, raylib::Color color = BLACK) {
 
 When the slope is less than 1, the linear interpolation function is called with $x$ as the independent variable ($i$) and $y$ as the dependent variable ($d$). When the slope is greater than or equal to 1, the function is instead called with $y$ as the independent variable and $x$ as the dependent variable.
 
+With our \mintinline{cpp}|drawLine()| function and linear interpolation function, we can now draw 3D triangles onto a 2D screen. Now all that remains is to fill in the triangle.
+
+
+
 \newpage
 \printbibliography{}
 \end{document}
