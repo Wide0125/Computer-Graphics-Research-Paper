@@ -1,9 +1,0 @@
-\babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
-\contentsline {section}{\numberline {2}3 Dimensional Space}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Coordinates and Vectors}{3}{subsection.2.1}%
-\contentsline {section}{\numberline {3}Ray Tracing}{8}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Viewports and Rays}{8}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}A Ray Tracer Implementation}{9}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Camera Movement}{17}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Rasterization}{22}{section.4}%
