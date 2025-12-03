@@ -698,6 +698,9 @@ INPUT ./svg-inkscape/projection_svg-tex.pdf
 INPUT ./svg-inkscape/projection_svg-tex.pdf
 INPUT ./svg-inkscape/projection_svg-tex.pdf
 INPUT ./svg-inkscape/projection_svg-tex.pdf
+INPUT ./_minted/129EB4485EB77D259E876788110668ED.highlight.minted
+INPUT ./_minted/129EB4485EB77D259E876788110668ED.highlight.minted
+INPUT _minted/129EB4485EB77D259E876788110668ED.highlight.minted
 INPUT /Users/brianpark/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/lati1000.tfm
 INPUT /Users/brianpark/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/lacc1000.tfm
 INPUT Paper.aux
