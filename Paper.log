@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.1)  3 DEC 2025 15:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.1)  3 DEC 2025 15:20
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1222,10 +1222,10 @@ Package hyperref Info: bookmark level for unknown listing defaults to 0 on input
 \pydata@fh@_D0A662A5235ECDE30739FE50CF0DE830.data.minted=\write8
 \openout8 = `_D0A662A5235ECDE30739FE50CF0DE830.data.minted'.
 
-runsystem(latexminted config  --timestamp 20251203151814 D0A662A5235ECDE30739FE50CF0DE830)...executed.
+runsystem(latexminted config  --timestamp 20251203152022 D0A662A5235ECDE30739FE50CF0DE830)...executed.
 
  (./_D0A662A5235ECDE30739FE50CF0DE830.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20251203151814 D0A662A5235ECDE30739FE50CF0DE830)...executed.
+runsystem(latexminted cleanconfig  --timestamp 20251203152022 D0A662A5235ECDE30739FE50CF0DE830)...executed.
 
  (./_minted/default.style.minted) (./_minted/BBB88CEC1029BE750D3C1947FACF7310.highlight.minted
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 1.
@@ -1238,187 +1238,4 @@ LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <10> not available
 
 [10])
 
-[11] (./_minted/0A74576F41E90F4F9AE24F19608F29A0.highlight.minted)
-Package svg Info: Last page of `./svg-inkscape/Figure-7_svg-tex.pdf' is 1 on input line 203.
- (./svg-inkscape/Figure-7_svg-tex.pdf_tex
-<./svg-inkscape/Figure-7_svg-tex.pdf, id=478, page=1, 438.134pt x 230.30058pt>
-File: ./svg-inkscape/Figure-7_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/Figure-7_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/Figure-7_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 350.50851pt x 184.24422pt.
-)
-Overfull \hbox (5.50851pt too wide) in paragraph at lines 203--204
-[][] 
- []
-
-(./_minted/56C3B5155CB7CE9B8A768CC7B2EC603A.highlight.minted) (./_minted/D7B72B8176D9CD0B326A66FF6DB22B73.highlight.minted) (./_minted/FF8B8C75829C19A6E05E39C459663FB0.highlight.minted)
-
-[12] (./_minted/12D2E01F877A8A3A527DE3F1581A0E65.highlight.minted)
-Package svg Info: Last page of `./svg-inkscape/Figure-8_svg-tex.pdf' is 1 on input line 228.
- (./svg-inkscape/Figure-8_svg-tex.pdf_tex
-<./svg-inkscape/Figure-8_svg-tex.pdf, id=487, page=1, 281.56392pt x 281.56392pt>
-File: ./svg-inkscape/Figure-8_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/Figure-8_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/Figure-8_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 281.5639pt x 281.56322pt.
-)
-
-[13{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./svg-inkscape/Figure-7_svg-tex.pdf>]
-
-[14 <./svg-inkscape/Figure-8_svg-tex.pdf>] (./_minted/BD05B50835EA31028BE9667701502A02.highlight.minted) (./_minted/620F6371635B972B12B2C6DCB417F414.highlight.minted
-
-[15]) (./_minted/7129D5B0D2D0EFFD7B0A1A9719C75899.highlight.minted) (./_minted/CB2C84CF7F73E0BC9C2460E0BDBA4027.highlight.minted)
-<First Sphere Render.png, id=589, 1076.02pt x 686.565pt>
-File: First Sphere Render.png Graphic file (type png)
-<use First Sphere Render.png>
-Package pdftex.def Info: First Sphere Render.png  used on input line 284.
-(pdftex.def)             Requested size: 355.0877pt x 226.56715pt.
-
-Overfull \hbox (10.0877pt too wide) in paragraph at lines 284--285
-[][] 
- []
-
-
-
-[16] (./_minted/0A0E65E04083F19A081762CA2C6479DE.highlight.minted) (./_minted/0C336D308EF0DC9ABC51B3C029AB1F70.highlight.minted
-
-[17 <./First Sphere Render.png>]
-
-[18]) (./_minted/185917754DEC27E3A314BC56DC5375CB.highlight.minted) (./_minted/3CF7209DAE88807730950E85A93FCA0D.highlight.minted) (./_minted/EC2517E6CC938E751EE09197605C3730.highlight.minted) (./_minted/8B91DCE917976F3C3F91FD4F6D1CB1B9.highlight.minted
-
-[19]) (./_minted/41ACF3A079F31B9A3E2E9D29731B319F.highlight.minted) (./_minted/F3E0AD891DE32AA326754CF6973266E0.highlight.minted) (./_minted/E42C306714D7E0EFA7600D2F4A1FDE07.highlight.minted) (./_minted/3775556CE90A9D5B546787AAFB2FFF7F.highlight.minted) (./_minted/E42C306714D7E0EFA7600D2F4A1FDE07.highlight.minted)
-
-LaTeX Warning: Marginpar on page 20 moved.
-
-(./_minted/41ACF3A079F31B9A3E2E9D29731B319F.highlight.minted) (./_minted/C01009A45FCC86D46A5C24C69327D212.highlight.minted
-Overfull \hbox (17.16156pt too wide) in paragraph at lines 5--5
-[]\T2A/cmtt/m/n/10 camera.screenWidth()[]/[][]2[])};|  
- []
-
-
-Overfull \hbox (22.41028pt too wide) in paragraph at lines 7--7
-[]\T2A/cmtt/m/n/10 camera.screenHeight()[]/[][]2[])};|  
- []
-
-) (./_minted/7213D07E629A10E562EA0697D62F7C9D.highlight.minted) (./_minted/1A4E3E4DEB734D8C34DCCE056DA841EB.highlight.minted
-
-[20])
-<Moving Camera Sphere Render.png, id=626, 1076.02pt x 686.565pt>
-File: Moving Camera Sphere Render.png Graphic file (type png)
-<use Moving Camera Sphere Render.png>
-Package pdftex.def Info: Moving Camera Sphere Render.png  used on input line 379.
-(pdftex.def)             Requested size: 355.0877pt x 226.56715pt.
-
-Overfull \hbox (10.0877pt too wide) in paragraph at lines 379--380
-[][] 
- []
-
-
-
-[21 <./Moving Camera Sphere Render.png>]
-<Dolphin_triangle_mesh.png, id=633, 636.3775pt x 392.46625pt>
-File: Dolphin_triangle_mesh.png Graphic file (type png)
-<use Dolphin_triangle_mesh.png>
-Package pdftex.def Info: Dolphin_triangle_mesh.png  used on input line 391.
-(pdftex.def)             Requested size: 318.18797pt x 196.23264pt.
-Package svg Info: Last page of `./svg-inkscape/Polygon Triangulation_svg-tex.pdf' is 1 on input line 397.
- (./svg-inkscape/Polygon Triangulation_svg-tex.pdf_tex
-<./svg-inkscape/Polygon Triangulation_svg-tex.pdf, id=637, page=1, 66.57945pt x 122.48912pt>
-File: ./svg-inkscape/Polygon Triangulation_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/Polygon Triangulation_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/Polygon Triangulation_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 99.86916pt x 183.73508pt.
-)
-
-[22 <./Dolphin_triangle_mesh.png (PNG copy)> <./svg-inkscape/Polygon Triangulation_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/PP_svg-tex.pdf' is 1 on input line 406.
- (./svg-inkscape/PP_svg-tex.pdf_tex
-<./svg-inkscape/PP_svg-tex.pdf, id=651, page=1, 281.56392pt x 281.56392pt>
-File: ./svg-inkscape/PP_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/PP_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/PP_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 281.5639pt x 281.56322pt.
-)
-
-[23 <./svg-inkscape/PP_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/projection_svg-tex.pdf' is 3 on input line 433.
- (./svg-inkscape/projection_svg-tex.pdf_tex
-<./svg-inkscape/projection_svg-tex.pdf, id=698, page=1, 418.517pt x 365.2164pt>
-File: ./svg-inkscape/projection_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/projection_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/projection_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 313.88776pt x 273.91719pt.
-<./svg-inkscape/projection_svg-tex.pdf, id=699, page=2, 418.517pt x 365.2164pt>
-File: ./svg-inkscape/projection_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/projection_svg-tex.pdf, page 2>
-Package pdftex.def Info: ./svg-inkscape/projection_svg-tex.pdf , page2 used on input line 60.
-(pdftex.def)             Requested size: 313.88776pt x 273.91719pt.
-<./svg-inkscape/projection_svg-tex.pdf, id=700, page=3, 418.517pt x 365.2164pt>
-File: ./svg-inkscape/projection_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/projection_svg-tex.pdf, page 3>
-Package pdftex.def Info: ./svg-inkscape/projection_svg-tex.pdf , page3 used on input line 63.
-(pdftex.def)             Requested size: 313.88776pt x 273.91719pt.
-) (./_minted/DDF33B3FE04ACC9B2E0E6E2B6FB444F1.highlight.minted
-
-[24 <./svg-inkscape/projection_svg-tex.pdf> <./svg-inkscape/projection_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/projection_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/projection_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/projection_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->])
-<Disconnected Lines.jpg, id=715, 602.25pt x 602.25pt>
-File: Disconnected Lines.jpg Graphic file (type jpg)
-<use Disconnected Lines.jpg>
-Package pdftex.def Info: Disconnected Lines.jpg  used on input line 455.
-(pdftex.def)             Requested size: 301.12425pt x 301.12425pt.
-
-
-[25 <./Disconnected Lines.jpg>]
-Overfull \hbox (3.09361pt too wide) in paragraph at lines 460--460
-[][]\T2A/cmr/m/n/10 Eldridge, Stephen. \T2A/cmr/m/it/10 Carte-sian co-or-di-nates\T2A/cmr/m/n/10 . 2023. \T2A/cmr/m/sc/10 url\T2A/cmr/m/n/10 : [][]$\T2A/cmtt/m/n/10 https : / / www . britannica .
- []
-
-
-Overfull \hbox (12.59235pt too wide) in paragraph at lines 460--460
-[][]\T2A/cmr/m/n/10 imagecomputing.net. \T2A/cmr/m/it/10 Project ver-tices of tri-an-gles\T2A/cmr/m/n/10 . \T2A/cmr/m/sc/10 url\T2A/cmr/m/n/10 : [][]$\T2A/cmtt/m/n/10 https : / / imagecomputing .
- []
-
-
-
-[26] (./Paper.aux)
- ***********
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
- ***********
-Package rerunfilecheck Info: File `Paper.out' has not changed.
-(rerunfilecheck)             Checksum: 845A4336D3CC45C7F0ACFED315A03E52;1273.
-Package logreq Info: Writing requests to 'Paper.run.xml'.
-\openout1 = `Paper.run.xml'.
-
- ) 
-Here is how much of TeX's memory you used:
- 37228 strings out of 473190
- 756396 string characters out of 5715800
- 1839476 words of memory out of 5000000
- 59695 multiletter control sequences out of 15000+600000
- 580261 words of font info for 83 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 117i,16n,121p,1353b,2166s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist, replaced by a fixed one
-
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on Paper.pdf (26 pages, 1090431 bytes).
-PDF statistics:
- 887 PDF objects out of 1000 (max. 8388607)
- 637 compressed objects within 7 object streams
- 103 named destinations out of 1000 (max. 500000)
- 230 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+[
