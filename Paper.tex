@@ -456,7 +456,7 @@ However, a problem occurs when the slope of the line is greater than $1$. Since 
 \end{figure}
 This happens because screen spaces are integer approximations of real numbers, and since the slope is greater than 1, for every 1 pixel difference in $x$, the $y$ coordinate increases by more than 1, leaving gaps. As such, for lines with a slope greater than 1, instead of drawing 1 pixel for every $x$ coordinate, we need to draw 1 pixel for every $y$ coordinate, filling in the gaps. To accomplish this, instead of iterating over every $x$ value between the two points, we instead iterate over every $y$ value between the two points and derive the $x$ coordinate from the $y$ values instead. This ensures that the drawn line remains connected.
 
-This process can be generalized by designating an independent variable $i$, the variable we choose values for, and a dependent variable $d$, the variable whose values depend on $i$. A linear interpolation function that returns an array of the dependent coordinates of a line connecting two points, $(i1, d1)$, $(i2, d2)$, in 2D space can be implemented as such:
+This process can be generalized by designating an independent variable $i$, the variable we choose values for, and a dependent variable $d$, the variable whose values depend on $i$. In our \mintinline{cpp}|for| loop, we iterate over every integer $i$ value and derive its appropriate $d$ value. This is known as a linear interpolation function, a function that returns a line connecting two points. A linear interpolation function that returns an array of the dependent coordinates of a line connecting two points, $(i1, d1)$, $(i2, d2)$, in 2D space can be implemented as such:
 \begin{code}
 \begin{minted}[breaklines]{cpp}
     std::vector<double> interpolate(int i1, int d1, int i2, int d2) {
@@ -484,7 +484,7 @@ This process can be generalized by designating an independent variable $i$, the 
 \end{code}
 For a point $(i, d)$ on the line, \mintinline{cpp}|retarray|[$i$] = $d$.
 
-When the slope is greater than 1, $y$ becomes the independent variable:
+This generalization of the interpolating process is useful as it will serve as the foundation of our rasterizer.
 
 \begin{code}
 \begin{minted}[breaklines]{cpp}
@@ -508,6 +508,8 @@ void drawLine(int x1, int y1, int x2, int y2, raylib::Color color = BLACK) {
 }   
 \end{minted}
 \end{code}
+
+When the slope is less than 1, the linear interpolation function is called with $x$ as the independent variable ($i$) and $y$ as the dependent variable ($d$). When the slope is greater than or equal to 1, the function is instead called with $y$ as the independent variable and $x$ as the dependent variable.
 
 \newpage
 \printbibliography{}
