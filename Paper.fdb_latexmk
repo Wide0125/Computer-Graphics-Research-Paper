@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber Paper"] 1764743631.56656 "Paper.bcf" "Paper.bbl" "Paper" 1764760186.09926 0
-  "Paper.bcf" 1764760185.88126 108977 d7665fa3fe23669f557e3a77d9984df7 "pdflatex"
+["biber Paper"] 1764743631.56656 "Paper.bcf" "Paper.bbl" "Paper" 1764760638.94709 0
+  "Paper.bcf" 1764760638.71183 108977 d7665fa3fe23669f557e3a77d9984df7 "pdflatex"
   "references.bib" 1764742096.78399 1919 dd24e47bce5dc6c75a9772d8413b6732 ""
   (generated)
   "Paper.bbl"
   "Paper.blg"
   (rewritten before read)
-["pdflatex"] 1764760182.07755 "/Users/brianpark/Documents/Math Research Paper/Paper.tex" "Paper.pdf" "Paper" 1764760186.09963 0
-  "/Users/brianpark/Documents/Math Research Paper/Paper.tex" 1764760181.81799 32011 182e40e0ffdc8799bd9dd625167023cf ""
+["pdflatex"] 1764760634.80133 "/Users/brianpark/Documents/Math Research Paper/Paper.tex" "Paper.pdf" "Paper" 1764760638.94747 0
+  "/Users/brianpark/Documents/Math Research Paper/Paper.tex" 1764760634.52845 32710 fadbed1728ca586702c8297958486994 ""
   "/Users/brianpark/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/labx0500.tfm" 1764129934.93239 3320 a430f046d61f34970b99e53711dc6a65 ""
   "/Users/brianpark/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/labx0900.tfm" 1764129895.35728 3308 0e40fe47c68a93146385123973edfb65 ""
   "/Users/brianpark/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/labx1000.tfm" 1764129907.13505 3300 6abb8e321227ead2a8e929e5abc72bd3 ""
@@ -271,12 +271,12 @@
   "First Sphere Render.png" 1761113827.76186 344446 3ae4999bbd387f7b81da086e50cae416 ""
   "Moving Camera Sphere Render.png" 1762925175.29036 344794 899e8174fc92863e4a0bf83ee57af5a8 ""
   "PP.svg" 1764674844.2265 27176 81bde7c696f4cfc78d911d76c02622bc ""
-  "Paper.aux" 1764760185.87511 9458 ce24d4cca3b7a15cc0023fc00e3f7deb "pdflatex"
+  "Paper.aux" 1764760638.70522 9458 0f5cf9da343c0bd2dc1a87cba5c203b0 "pdflatex"
   "Paper.bbl" 1764743634.01541 12602 5850d9b533c32780d4d9151b66671bdd "biber Paper"
-  "Paper.out" 1764760185.87777 1273 845a4336d3cc45c7f0acfed315a03e52 "pdflatex"
-  "Paper.run.xml" 1764760185.88215 2351 99ce50ed3d46f4104ad8edaa9349d32f "pdflatex"
-  "Paper.tex" 1764760181.81799 32011 182e40e0ffdc8799bd9dd625167023cf ""
-  "Paper.toc" 1764760185.88223 743 9e0b70952b525bec36643bfddc8f6f2a "pdflatex"
+  "Paper.out" 1764760638.70803 1273 845a4336d3cc45c7f0acfed315a03e52 "pdflatex"
+  "Paper.run.xml" 1764760638.71287 2351 99ce50ed3d46f4104ad8edaa9349d32f "pdflatex"
+  "Paper.tex" 1764760634.52845 32710 fadbed1728ca586702c8297958486994 ""
+  "Paper.toc" 1764760638.71297 743 9e0b70952b525bec36643bfddc8f6f2a "pdflatex"
   "Polygon Triangulation.svg" 1764116547.10442 12037 4e08dccd95cdf7655f9b12e422253052 ""
   "Right-hand rule.png" 1760316513.49636 197057 521c53eeeef72e2c893702133a3df14e ""
   "_minted/0A0E65E04083F19A081762CA2C6479DE.highlight.minted" 1762924526.85448 81 dbf2b8fb1383baa5afb891b44ed714eb ""
@@ -288,6 +288,7 @@
   "_minted/3775556CE90A9D5B546787AAFB2FFF7F.highlight.minted" 1762924045.45587 82 79a115bf7719080eb599e9442ad307eb ""
   "_minted/3CF7209DAE88807730950E85A93FCA0D.highlight.minted" 1762922627.24471 82 80c9e3a805cb0a0539f3d5f0bce2360e ""
   "_minted/41ACF3A079F31B9A3E2E9D29731B319F.highlight.minted" 1762923415.1711 87 d18379d46b37d608ed4d7d1eb9db19e1 ""
+  "_minted/4A6089948D1CC59AF5B5BCD516D42E8A.highlight.minted" 1764760449.24032 78 5ef1ac62ec2a0696b2120d26deba0029 ""
   "_minted/56C3B5155CB7CE9B8A768CC7B2EC603A.highlight.minted" 1760483559.07465 1012 b7aab7486cdcca4461d0713c1798e493 ""
   "_minted/620F6371635B972B12B2C6DCB417F414.highlight.minted" 1761714303.52988 2424 53205ea9b506b9b3acf71323dcef2241 ""
   "_minted/6FD519C87E40FB29211E1B5FBCA42E60.highlight.minted" 1764743113.69652 3031 9adf7fecd7ff7acd9f8ae8a8a1947d56 ""
@@ -307,7 +308,7 @@
   "_minted/EC2517E6CC938E751EE09197605C3730.highlight.minted" 1762924746.03597 1402 0aa85bb55b1d0711652af36ffbcf173e ""
   "_minted/F3E0AD891DE32AA326754CF6973266E0.highlight.minted" 1762923608.06054 93 a7b4e2e8d8d93ae9aed45be576769e0c ""
   "_minted/FF8B8C75829C19A6E05E39C459663FB0.highlight.minted" 1760399514.02405 94 709697faa89c95510abac30b961f1770 ""
-  "_minted/_D0A662A5235ECDE30739FE50CF0DE830.index.minted" 1764743655.69422 1802 90f6d0ba7ae1f78c32531c2aebee9da7 ""
+  "_minted/_D0A662A5235ECDE30739FE50CF0DE830.index.minted" 1764760449.76427 1859 6533a8fef7f7fa73cde002162bd2d3c4 ""
   "_minted/default.style.minted" 1760399514.02441 6426 e1fb43a91491f41b33310478eee48cdb ""
   "camera.hpp" 1761714314.40175 822 530a7f82a969322327a155c20f69a30c ""
   "degree.hpp" 1762922414.98385 1749 ca7f294f9c3d044187254eabafbb5f0b ""

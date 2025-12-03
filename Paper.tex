@@ -269,7 +269,7 @@ A function that takes in a light ray and sphere object and outputs whether they 
     \inputminted[breaklines]{cpp}{rayIntersectWithSphere.cpp}
 \end{code}
 
-Using a nested for loop, the operations pipeline of obtaining a light ray for the pixel and determining if the ray intersects with the sphere can be applied for every pixel on the screen.
+Using a nested \mintinline{cpp}|for| loop, the operations pipeline of obtaining a light ray for the pixel and determining if the ray intersects with the sphere can be applied for every pixel on the screen.
 
 \begin{code}
     \inputminted[breaklines]{cpp}{displaySphere.cpp}
@@ -438,7 +438,7 @@ To draw a triangle, we must first figure out how to connect two screen space coo
 \[
     y - A_{y} = \frac{B_{y} - A_{y}}{B_{x} - A_{x}} (x - A_{x})
 \]
-Computer screens approximate images with pixels, so drawing a mathematically accurate line is not possible. However, an approximation is possible by rounding to the nearest integer. 
+Computer screens approximate images with pixels, so drawing a mathematically accurate line is not possible. However, an approximation is possible by rounding to the nearest integer. For every $x$ coordinate of a pixel on the screen, the pixel's $y$ coordinate can be derived by plugging the value of $x$ into our formula for the line. After that, the y value is rounded to the nearest integer to color in the pixel closest to the given $x$ and $y$ coordinates. To draw a line between two pixel coordinates, a \mintinline{cpp}|for| loop that iterates over every integer $x$ value is used. Every iteration, the $y$ coordinate for that pixel is derived, and the pixel is colored in. An optimization can be made here by instead adding the slope of the line to the $y$ coordinate every iteration instead of recalculating, as multiplication is simply repeated addition.
 
 \begin{minted}[breaklines]{cpp}
     double slope {(y2 - y1) / static_cast<double>((x2 - x1))};
