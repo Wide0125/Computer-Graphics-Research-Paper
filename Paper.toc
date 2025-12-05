@@ -8,3 +8,4 @@
 \contentsline {subsection}{\numberline {3.3}Camera Movement}{17}{subsection.3.3}%
 \contentsline {section}{\numberline {4}Rasterization}{22}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Polygon Projection}{22}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Model Transformation}{29}{subsection.4.2}%

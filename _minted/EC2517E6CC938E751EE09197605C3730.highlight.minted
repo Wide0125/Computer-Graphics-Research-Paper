@@ -1,8 +1,0 @@
-\begin{MintedVerbatim}[commandchars=\\\{\}]
-\PYG{+w}{        }\PYG{n}{Degree}\PYG{+w}{ }\PYG{n}{m\PYGZus{}xzTheta}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{90}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
-\PYG{+w}{        }\PYG{n}{Degree}\PYG{+w}{ }\PYG{n}{m\PYGZus{}yzTheta}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{0}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
-\PYG{+w}{        }\PYG{n}{Vector}\PYG{+w}{ }\PYG{n}{m\PYGZus{}cameraToViewportCenter}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{            }\PYG{n}{m\PYGZus{}viewportDistanceFromCamera}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n+nf}{cos}\PYG{p}{(}\PYG{n}{m\PYGZus{}yzTheta}\PYG{p}{.}\PYG{n}{radians}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{cos}\PYG{p}{(}\PYG{n}{m\PYGZus{}xzTheta}\PYG{p}{.}\PYG{n}{radians}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{p}{,}
-\PYG{+w}{            }\PYG{n}{m\PYGZus{}viewportDistanceFromCamera}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{sin}\PYG{p}{(}\PYG{n}{m\PYGZus{}yzTheta}\PYG{p}{.}\PYG{n}{radians}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{p}{,}
-\PYG{+w}{            }\PYG{n}{m\PYGZus{}viewportDistanceFromCamera}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{cos}\PYG{p}{(}\PYG{n}{m\PYGZus{}yzTheta}\PYG{p}{.}\PYG{n}{radians}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{sin}\PYG{p}{(}\PYG{n}{m\PYGZus{}xzTheta}\PYG{p}{.}\PYG{n}{radians}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
-\end{MintedVerbatim}

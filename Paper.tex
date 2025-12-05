@@ -214,7 +214,7 @@ double yDistanceFromCenter {camera.viewportHeight()/camera.screenHeight() * -(pi
 Adding \mintinline{cpp}{xDistanceFromCenter} and \mintinline{cpp}{yDistanceFromCenter} to the $x$ and $y$ components of the vector going from camera to viewport center $(0, 0, 1)$ respectively results in a vector from the camera to the pixel's equivalent location on the viewport.
 
 \begin{code}
-    \inputminted[breaklines]{cpp}{getPixelLine.cpp}
+\inputminted[breaklines]{cpp}{getPixelLine.cpp}
 \end{code}
 
 With this, a ray going starting from the camera position point ($C_{p}$) and going in the direction of the camera to pixel vector ($\vec{D}$) can be derived.
@@ -262,11 +262,11 @@ Taking advantage of the fact that the distance between two points is essentially
 A function that takes in a light ray and sphere object and outputs whether they intersect can be implemented as such:
 
 \begin{code}
-    \inputminted[breaklines]{cpp}{sphere.hpp}
+\inputminted[breaklines]{cpp}{sphere.hpp}
 \end{code}
 
 \begin{code}
-    \inputminted[breaklines]{cpp}{rayIntersectWithSphere.cpp}
+\inputminted[breaklines]{cpp}{rayIntersectWithSphere.cpp}
 \end{code}
 
 Using a nested \mintinline{cpp}|for| loop, the operations pipeline of obtaining a light ray for the pixel and determining if the ray intersects with the sphere can be applied for every pixel on the screen.
@@ -298,41 +298,41 @@ By increasing or decreasing either of these angles, we can essentially `turn' th
 First, we create a \mintinline{cpp}|Degree| class object.
 
 \begin{code}\caption{degree.hpp}
-    \inputminted[breaklines]{cpp}{degree.hpp}
+\inputminted[breaklines]{cpp}{degree.hpp}
 \end{code}
 
 Then, we can add \mintinline{cpp}|xztheta| (azimuth) and \mintinline{cpp}|yztheta| (elevation) as new member variables of the camera class. Additionally, the vector denoting the direction from the camera to the viewport center is initialized as well.
 \begin{code}
-    \begin{minted}[breaklines]{cpp}
-        Degree m_xzTheta {90};
-        Degree m_yzTheta {0};
-        Vector m_cameraToViewportCenter {
-            m_viewportDistanceFromCamera * cos(m_yzTheta.radians()) * cos(m_xzTheta.radians()),
-            m_viewportDistanceFromCamera * sin(m_yzTheta.radians()), 
-            m_viewportDistanceFromCamera * cos(m_yzTheta.radians()) * sin(m_xzTheta.radians())};
-    \end{minted}
+\begin{minted}[breaklines]{cpp}
+Degree m_xzTheta {90};
+Degree m_yzTheta {0};
+Vector m_cameraToViewportCenter {
+    m_viewportDistanceFromCamera * cos(m_yzTheta.radians()) * cos(m_xzTheta.radians()),
+    m_viewportDistanceFromCamera * sin(m_yzTheta.radians()), 
+    m_viewportDistanceFromCamera * cos(m_yzTheta.radians()) * sin(m_xzTheta.radians())};
+\end{minted}
 \end{code}
 Two more member functions are added that enable changing the direction the camera is facing, updating the appropriate angle and vector variables.
 \begin{code}
-    \begin{minted}[breaklines]{cpp}
-        void addAzimuth(double amount) {
-            m_xzTheta += amount; // base of the right triangle with a hypotenuse of m_viewportDistanceFromCamera and angle yzTheta    
-            double yTriangleBase = m_viewportDistanceFromCamera * cos(m_yzTheta.radians());
-            m_cameraToViewportCenter.x = yTriangleBase * cos(m_xzTheta.radians());
-            m_cameraToViewportCenter.z = yTriangleBase * sin(m_xzTheta.radians());
-        }
-        void addElevation(double amount) {
-            m_yzTheta += amount;
+\begin{minted}[breaklines]{cpp}
+void addAzimuth(double amount) {
+    m_xzTheta += amount; // base of the right triangle with a hypotenuse of m_viewportDistanceFromCamera and angle yzTheta    
+    double yTriangleBase = m_viewportDistanceFromCamera * cos(m_yzTheta.radians());
+    m_cameraToViewportCenter.x = yTriangleBase * cos(m_xzTheta.radians());
+    m_cameraToViewportCenter.z = yTriangleBase * sin(m_xzTheta.radians());
+}
+void addElevation(double amount) {
+    m_yzTheta += amount;
 
-            if (m_yzTheta.get() > 90 and m_yzTheta.get() < 180) {m_yzTheta.set(90);}
-            if (m_yzTheta.get() > 180 and m_yzTheta.get() < 270) {m_yzTheta.set(270);} // limit the range of the elevation (it doesn't make sense to be able to look up and then backwards)
+    if (m_yzTheta.get() > 90 and m_yzTheta.get() < 180) {m_yzTheta.set(90);}
+    if (m_yzTheta.get() > 180 and m_yzTheta.get() < 270) {m_yzTheta.set(270);} // limit the range of the elevation (it doesn't make sense to be able to look up and then backwards)
 
-            m_cameraToViewportCenter.y = m_viewportDistanceFromCamera * sin(m_yzTheta.radians());
-            double yTriangleBase = m_viewportDistanceFromCamera * cos(m_yzTheta.radians()); // base of the right triangle with a hypotenuse of m_viewportDistanceFromCamera and angle yzTheta
-            m_cameraToViewportCenter.x = yTriangleBase * cos(m_xzTheta.radians());
-            m_cameraToViewportCenter.z = yTriangleBase * sin(m_xzTheta.radians());
-        }
-    \end{minted}
+    m_cameraToViewportCenter.y = m_viewportDistanceFromCamera * sin(m_yzTheta.radians());
+    double yTriangleBase = m_viewportDistanceFromCamera * cos(m_yzTheta.radians()); // base of the right triangle with a hypotenuse of m_viewportDistanceFromCamera and angle yzTheta
+    m_cameraToViewportCenter.x = yTriangleBase * cos(m_xzTheta.radians());
+    m_cameraToViewportCenter.z = yTriangleBase * sin(m_xzTheta.radians());
+}
+\end{minted}
 \end{code}
 \todo{add figure visualizing the camera-to-viewport-center vector}
 
@@ -342,35 +342,35 @@ It can be noted that the \mintinline{cpp}|xVector| is orthogonal to the camera-t
 
 \mintinline{cpp}|getPixelLine| can be updated as such:
 \begin{code}
-    \begin{minted}[breaklines]{cpp}
-        inline constexpr Line getPixelLine(int pixelX, int pixelY, const Custom::Camera& camera) {
+\begin{minted}[breaklines]{cpp}
+inline constexpr Line getPixelLine(int pixelX, int pixelY, const Custom::Camera& camera) {
 
-            double xDistanceFromCenter {camera.viewportWidth()/camera.screenWidth() *
-                                        -(pixelX - camera.screenWidth()/2)};
-            double yDistanceFromCenter {camera.viewportHeight()/camera.screenHeight() *
-                                        -(pixelY - camera.screenHeight()/2)};
-            
-            Vector cameraToViewportCenter {camera.cameraToViewportCenter()};
-            Vector xVector {crossProduct(cameraToViewportCenter, {0, -1, 0})};
-            Vector yVector {crossProduct(cameraToViewportCenter, xVector)};
-            
-            double xMultiple {xDistanceFromCenter/sqrt(dotProduct(xVector, xVector))};
-            double yMultiple {yDistanceFromCenter/sqrt(dotProduct(yVector, yVector))};
+    double xDistanceFromCenter {camera.viewportWidth()/camera.screenWidth() *
+                                -(pixelX - camera.screenWidth()/2)};
+    double yDistanceFromCenter {camera.viewportHeight()/camera.screenHeight() *
+                                -(pixelY - camera.screenHeight()/2)};
+    
+    Vector cameraToViewportCenter {camera.cameraToViewportCenter()};
+    Vector xVector {crossProduct(cameraToViewportCenter, {0, -1, 0})};
+    Vector yVector {crossProduct(cameraToViewportCenter, xVector)};
+    
+    double xMultiple {xDistanceFromCenter/sqrt(dotProduct(xVector, xVector))};
+    double yMultiple {yDistanceFromCenter/sqrt(dotProduct(yVector, yVector))};
 
-            return {camera.pos(), camera.cameraToViewportCenter() + xMultiple * xVector + yMultiple * yVector};
-        } // get vector from origin to pixel's equivalent location on viewport
-    \end{minted}
+    return {camera.pos(), camera.cameraToViewportCenter() + xMultiple * xVector + yMultiple * yVector};
+} // get vector from origin to pixel's equivalent location on viewport
+\end{minted}
 \end{code}
 
 Lastly, code is added to the \mintinline{cpp}|main| function that maps mouse movement to camera movement.
 
 \begin{code}
-    \begin{minted}[breaklines]{cpp}
-        Vector2 mouseMovement {GetMouseDelta()};
-        camera.addAzimuth(mouseMovement.x/50); 
-        camera.addElevation(-mouseMovement.y/50); 
-        //down is +yDelta, up is -yDelta so mouse movement is inverted
-    \end{minted}
+\begin{minted}[breaklines]{cpp}
+Vector2 mouseMovement {GetMouseDelta()};
+camera.addAzimuth(mouseMovement.x/50); 
+camera.addElevation(-mouseMovement.y/50); 
+//down is +yDelta, up is -yDelta so mouse movement is inverted
+\end{minted}
 \end{code}
 
 As no more functions require further updating, our upgraded raytracer implementation is now complete. Source code for this version can be found at \url{https://github.com/Wide0125/Raytracer-Version-2}.
@@ -441,13 +441,13 @@ To draw a triangle, we must first figure out how to connect two screen space coo
 Computer screens approximate images with pixels, so drawing a mathematically accurate line is not possible. However, an approximation is possible by rounding to the nearest integer. For every $x$ coordinate of a pixel on the screen, the pixel's $y$ coordinate can be derived by plugging the value of $x$ into our formula for the line. After that, the y value is rounded to the nearest integer to color in the pixel closest to the given $x$ and $y$ coordinates. Therfore, to draw a line between two pixel coordinates, a \mintinline{cpp}|for| loop that iterates over every integer $x$ value between the two points is used. Every iteration, the $y$ coordinate for that pixel is derived, and the pixel is colored in. An optimization can be made here by adding the slope of the line to the $y$ coordinate every iteration instead of recalculating, as multiplication is simply repeated addition.
 
 \begin{minted}[breaklines]{cpp}
-    double slope {(y2 - y1) / static_cast<double>((x2 - x1))};
-    double y {static_cast<double>(x1)};
+double slope {(y2 - y1) / static_cast<double>((x2 - x1))};
+double y {static_cast<double>(x1)};
 
-    for (int x {x1}; x <= x2; ++x) {
-        DrawPixel(x, y);
-        y += slope;
-    }
+for (int x {x1}; x <= x2; ++x) {
+    DrawPixel(x, y);
+    y += slope;
+}
 \end{minted}
 
 However, a problem occurs when the slope of the line is greater than $1$. Since we are drawing one pixel for every $x$ coordinate, the algorithm results in disconnected lines (Figure~\ref{figure:disconnectedlines}).
@@ -459,30 +459,30 @@ This happens because screen spaces are integer approximations of real numbers, a
 This process can be generalized by designating an independent variable $i$, the variable we choose values for, and a dependent variable $d$, the variable whose values depend on $i$. In our \mintinline{cpp}|for| loop, we iterate over every integer $i$ value and derive its appropriate $d$ value. This is known as a linear interpolation function, a function that returns a line connecting two points. A linear interpolation function that returns an array of the dependent coordinates of a line connecting two points, $(i1, d1)$, $(i2, d2)$, in 2D space can be implemented as such:
 \begin{code}
 \begin{minted}[breaklines]{cpp}
-    std::vector<double> interpolate(int i1, int d1, int i2, int d2) {
-        if (i1 == i2) {
-            return {static_cast<double>(d1)};
-        }
-
-        if (i2 < i1) {
-            std::swap(i1, i2);
-            std::swap(d1, d2);
-        }
-
-        std::vector<double> retArray (i2 - i1 + 1);
-        double slope {(d2 - d1) / static_cast<double>((i2 - i1))};
-        double d {static_cast<double>(d1)};
-
-        for (int i {i1}; i <= i2; ++i) {
-            retArray[i - i1] = d;
-            d += slope;
-        }
-        
-        return retArray;
+std::vector<double> interpolate(int i1, int d1, int i2, int d2) {
+    if (i1 == i2) {
+        return {static_cast<double>(d1)};
     }
+
+    if (i2 < i1) {
+        std::swap(i1, i2);
+        std::swap(d1, d2);
+    }
+
+    std::vector<double> retArray (i2 - i1 + 1);
+    double slope {(d2 - d1) / static_cast<double>((i2 - i1))};
+    double d {static_cast<double>(d1)};
+
+    for (int i {i1}; i <= i2; ++i) {
+        retArray[i - i1] = d;
+        d += slope;
+    }
+    
+    return retArray;
+}
 \end{minted}
 \end{code}
-For a point $(i, d)$ on the line, \mintinline{cpp}|retarray|[$i$] = $d$.
+For a point $(i, d)$ on the line, \mintinline{cpp}|retarray|[$i$] = $d$. For cases where the two points are the same, we simply return an array of a single point $d1$.
 
 This generalization of the interpolating process is useful as it will serve as the foundation of our rasterizer.
 
@@ -519,7 +519,52 @@ We can go about accomplishing this in many ways, but one of the most straightfor
     \includegraphics[scale=0.4]{Triangle Fill.png}\autocite{TriangleFill}
 \end{figure}
 
-By sorting the 3 vertices of the triangle in terms of their $y$ coordinates in descending order, we can designate two `edges' that will serve as the left and right borders for our horizontal strips. One edge is the geometric edge between the highest point and the lowest point. The other edge is the combination of two geometric edges 
+By sorting the 3 vertices of the triangle in terms of their $y$ coordinates in descending order, we can designate two `edges' that will serve as the left and right borders for our horizontal strips. One edge is the geometric edge between the highest point and the lowest point. The other edge is the combination of two geometric edges, the edge connecting the highest point with the middle point and the edge connecting the middle point with the lowest point. Which edge becomes the left edge and which edge becomes the right edge depends on the configuration of the points (Figure~\ref{Figure:trianglevertices}).
+
+\begin{figure}[htp]
+    \includesvg[scale=0.95]{triangleEdges.svg}\caption{}\label{Figure:trianglevertices}
+\end{figure}
+
+Our linear interpolation function comes in handy here, as it can be used to return arrays of every point along the necessary edges. For both edges, we must use the linear interpolation function with $y$ as the independent variable, as we need to be able to color in every single $y$ `level' in the triangle. Once we obtain our left and right edges, we can iterate through both arrays simultaneously, and every operation, we color in the every pixel in between the left and right edges at the current $y$ level.
+
+\begin{code}
+\begin{minted}[breaklines]{cpp}
+void draw() const {
+    std::vector<double> x123 {interpolate(m_p1.y, m_p1.x, m_p2.y, m_p2.x)};
+    x123.pop_back();
+    std::vector<double> x23 {interpolate(m_p2.y, m_p2.x, m_p3.y, m_p3.x)};
+    x123.insert(x123.end(), x23.begin(), x23.end());
+    std::vector<double> x31 {interpolate(m_p3.y, m_p3.x, m_p1.y, m_p1.x)};
+    
+    assert(x123.size() == x31.size());
+
+    std::vector<double> x_left {};
+    std::vector<double> x_right {};
+    if (x31[x31.size() / 2] < x123[x123.size() / 2]) {
+        x_left = x31;
+        x_right = x123;
+    }
+    else {
+        x_left = x123;
+        x_right = x31;
+    }
+    
+    for (int y {m_p1.y}; y <= m_p3.y; ++y) {
+        for (int x {static_cast<int>(std::ceil(x_left[y - m_p1.y]))}; x <= x_right[y - m_p1.y]; ++x) {
+            DrawPixel(x, y, m_color);
+        }
+    }
+}
+\end{minted}
+\end{code}
+
+\begin{figure}[htp]
+    \includegraphics[scale=0.33]{Filled Triangle.png}\caption{Our filled triangle result}
+\end{figure}
+
+\subsection{Model Transformation}
+
+Let's say we would like to illustrate a scene, an ocean full of dolphins. In this case need to be able to render multiple dolphins in the scene. This calls for the need to separately designate \textbf{models} and \textbf{model instances}. A model is an object containing all the information about its vertices and which ones connect to form triangles, and a model instance is an object that contains a model object, with additional member variables denoting its rotation, scale, and position.
 
 \newpage
 \printbibliography{}

@@ -1,6 +1,0 @@
-\begin{MintedVerbatim}[commandchars=\\\{\}]
-\PYG{+w}{        }\PYG{n}{Vector2}\PYG{+w}{ }\PYG{n}{mouseMovement}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{GetMouseDelta}\PYG{p}{(}\PYG{p}{)}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
-\PYG{+w}{        }\PYG{n}{camera}\PYG{p}{.}\PYG{n}{addAzimuth}\PYG{p}{(}\PYG{n}{mouseMovement}\PYG{p}{.}\PYG{n}{x}\PYG{o}{/}\PYG{l+m+mi}{50}\PYG{p}{)}\PYG{p}{;}
-\PYG{+w}{        }\PYG{n}{camera}\PYG{p}{.}\PYG{n}{addElevation}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{n}{mouseMovement}\PYG{p}{.}\PYG{n}{y}\PYG{o}{/}\PYG{l+m+mi}{50}\PYG{p}{)}\PYG{p}{;}
-\PYG{+w}{        }\PYG{c+c1}{//down is +yDelta, up is \PYGZhy{}yDelta so mouse movement is inverted}
-\end{MintedVerbatim}
