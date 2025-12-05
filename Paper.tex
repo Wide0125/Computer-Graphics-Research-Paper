@@ -421,10 +421,10 @@ $P'_{x}$ is able to be derived in a similar fashion, except this time from the v
 We can convert the world space coordinates of $P'$ into screen space coordinate with the formula below (where $V_{w}$ and $V_{h}$ refer to viewport width and height respectively, while $S_{w}$ and $S_{h}$ refer to screen width and height respectively):
 
 \[
-    P'_{cx} = \frac{P'_{x}}{V_{w}} \cdot S_{w}
+    P'_{cx} = -\frac{P'_{x}}{V_{w}} \cdot S_{w} + \frac{S_{w}}{2}
 \]
 \[
-    P'_{cy} = \frac{P'_{y}}{V_{h}} \cdot S_{h}
+    P'_{cy} = -\frac{P'_{y}}{V_{h}} \cdot S_{h} + \frac{S_h}{2}
 \]
 
 Now that we have a method to obtain the $P'$ coordinate of every point on the triangle $P$, all that is left is to fill in the rest of the triangle onto the screen. It can be noted that straight lines in 3D space remain straight even when projected onto a 2D surface; therefore, connecting the three points drawn onto the screen results in the correctly projected triangle.
@@ -564,7 +564,115 @@ void draw() const {
 
 \subsection{Model Transformation}
 
-Let's say we would like to illustrate a scene, an ocean full of dolphins. In this case need to be able to render multiple dolphins in the scene. This calls for the need to separately designate \textbf{models} and \textbf{model instances}. A model is an object containing all the information about its vertices and which ones connect to form triangles, and a model instance is an object that contains a model object, with additional member variables denoting its rotation, scale, and position.
+Let's say we would like to illustrate a scene, an ocean full of dolphins. In this case, we need to be able to render multiple dolphins in the scene. This calls for the need to separately designate \textbf{models} and \textbf{model instances}. A model is an object containing all the information about its vertices and which ones connect to form triangles, and a model instance is an object that contains a model object, with additional member variables denoting its rotation, scale, and position.
+
+We first define a primitive version of our model and model instance class objects:
+\begin{code}
+    \begin{minted}{cpp}
+namespace Custom {
+    struct Model {
+        std::vector<Point3> vertices {};
+        std::vector<std::array<int, 3>> triangles {{}};
+        std::vector<raylib::Color> colors {triangles.size()};
+        Point3 center {ORIGIN};
+    };
+
+    class ModelInstance {
+        public:
+            ModelInstance(Model model, Point3 position, double scale = 1) 
+                : m_model {model}, m_position {position}, m_scale {scale}
+            {}
+
+            void draw(Custom::Camera& camera) const;
+
+            void addRoll(double amount);
+            void addPitch(double amount);
+            void addYaw(double amount);
+
+        private:
+            Model m_model {};
+            Point3 m_position {0, 0, 0};
+            double m_scale {1};
+            Degree m_roll {0};
+            Degree m_pitch {0};
+            Degree m_yaw {0};
+    };
+}
+    \end{minted}
+\end{code}
+
+A primitive \mintinline{cpp}|draw()| function can be implemented as such:
+
+\begin{code}
+    \begin{minted}[breaklines]{cpp}
+void Custom::ModelInstance::draw(Custom::Camera& camera) const {
+
+    std::vector<ScreenPoint2> pointsOnScreen {};
+    pointsOnScreen.reserve(m_model.vertices.size());
+    for (auto a: m_model.vertices) {
+        Vector deltas {m_position - m_model.center};
+        double px {a.x/a.z};
+        double py {a.y/a.z};
+
+        int cx {static_cast<int>(std::round(px/camera.viewportWidth() * camera.screenWidth()))};
+        int cy {static_cast<int>(std::round(py/camera.viewportHeight() * camera.screenHeight()))};
+        pointsOnScreen.push_back({-cx + camera.screenWidth()/2, -cy + camera.screenHeight()/2});
+    }
+    int count {0};
+    for (auto a: m_model.triangles) {
+        Triangle{{pointsOnScreen[a[0]]}, {pointsOnScreen[a[1]]}, {pointsOnScreen[a[2]]}, m_model.colors[count]}.draw();
+        ++count;
+    }
+}
+    \end{minted}
+\end{code}
+
+Now, we must implement a \mintinline{cpp}|transform()| function that can apply the 3 transformations of the model instance: rotation, then scaling, then transformation in that order. This can be achieved using a \textbf{matrix}. Matrices are a rectangular array of numbers that are useful for a variety of mathematical applications. In our case, we can use matrices to perform coordinate transformations.
+
+Rigorously defining matrices and their operations is outside the scope of this paper, but the concepts and operations useful to our rasterizer will be defined below.
+
+Matrix addition can be performed between matrices of the exact same shape. For example, a $3 \times 2$ matrix can only be added to another $3 \times 2$ matrix.
+
+\[
+\begin{bmatrix}
+    i_a & l_a \\
+    j_a & m_a \\
+    k_a & n_a
+\end{bmatrix}
++
+\begin{bmatrix}
+    i_b & l_b \\
+    j_b & m_b \\
+    k_b & n_b
+\end{bmatrix}
+=
+\begin{bmatrix}
+    i_a + i_b & l_a + l_b \\
+    j_a + j_b & m_a + m_b \\
+    k_a + k_b & n_a + n_b
+\end{bmatrix}
+\]
+
+Matrix multiplication can be performed between two matrices; additionally, the number of columns in the first matrix must equal the number of rows in the second matrix.
+
+\[
+\begin{bmatrix}
+    a & d \\
+    b & e \\
+    c & f
+\end{bmatrix}
+\times
+\begin{bmatrix}
+    g & i & k \\
+    h & j & l
+\end{bmatrix}
+=
+\begin{bmatrix}
+    ag + dh & ia + dj & ak + dl \\
+    bg + eh & ib + ej & bk + el \\
+    cg + fh & ic + fj & ck + fl
+\end{bmatrix}
+\]
 
 \newpage
 \printbibliography{}

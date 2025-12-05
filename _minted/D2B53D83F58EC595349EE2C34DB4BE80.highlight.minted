@@ -1,0 +1,31 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{namespace}\PYG{+w}{ }\PYG{n+nn}{Custom}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{struct}\PYG{+w}{ }\PYG{n+nc}{Model}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{Point3}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{vertices}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{array}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{o}{\PYGZgt{}}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{triangles}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{p}{\PYGZob{}}\PYG{p}{\PYGZcb{}}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{raylib}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Color}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{colors}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{triangles}\PYG{p}{.}\PYG{n}{size}\PYG{p}{(}\PYG{p}{)}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{Point3}\PYG{+w}{ }\PYG{n}{center}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{ORIGIN}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{k}{class}\PYG{+w}{ }\PYG{n+nc}{ModelInstance}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k}{public}\PYG{o}{:}
+\PYG{+w}{            }\PYG{n}{ModelInstance}\PYG{p}{(}\PYG{n}{Model}\PYG{+w}{ }\PYG{n}{model}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Point3}\PYG{+w}{ }\PYG{n}{position}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{scale}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{)}
+\PYG{+w}{                }\PYG{o}{:}\PYG{+w}{ }\PYG{n}{m\PYGZus{}model}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{model}\PYG{p}{\PYGZcb{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{m\PYGZus{}position}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{position}\PYG{p}{\PYGZcb{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{m\PYGZus{}scale}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{scale}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{            }\PYG{p}{\PYGZob{}}\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{            }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{draw}\PYG{p}{(}\PYG{n}{Custom}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Camera}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{camera}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{const}\PYG{p}{;}
+
+\PYG{+w}{            }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{addRoll}\PYG{p}{(}\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{amount}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{            }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{addPitch}\PYG{p}{(}\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{amount}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{            }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{addYaw}\PYG{p}{(}\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{amount}\PYG{p}{)}\PYG{p}{;}
+
+\PYG{+w}{        }\PYG{k}{private}\PYG{o}{:}
+\PYG{+w}{            }\PYG{n}{Model}\PYG{+w}{ }\PYG{n}{m\PYGZus{}model}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{Point3}\PYG{+w}{ }\PYG{n}{m\PYGZus{}position}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{            }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{m\PYGZus{}scale}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{1}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{Degree}\PYG{+w}{ }\PYG{n}{m\PYGZus{}roll}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{0}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{Degree}\PYG{+w}{ }\PYG{n}{m\PYGZus{}pitch}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{0}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{Degree}\PYG{+w}{ }\PYG{n}{m\PYGZus{}yaw}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{0}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{MintedVerbatim}

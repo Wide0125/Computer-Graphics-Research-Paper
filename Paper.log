@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.1)  5 DEC 2025 09:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.1)  5 DEC 2025 17:12
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1222,10 +1222,10 @@ Package hyperref Info: bookmark level for unknown listing defaults to 0 on input
 \pydata@fh@_D0A662A5235ECDE30739FE50CF0DE830.data.minted=\write8
 \openout8 = `_D0A662A5235ECDE30739FE50CF0DE830.data.minted'.
 
-runsystem(latexminted config  --timestamp 20251205090730 D0A662A5235ECDE30739FE50CF0DE830)...executed.
+runsystem(latexminted config  --timestamp 20251205171218 D0A662A5235ECDE30739FE50CF0DE830)...executed.
 
  (./_D0A662A5235ECDE30739FE50CF0DE830.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20251205090730 D0A662A5235ECDE30739FE50CF0DE830)...executed.
+runsystem(latexminted cleanconfig  --timestamp 20251205171218 D0A662A5235ECDE30739FE50CF0DE830)...executed.
 
  (./_minted/default.style.minted) (./_minted/BBB88CEC1029BE750D3C1947FACF7310.highlight.minted
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 1.
@@ -1390,21 +1390,35 @@ Overfull \hbox (10.0877pt too wide) in paragraph at lines 562--562
 [][] 
  []
 
+(./_minted/D2B53D83F58EC595349EE2C34DB4BE80.highlight.minted
+
+[29 <./Filled Triangle.png>]) (./_minted/8F37FEA60AFBF11ED148A15AB2401495.highlight.minted) (./_minted/9FB26D7583DFCFE9F8E665AD0E5BB506.highlight.minted
+Overfull \hbox (1.4154pt too wide) in paragraph at lines 11--11
+[]\T2A/cmtt/m/n/10 {[]static_cast[][]<[][]int[][]>[](std[]:[][]:[]round(px[]/[]camera.viewportWidth()[] 
+ []
 
 
-[29 <./Filled Triangle.png>]
-Overfull \hbox (3.09361pt too wide) in paragraph at lines 570--570
+Overfull \hbox (6.66412pt too wide) in paragraph at lines 12--12
+[]\T2A/cmtt/m/n/10 {[]static_cast[][]<[][]int[][]>[](std[]:[][]:[]round(py[]/[]camera.viewportHeight()[] 
+ []
+
+) (./_minted/9210B3F6A6F2705C6042055DF1795C78.highlight.minted)
+
+[30]
+
+[31]
+Overfull \hbox (3.09361pt too wide) in paragraph at lines 678--678
 [][]\T2A/cmr/m/n/10 Eldridge, Stephen. \T2A/cmr/m/it/10 Carte-sian co-or-di-nates\T2A/cmr/m/n/10 . 2023. \T2A/cmr/m/sc/10 url\T2A/cmr/m/n/10 : [][]$\T2A/cmtt/m/n/10 https : / / www . britannica .
  []
 
 
-Overfull \hbox (12.59235pt too wide) in paragraph at lines 570--570
+Overfull \hbox (12.59235pt too wide) in paragraph at lines 678--678
 [][]\T2A/cmr/m/n/10 imagecomputing.net. \T2A/cmr/m/it/10 Project ver-tices of tri-an-gles\T2A/cmr/m/n/10 . \T2A/cmr/m/sc/10 url\T2A/cmr/m/n/10 : [][]$\T2A/cmtt/m/n/10 https : / / imagecomputing .
  []
 
 
 
-[30] (./Paper.aux)
+[32] (./Paper.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1416,10 +1430,10 @@ Package logreq Info: Writing requests to 'Paper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37344 strings out of 473190
- 760800 string characters out of 5715800
+ 37384 strings out of 473190
+ 762552 string characters out of 5715800
  1838575 words of memory out of 5000000
- 59773 multiletter control sequences out of 15000+600000
+ 59797 multiletter control sequences out of 15000+600000
  580261 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,16n,121p,1353b,2166s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1435,11 +1449,11 @@ pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist,
 
 pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist, replaced by a fixed one
 
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on Paper.pdf (30 pages, 1333344 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on Paper.pdf (32 pages, 1346915 bytes).
 PDF statistics:
- 948 PDF objects out of 1000 (max. 8388607)
- 681 compressed objects within 7 object streams
- 116 named destinations out of 1000 (max. 500000)
+ 964 PDF objects out of 1000 (max. 8388607)
+ 693 compressed objects within 7 object streams
+ 120 named destinations out of 1000 (max. 500000)
  258 words of extra memory for PDF output out of 10000 (max. 10000000)
 

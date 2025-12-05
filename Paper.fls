@@ -754,6 +754,18 @@ INPUT ./Filled Triangle.png
 INPUT ./Filled Triangle.png
 INPUT ./Filled Triangle.png
 INPUT ./Filled Triangle.png
+INPUT ./_minted/D2B53D83F58EC595349EE2C34DB4BE80.highlight.minted
+INPUT ./_minted/D2B53D83F58EC595349EE2C34DB4BE80.highlight.minted
+INPUT _minted/D2B53D83F58EC595349EE2C34DB4BE80.highlight.minted
+INPUT ./_minted/8F37FEA60AFBF11ED148A15AB2401495.highlight.minted
+INPUT ./_minted/8F37FEA60AFBF11ED148A15AB2401495.highlight.minted
+INPUT _minted/8F37FEA60AFBF11ED148A15AB2401495.highlight.minted
+INPUT ./_minted/9FB26D7583DFCFE9F8E665AD0E5BB506.highlight.minted
+INPUT ./_minted/9FB26D7583DFCFE9F8E665AD0E5BB506.highlight.minted
+INPUT _minted/9FB26D7583DFCFE9F8E665AD0E5BB506.highlight.minted
+INPUT ./_minted/9210B3F6A6F2705C6042055DF1795C78.highlight.minted
+INPUT ./_minted/9210B3F6A6F2705C6042055DF1795C78.highlight.minted
+INPUT _minted/9210B3F6A6F2705C6042055DF1795C78.highlight.minted
 INPUT /Users/brianpark/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/lati1000.tfm
 INPUT /Users/brianpark/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/lacc1000.tfm
 INPUT Paper.aux
@@ -761,6 +773,7 @@ INPUT ./Paper.out
 INPUT ./Paper.out
 INPUT Paper.run.xml
 OUTPUT Paper.run.xml
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb

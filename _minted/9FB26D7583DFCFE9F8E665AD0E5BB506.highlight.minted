@@ -1,0 +1,21 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{Custom::ModelInstance::draw}\PYG{p}{(}\PYG{n}{Custom}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Camera}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{camera}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+
+\PYG{+w}{    }\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{n}{ScreenPoint2}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{pointsOnScreen}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{pointsOnScreen}\PYG{p}{.}\PYG{n}{reserve}\PYG{p}{(}\PYG{n}{m\PYGZus{}model}\PYG{p}{.}\PYG{n}{vertices}\PYG{p}{.}\PYG{n}{size}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{k}{auto}\PYG{+w}{ }\PYG{n}{a}\PYG{o}{:}\PYG{+w}{ }\PYG{n}{m\PYGZus{}model}\PYG{p}{.}\PYG{n}{vertices}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{Vector}\PYG{+w}{ }\PYG{n}{deltas}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{m\PYGZus{}position}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{m\PYGZus{}model}\PYG{p}{.}\PYG{n}{center}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{px}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{a}\PYG{p}{.}\PYG{n}{x}\PYG{o}{/}\PYG{n}{a}\PYG{p}{.}\PYG{n}{z}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{py}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{a}\PYG{p}{.}\PYG{n}{y}\PYG{o}{/}\PYG{n}{a}\PYG{p}{.}\PYG{n}{z}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+
+\PYG{+w}{        }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{cx}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{k}{static\PYGZus{}cast}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{p}{(}\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{round}\PYG{p}{(}\PYG{n}{px}\PYG{o}{/}\PYG{n}{camera}\PYG{p}{.}\PYG{n}{viewportWidth}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{camera}\PYG{p}{.}\PYG{n}{screenWidth}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{p}{)}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{cy}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{k}{static\PYGZus{}cast}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{p}{(}\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{round}\PYG{p}{(}\PYG{n}{py}\PYG{o}{/}\PYG{n}{camera}\PYG{p}{.}\PYG{n}{viewportHeight}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{camera}\PYG{p}{.}\PYG{n}{screenHeight}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{p}{)}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{pointsOnScreen}\PYG{p}{.}\PYG{n}{push\PYGZus{}back}\PYG{p}{(}\PYG{p}{\PYGZob{}}\PYG{o}{\PYGZhy{}}\PYG{n}{cx}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{camera}\PYG{p}{.}\PYG{n}{screenWidth}\PYG{p}{(}\PYG{p}{)}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{n}{cy}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{camera}\PYG{p}{.}\PYG{n}{screenHeight}\PYG{p}{(}\PYG{p}{)}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{p}{\PYGZcb{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{count}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{0}\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{k}{auto}\PYG{+w}{ }\PYG{n}{a}\PYG{o}{:}\PYG{+w}{ }\PYG{n}{m\PYGZus{}model}\PYG{p}{.}\PYG{n}{triangles}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{Triangle}\PYG{p}{\PYGZob{}}\PYG{p}{\PYGZob{}}\PYG{n}{pointsOnScreen}\PYG{p}{[}\PYG{n}{a}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{]}\PYG{p}{\PYGZcb{}}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{pointsOnScreen}\PYG{p}{[}\PYG{n}{a}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{]}\PYG{p}{\PYGZcb{}}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{pointsOnScreen}\PYG{p}{[}\PYG{n}{a}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{]}\PYG{p}{]}\PYG{p}{\PYGZcb{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{m\PYGZus{}model}\PYG{p}{.}\PYG{n}{colors}\PYG{p}{[}\PYG{n}{count}\PYG{p}{]}\PYG{p}{\PYGZcb{}}\PYG{p}{.}\PYG{n}{draw}\PYG{p}{(}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{        }\PYG{o}{+}\PYG{o}{+}\PYG{n}{count}\PYG{p}{;}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{MintedVerbatim}
