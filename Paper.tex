@@ -13,6 +13,42 @@
 \newenvironment{code}{\captionsetup{type=listing}}{}
 \SetupFloatingEnvironment{listing}{name=Source Code}
 
+% \usepackage{environ,etoolbox}
+
+% \newsavebox{\figtabsavebox}
+% \newcommand{\savelabel}[1]{\xdef\savedlabel{#1}}
+% \RenewEnviron{figure}{%
+%   \patchcmd{\BODY}
+%     {\label}
+%     {\savelabel}
+%     {% \label found
+%      \renewcommand{\caption}[2][]{}% Make \caption[.]{..} a no-op (assume it doesn't contain \label)
+%      \refstepcounter{figure}% Step figure counter
+%      \savebox{\figtabsavebox}{\BODY}% "Execute" \BODY; also stores \label
+%      \label{\savedlabel}% \label figure
+%     }
+%     {% No \label found
+%      \stepcounter{figure}% Step figure counter
+%     }%
+%   \ignorespaces
+% }
+% \RenewEnviron{table}{%
+%   \patchcmd{\BODY}
+%     {\label}
+%     {\savelabel}
+%     {% \label found
+%      \renewcommand{\caption}[2][]{}% Make \caption[.]{..} a no-op (assume it doesn't contain \label)
+%      \refstepcounter{table}% Step figure counter
+%      \savebox{\figtabsavebox}{\BODY}% "Execute" \BODY; also stores \label
+%      \label{\savedlabel}% \label figure
+%     }
+%     {% No \label found
+%      \stepcounter{table}% Step figure counter
+%     }%
+%   \ignorespaces
+% }
+
+
 \usepackage{hyperref}
 \hypersetup{
     colorlinks,
@@ -27,6 +63,9 @@
 
 \newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
 
+\newcommand*{\ihat}{\hat{\imath}}
+\newcommand*{\jhat}{\hat{\jmath}}
+\newcommand*{\khat}{\hat{\kmath}}
 
 \author{Saehim Park}
 \title{Fundamentals of 3D Perspective Projection In Computer Graphics}
@@ -85,7 +124,20 @@ Axis configurations corresponding to the left hand also exist, however the right
     \caption{A vector from point $(0, 0, 0)$ to $(1, 1, 1)$}\label{figure:v000to111}
 \end{figure}
    
-$n$-dimension vectors can be notated as a set of $n$ components $ \vec{C} = \langle C_{1}, C_{2}, \\C_{3}, \ldots, C_{n} \rangle$. Much like the slope of a line in $2$ dimensions, vectors can be thought of as the ratio between each of the components’ deltas (differences in magnitude). For example, take the $3$D vector $\langle 1, 2, 3 \rangle$: when $x$ is increased by $1$, $y$ is increased by $2$, and $z$ is increased by $3$ (Figure~\ref{figure:vectorcomponents}).\autocite{BritannicaVector2004}
+$n$-dimension vectors can be notated as a set of $n$ components:
+\[
+\vec{V} = 
+\begin{bmatrix}
+    V_{1} \\
+    V_{2} \\
+    V_{3} \\
+    \vdots \\
+    V_{n}
+\end{bmatrix} \quad
+\text{or} \quad
+\vec{V} = \langle V_{1}, V_{2}, V_{3}, \ldots, V_{n} \rangle
+\]
+Much like the slope of a line in $2$ dimensions, vectors can be thought of as the ratio between each of the components’ deltas (differences in magnitude). For example, take the $3$D vector $\langle 1, 2, 3 \rangle$: when $x$ is increased by $1$, $y$ is increased by $2$, and $z$ is increased by $3$ (Figure~\ref{figure:vectorcomponents}).\autocite{BritannicaVector2004}
 
 \begin{figure}[htp]
     \includesvg[scale=0.95]{Figure-4.svg}
@@ -100,15 +152,17 @@ Arithmetic operations can also be performed on vectors. Vector addition is done 
 \end{figure}
 
 \begin{equation}\label{equation:dotproduct}
-    \vec{A} \cdot \vec{B} = A_{x} \cdot B_{x} + A_{y} \cdot B_{y} + A_{z} \cdot B_{z}
+    \vec{A} \cdot \vec{B} = A_{x}B_{x} + A_{y}B_{y} + A_{z}B_{z}
 \end{equation}
 
 \begin{equation}\label{equation:crossproduct}
     \begin{split}
-        \vec{A} \times \vec{B} = \langle 
-        A_{y} \cdot B_{z} - A_{z} \cdot B_{y}, \\
-        A_{z} \cdot B_{x} - A_{x} \cdot B_{z}, \\
-        A_{x} \cdot B_{y} - A_{y} \cdot B_{x} \rangle
+        \vec{A} \times \vec{B} =
+        \begin{bmatrix}
+            A_{y}B_{z} - A_{z}B_{y} \\
+            A_{z}B_{x} - A_{x}B_{z} \\
+            A_{x}B_{y} - A_{y}B_{x}
+        \end{bmatrix}
     \end{split}
 \end{equation}
 
@@ -129,7 +183,6 @@ t\vec{V} = \langle tV_{x}, tV_{y}, tV_{z} \rangle
 
 Vectors are useful in that they allow us to easily define movement or position differences in any direction.
 
-\newpage
 A \textbf{line} is a collection of points arranged in a straight path, extending infinitely in opposing directions.\autocite{BritannicaLine2009} In $2$D, a line is most commonly defined as an equation conveying the relationship between the two coordinate variables $x$ and $y$ (\ref{equation:2dline}). Although this can be expanded to $3$ dimensions (\ref{equation:2dline}), a more convenient and commonly used definition utilizes vectors (\ref{equation:3dpara}). In this definition, every point $P$ along the line is defined by adding a multiple $t$ ($t \in \mathbb{R}$) of $\vec{D}$ to a point of origin $O$. Intuitively, it can be thought of as starting from an origin point $O$ and traveling $t$ amount in the direction of the vector component $\vec{D}$.
 
 Line definitions allow us to calculate intersections involving objects traveling in a straight path.
@@ -627,52 +680,65 @@ void Custom::ModelInstance::draw(Custom::Camera& camera) const {
     \end{minted}
 \end{code}
 
-Now, we must implement a \mintinline{cpp}|transform()| function that can apply the 3 transformations of the model instance: rotation, then scaling, then transformation in that order. This can be achieved using a \textbf{matrix}. Matrices are a rectangular array of numbers that are useful for a variety of mathematical applications. In our case, we can use matrices to perform coordinate transformations.
+Now, we must implement a \mintinline{cpp}|transform()| function that can apply the 3 transformations of the model instance: rotation, then scaling, then transformation in that order. In order to achieve this, a closer examination of vector and space properties is required. For the sake of simplicity and ease of understanding, the following vector concepts will be explained in terms of 2 dimensions. These concepts can then be easily expanded to apply for 3 dimensions.
 
-Rigorously defining matrices and their operations is outside the scope of this paper, but the concepts and operations useful to our rasterizer will be defined below.
+A vector is composed of scalar multiples of the unit vectors.
+\begin{figure}[htp]
+    \includesvg{vectorUnits.svg}\caption{The vector $\begin{bmatrix}
+        2 \\
+        1
+    \end{bmatrix}$ and its components}
+\end{figure}
+Using the 2 unit vectors $\ihat$ and $\jhat$, every possible vector can be expressed. Extending the concept, we can say that space itself is defined with a combination of scalar multiples of the unit vectors serving as the basis; in other words, every possible point in space can be defined as a vector made up of scalar multiples of the unit vectors. Going back to our use case, we can take advantage of the fact that transforming the unit vectors composing a vector also applies that same transformation to the vector itself.
 
-Matrix addition can be performed between matrices of the exact same shape. For example, a $3 \times 2$ matrix can only be added to another $3 \times 2$ matrix.
+\todo{finish vectorTransformation figure}
 
-\[
-\begin{bmatrix}
-    i_a & l_a \\
-    j_a & m_a \\
-    k_a & n_a
-\end{bmatrix}
-+
-\begin{bmatrix}
-    i_b & l_b \\
-    j_b & m_b \\
-    k_b & n_b
-\end{bmatrix}
-=
-\begin{bmatrix}
-    i_a + i_b & l_a + l_b \\
-    j_a + j_b & m_a + m_b \\
-    k_a + k_b & n_a + n_b
-\end{bmatrix}
-\]
+% This can be achieved using a \textbf{matrix}. Matrices are a rectangular array of numbers that are useful for a variety of mathematical applications. In our case, we can use matrices to perform coordinate transformations.
 
-Matrix multiplication can be performed between two matrices; additionally, the number of columns in the first matrix must equal the number of rows in the second matrix.
+% Rigorously defining matrices and their operations is outside the scope of this paper, but the concepts and operations useful to our rasterizer will be defined below.
 
-\[
-\begin{bmatrix}
-    a & d \\
-    b & e \\
-    c & f
-\end{bmatrix}
-\times
-\begin{bmatrix}
-    g & i & k \\
-    h & j & l
-\end{bmatrix}
-=
-\begin{bmatrix}
-    ag + dh & ia + dj & ak + dl \\
-    bg + eh & ib + ej & bk + el \\
-    cg + fh & ic + fj & ck + fl
-\end{bmatrix}
-\]
+% Matrix addition can be performed between matrices of the exact same shape. For example, a $3 \times 2$ matrix can only be added to another $3 \times 2$ matrix.
+
+% \[
+% \begin{bmatrix}
+%     i_a & l_a \\
+%     j_a & m_a \\
+%     k_a & n_a
+% \end{bmatrix}
+% +
+% \begin{bmatrix}
+%     i_b & l_b \\
+%     j_b & m_b \\
+%     k_b & n_b
+% \end{bmatrix}
+% =
+% \begin{bmatrix}
+%     i_a + i_b & l_a + l_b \\
+%     j_a + j_b & m_a + m_b \\
+%     k_a + k_b & n_a + n_b
+% \end{bmatrix}
+% \]
+
+% Matrix multiplication can be performed between two matrices; additionally, the number of columns in the first matrix must equal the number of rows in the second matrix.
+
+% \[
+% \begin{bmatrix}
+%     a & d \\
+%     b & e \\
+%     c & f
+% \end{bmatrix}
+% \times
+% \begin{bmatrix}
+%     g & i & k \\
+%     h & j & l
+% \end{bmatrix}
+% =
+% \begin{bmatrix}
+%     ag + dh & ia + dj & ak + dl \\
+%     bg + eh & ib + ej & bk + el \\
+%     cg + fh & ic + fj & ck + fl
+% \end{bmatrix}
+% \]
 
 \newpage
 \printbibliography{}

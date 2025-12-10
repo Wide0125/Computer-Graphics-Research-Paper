@@ -180,11 +180,37 @@
       \strng{authornamehash}{1cf0f11213db40d088c94d74a6cb71b3}
       \strng{authorfullhash}{1cf0f11213db40d088c94d74a6cb71b3}
       \strng{authorfullhashraw}{1cf0f11213db40d088c94d74a6cb71b3}
+      \field{extraname}{1}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-1-7185-0077-8}
+      \field{title}{Computer Graphics From Scratch}
+      \field{year}{2021}
+    \endentry
+    \entry{TriangleFill}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1cf0f11213db40d088c94d74a6cb71b3}{%
+           family={Gambetta},
+           familyi={G\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1cf0f11213db40d088c94d74a6cb71b3}
+      \strng{fullhash}{1cf0f11213db40d088c94d74a6cb71b3}
+      \strng{fullhashraw}{1cf0f11213db40d088c94d74a6cb71b3}
+      \strng{bibnamehash}{1cf0f11213db40d088c94d74a6cb71b3}
+      \strng{authorbibnamehash}{1cf0f11213db40d088c94d74a6cb71b3}
+      \strng{authornamehash}{1cf0f11213db40d088c94d74a6cb71b3}
+      \strng{authorfullhash}{1cf0f11213db40d088c94d74a6cb71b3}
+      \strng{authorfullhashraw}{1cf0f11213db40d088c94d74a6cb71b3}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{title}{Computer Graphics From Scratch}
       \field{year}{2021}
     \endentry

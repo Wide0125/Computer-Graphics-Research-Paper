@@ -1,0 +1,114 @@
+\begin{figure}[htp]
+    \includesvg{Figure-1.svg}
+    \caption{The point (1, 1, 1) in a 3D cartesian coordinate system}\label{figure:point111}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htp]
+    \includegraphics[scale=0.2]{Right-hand rule.png}
+    \caption{Right-hand rule}\label{figure:righthandrule}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htp]
+    \includesvg[scale=0.95]{Figure-3}
+    \caption{A vector from point $(0, 0, 0)$ to $(1, 1, 1)$}\label{figure:v000to111}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htp]
+    \includesvg[scale=0.95]{Figure-4.svg}
+    \caption{The vector $\langle 1, 2, 3 \rangle$ broken down into its $x$, $y$, and $z$ components}\label{figure:vectorcomponents}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htp]
+    \includesvg{Figure-9}
+    \caption{The cross product of two vectors $\langle 0, 1, 1 \rangle$ and $\langle 1, 1, 1 \rangle$}\label{v011&111crossproduct}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htp]
+    \includesvg{Figure-5}
+    \caption{A viewport of a 16:9 screen with its center located at $(0, 0, 1)$}\label{figure:viewport}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htp]
+    \includesvg{Figure-6}
+    \caption{A vector from camera to pixel $(0, 0)$'s equivalent location on viewport}\label{figure:raytopixelonviewport}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htp]
+    \includesvg[scale=0.8]{Figure-7}
+    \caption{Coordinate ranges for pixels on a $1920\cdot1080$ screen}\label{figure:figure7}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[t]
+    \includesvg{Figure-8.svg}
+    \caption{}\label{figure:lightray}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htp]
+    \includegraphics[scale=0.33]{First Sphere Render.png}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htp]
+    \includegraphics[scale=0.33]{Moving Camera Sphere Render.png}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htp]
+    \includegraphics[scale = 0.5]{Dolphin_triangle_mesh.png}\autocite{DolphinMesh}
+    \caption{A 3D model approximated into triangles}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htp]
+    \centering
+    \includesvg[scale = 1.5]{Polygon Triangulation.svg}\autocite{PolygonTriangulation}
+    \caption{A demonstration of polygon triangulation}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+    \includesvg{PP.svg}\caption{A side ($yz$ plane) view of an arbitrary point $P$}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htp]
+    \includesvg[scale=0.75]{projection.svg}\autocite{TriangleProjection}
+    \caption{Projection of a 3D triangle onto a 2D viewport}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htp]
+    \includegraphics[scale=0.5]{Disconnected Lines.jpg}\caption{Disconnected lines}\label{figure:disconnectedlines}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htp]
+    \includegraphics[scale=0.4]{Triangle Fill.png}\autocite{TriangleFill}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htp]
+    \includesvg[scale=0.95]{triangleEdges.svg}\caption{}\label{Figure:trianglevertices}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htp]
+    \includegraphics[scale=0.33]{Filled Triangle.png}\caption{Our filled triangle result}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htp]
+    \includesvg{vectorUnits.svg}\caption{The vector $\begin{bmatrix}
+        2 \\
+        1
+    \end{bmatrix}$ and its components}
+\end{figure}
