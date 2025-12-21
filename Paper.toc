@@ -2,10 +2,10 @@
 \contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
 \contentsline {section}{\numberline {2}3 Dimensional Space}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Coordinates and Vectors}{4}{subsection.2.1}%
-\contentsline {section}{\numberline {3}Ray Tracing}{10}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Viewports and Rays}{10}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}A Ray Tracer Implementation}{11}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Camera Movement}{19}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Rasterization}{24}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Polygon Projection}{24}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Model Transformation}{31}{subsection.4.2}%
+\contentsline {section}{\numberline {3}Ray Tracing}{9}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Viewports and Rays}{9}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}A Ray Tracer Implementation}{10}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Camera Movement}{18}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Rasterization}{23}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Polygon Projection}{23}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Model Transformation}{30}{subsection.4.2}%
