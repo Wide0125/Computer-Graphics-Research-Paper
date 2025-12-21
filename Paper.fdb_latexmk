@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber Paper"] 1766322626.74704 "Paper.bcf" "Paper.bbl" "Paper" 1766325730.51097 0
-  "Paper.bcf" 1766325730 108830 6294124876c77fb5664043703706de26 "pdflatex"
+["biber Paper"] 1766322626.74704 "Paper.bcf" "Paper.bbl" "Paper" 1766326741.63742 0
+  "Paper.bcf" 1766326741 108830 6294124876c77fb5664043703706de26 "pdflatex"
   "references.bib" 1766322247 2320 853ccff3a73044196ba7894b17bf9a87 ""
   (generated)
   "Paper.bbl"
   "Paper.blg"
   (rewritten before read)
-["pdflatex"] 1766325724.41641 "c:/Users/brian/Documents/Math-Research-Paper/Paper.tex" "Paper.pdf" "Paper" 1766325730.51174 0
+["pdflatex"] 1766326735.31191 "c:/Users/brian/Documents/Math-Research-Paper/Paper.tex" "Paper.pdf" "Paper" 1766326741.63822 0
   "Blender Window.png" 1766320838 506169 8c6ba06bb9e2ca8f86de30dc118c2798 ""
   "Disconnected Lines.jpg" 1765469040 11984 72101a6a9cb67609cfa5939df8447e29 ""
   "Dolphin_triangle_mesh.png" 1765469040 33317 7346bcfa791764bcb7aa15e14c0616a8 ""
@@ -22,14 +22,15 @@
   "First Sphere Render.png" 1763126309 344446 fe4b8e5d28ce194c95c8457b51b980b1 ""
   "Moving Camera Sphere Render.png" 1763126309 344794 883322208cd7a074872153a46047fd7f ""
   "PP.svg" 1765469040 28309 28c216670029e22ff7d863242870c75a ""
-  "Paper.aux" 1766325730 10653 51e9e240354ed33269880761b38e6627 "pdflatex"
+  "Paper.aux" 1766326741 10929 cdf825e51ae83ad2e05f92ddd7325cbc "pdflatex"
   "Paper.bbl" 1766322628 9865 1b9d2f8bb1d9022260ae28a2b3797987 "biber Paper"
-  "Paper.lof" 1766325730 2572 4a4051e652fb436513181d2c407aa23d "pdflatex"
-  "Paper.out" 1766325730 1434 64128cfe4e6587c30d7c1e7573da4c09 "pdflatex"
-  "Paper.run.xml" 1766325730 2351 99ce50ed3d46f4104ad8edaa9349d32f "pdflatex"
-  "Paper.tex" 1766325723 56019 9cb4f4371ba51899bae5bdb80a46095c ""
-  "Paper.toc" 1766325730 831 2c8128b5b1a83d6b187b8370f9cb3dac "pdflatex"
+  "Paper.lof" 1766326741 2699 e8ef3f745dcdfb2c8c58bd7c676ac51c "pdflatex"
+  "Paper.out" 1766326741 1528 b44ee5cfafaed707f9163f11a554d1df "pdflatex"
+  "Paper.run.xml" 1766326741 2351 99ce50ed3d46f4104ad8edaa9349d32f "pdflatex"
+  "Paper.tex" 1766326732 56179 0d8c96d95a633460231af93b6203350e ""
+  "Paper.toc" 1766326741 898 4386ea23531f9de5a8c97d8a9cb1dc41 "pdflatex"
   "Polygon Triangulation.svg" 1765469040 12240 4e08dccd95cdf7655f9b12e422253052 ""
+  "Rasterizer Tree.png" 1766326623 360947 03b3bd459fe87869ce56450c10dbb8c3 ""
   "Right-hand rule.png" 1759846661 197057 10a55c384393fbf43e50710ad1984521 ""
   "Triangle Fill.png" 1765469040 104321 be628261856ecb9a108874006e2bf13d ""
   "Vector_addition.svg" 1766316075 25529 2f6a010a12289355a4eae08cb01e3c7d ""
@@ -105,7 +106,7 @@
   "c:/Users/brian/.texlive2025/texmf-var/fonts/tfm/lh/lh-t2a/lati1000.tfm" 1766316156 3528 defd551e32c4af414f9b54b8101bfa9b ""
   "c:/Users/brian/.texlive2025/texmf-var/fonts/tfm/lh/lh-t2a/latt0800.tfm" 1766316144 1272 2a21550efcb075c108e98819097de5c8 ""
   "c:/Users/brian/.texlive2025/texmf-var/fonts/tfm/lh/lh-t2a/latt1000.tfm" 1766316140 1272 55f67101730a20777decd892fb4b4e3e ""
-  "c:/Users/brian/Documents/Math-Research-Paper/Paper.tex" 1766325723 56019 9cb4f4371ba51899bae5bdb80a46095c ""
+  "c:/Users/brian/Documents/Math-Research-Paper/Paper.tex" 1766326732 56179 0d8c96d95a633460231af93b6203350e ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc" 1759833628 3141 82d5616418ed8d5de703b3951bedecb4 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1759833628 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1759833900 3524 cb3e574dea2d1052e39280babc910dc8 ""
