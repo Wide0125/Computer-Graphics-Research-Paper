@@ -78,6 +78,7 @@
 \end{abstract}
 
 \tableofcontents
+\listoffigures
 \newpage
 
 
@@ -144,7 +145,11 @@ Much like the slope of a line in $2$ dimensions, vectors can be thought of as th
     \caption{The vector $\langle 1, 2, 3 \rangle$ broken down into its $x$, $y$, and $z$ components}\label{figure:vectorcomponents}
 \end{figure}
 
-Arithmetic operations can also be performed on vectors. Vector addition is done by summing together each respective component. For example, the resulting vector of adding vectors $\langle A_{x}, A_{y}, A_{z} \rangle$ and $\langle B_{x}, B_{y}, B_{z} \rangle$ together is vector $\langle A_{x} + B_{x}, A_{y} + B_{y}, A_{z} + B_{z} \rangle$. Additionally, two types of vector multiplication exist: the \textbf{dot product} and the \textbf{cross product}. The dot product (denoted as $\vec{A} \cdot \vec{B}$) is used to find how similar two vectors are to each other, and results in a scalar\footnote{A scalar is a value that possesses only magnitude. It differs from a vector value in that vectors possess both magnitude and direction.} value representing similarity. A vector dot product with itself produces a scalar square of its magnitude. The cross product (denoted as $\vec{A} \times \vec{B}$) by contrast is used to find a vector that is the most different to the vectors it operates on. The cross product of two vectors results in a vector perpendicular to the plane created by the two vectors (Figure~\ref{v011&111crossproduct}). Formulas for the dot product (\ref{equation:dotproduct}) and the cross product (\ref{equation:crossproduct}) are listed below.
+Arithmetic operations can also be performed on vectors. Vector addition is done by summing together each respective component. For example, the resulting vector of adding vectors $\langle A_{x}, A_{y}, A_{z} \rangle$ and $\langle B_{x}, B_{y}, B_{z} \rangle$ together is vector $\langle A_{x} + B_{x}, A_{y} + B_{y}, A_{z} + B_{z} \rangle$. Visually, adding two vectors involves putting the beginning of a vector at the end of another (Figure~\ref{figure:vectorAddition}). Additionally, two types of vector multiplication exist: the \textbf{dot product} and the \textbf{cross product}. The dot product (denoted as $\vec{A} \cdot \vec{B}$) is used to find how similar two vectors are to each other, and results in a scalar\footnote{A scalar is a value that possesses only magnitude. It differs from a vector value in that vectors possess both magnitude and direction.} value representing similarity. A vector dot product with itself produces a scalar square of its magnitude. The cross product (denoted as $\vec{A} \times \vec{B}$) by contrast is used to find a vector that is the most different to the vectors it operates on. The cross product of two vectors results in a vector perpendicular to the plane created by the two vectors (Figure~\ref{v011&111crossproduct}). Formulas for the dot product (\ref{equation:dotproduct}) and the cross product (\ref{equation:crossproduct}) are listed below.
+
+\begin{figure}[htp]
+    \includesvg{Vector_addition.svg}\caption{}\label{figure:vectorAddition}
+\end{figure}
 
 \begin{figure}[htp]
     \includesvg{Figure-9}
@@ -435,6 +440,7 @@ As no more functions require further updating, our upgraded raytracer implementa
 Although ray tracing is useful in allowing us to represent 3-dimensional objects in a mathematically accurate manner, it comes at the cost of scalability and performance. It is easy enough to ray trace mathematically simple objects such as spheres (as demonstrated); however, attempting to ray trace objects other than spheres proves to be more difficult. Although not impossible, as it is possible to approximate 3D shapes using  2D polygons and trace each polygon separately, the core obstacle lies in performance: it is simply too costly to compute every single ray-object interaction for every pixel. Therefore, a different method, one optimized for drawing polygons that is more performant at the cost of quality and accuracy, is needed for applications that require high framerates.
 
 \newpage
+
 \section{Rasterization}
 \subsection{Polygon Projection}
 
@@ -453,7 +459,7 @@ Rasterization is a technique that involves approximating any 3D object into a co
 
 Approximating models into triangles is convenient, as all we have to figure out is how to properly display a triangle in 3D space onto a 2D plane, and repeat that process for every single triangle in the scene.
 
-The next step is to determine a method to render a triangle suspended in 3D space onto a 2D plane. Focusing on a single point on the triangle, and assuming a viewport center position of $(0, 0, 1)$ for simplicity, a side view of the point in relation to the viewport reveals 2 triangles, $\triangle OPA$ and $\triangle OP'A'$.
+The next step is to determine a method to render a triangle suspended in 3D space onto a 2D plane. Focusing on a single point on the triangle $P$, and assuming a viewport center position of $(0, 0, 1)$ for simplicity, a side view of the point in relation to the viewport reveals 2 triangles, $\triangle OPA$ and $\triangle OP'A'$.
 
 \begin{figure}
     \includesvg{PP.svg}\caption{A side ($yz$ plane) view of an arbitrary point $P$}
@@ -617,7 +623,7 @@ void draw() const {
 
 \subsection{Model Transformation}
 
-Let's say we would like to illustrate a scene, an ocean full of dolphins. In this case, we need to be able to render multiple dolphins in the scene. This calls for the need to separately designate \textbf{models} and \textbf{model instances}. A model is an object containing all the information about its vertices and which ones connect to form triangles, and a model instance is an object that contains a model object, with additional member variables denoting its rotation, scale, and position.
+Let's say we would like to illustrate a scene, an ocean full of dolphins. In this case, we need to be able to render multiple dolphins in the scene, all with their own distinct positions, orientations, and sizes. This calls for the need to separately designate \textbf{models} and \textbf{model instances}. A model is an object containing all the information about its vertices and which ones connect to form triangles, and a model instance is an object that contains a model object, with additional member variables denoting its rotation, scale, and position.
 
 We first define a primitive version of our model and model instance class objects:
 \begin{code}
@@ -646,9 +652,6 @@ namespace Custom {
             Model m_model {};
             Point3 m_position {0, 0, 0};
             double m_scale {1};
-            Degree m_roll {0};
-            Degree m_pitch {0};
-            Degree m_yaw {0};
     };
 }
     \end{minted}
@@ -680,20 +683,180 @@ void Custom::ModelInstance::draw(Custom::Camera& camera) const {
     \end{minted}
 \end{code}
 
-Now, we must implement a \mintinline{cpp}|transform()| function that can apply the 3 transformations of the model instance: rotation, then scaling, then transformation in that order. In order to achieve this, a closer examination of vector and space properties is required. For the sake of simplicity and ease of understanding, the following vector concepts will be explained in terms of 2 dimensions. These concepts can then be easily expanded to apply for 3 dimensions.
+Now, we must implement a \mintinline{cpp}|transform()| function that can apply the 3 transformations of the model instance: rotation, then scaling, then translation in that order. In order to achieve this, a closer examination of vector and space properties is required. For the sake of simplicity and ease of understanding, the following vector concepts will be explained in terms of 2 dimensions. These concepts can then be easily expanded to apply for 3 dimensions.
 
-A vector is composed of scalar multiples of the unit vectors.
+A vector is composed of scalar multiples of the unit vectors. A \textbf{unit vector} is a vector with length 1 that only travels along one axis. In 2 dimensions, the unit vectors are:
+\[
+\ihat = 
+\begin{bmatrix}
+    1 \\
+    0
+\end{bmatrix}
+\jhat = 
+\begin{bmatrix}
+    0 \\
+    1
+\end{bmatrix}
+\]
 \begin{figure}[htp]
-    \includesvg{vectorUnits.svg}\caption{The vector $\begin{bmatrix}
-        2 \\
-        1
-    \end{bmatrix}$ and its components}
+    \includesvg{vectorUnits.svg}\caption{The vector $2\ihat + 1\jhat$}
 \end{figure}
-Using the 2 unit vectors $\ihat$ and $\jhat$, every possible vector can be expressed. Extending the concept, we can say that space itself is defined with a combination of scalar multiples of the unit vectors serving as the basis; in other words, every possible point in space can be defined as a vector made up of scalar multiples of the unit vectors. Going back to our use case, we can take advantage of the fact that transforming the unit vectors composing a vector also applies that same transformation to the vector itself.
+Using the 2 unit vectors $\ihat$ and $\jhat$, every possible vector can be expressed. Extending the concept, we can say that space itself is defined with a combination of scalar multiples of the unit vectors serving as the basis; in other words, every possible point in space can be defined as a vector made up of scalar multiples of the unit vectors. Going back to our use case, we can take advantage of the fact that transforming the unit vectors composing a vector also applies that same transformation to the vector itself (Figure~\ref{figure:vectorTransformation}).
 
-\todo{finish vectorTransformation figure}
+\begin{figure}[htp]
+    \includesvg[scale=0.9]{vectorTransformation.svg}\caption{}\label{figure:vectorTransformation}
+\end{figure}
 
-% This can be achieved using a \textbf{matrix}. Matrices are a rectangular array of numbers that are useful for a variety of mathematical applications. In our case, we can use matrices to perform coordinate transformations.
+As such, we can store the information of the transformed unit vectors using a matrix. A \textbf{matrix} is a rectangular array of numbers, composed of rows and columns, useful for a variety of mathematical applications. In our case, we can use matrices to perform coordinate transformations.
+
+We store the information of the transformed unit vectors into a matrix like so:
+
+\[
+\ihat^\prime = 
+\begin{bmatrix}
+    \ihat^\prime_x \\
+    \ihat^\prime_y
+\end{bmatrix}
+\jhat^\prime = 
+\begin{bmatrix}
+    \jhat^\prime_x \\
+    \jhat^\prime_y
+\end{bmatrix}\rightarrow 
+M_t =
+\begin{bmatrix}
+    \ihat^\prime_x & \jhat^\prime_x\\
+    \ihat^\prime_y & \jhat^\prime_y
+\end{bmatrix}
+\]
+Where $\ihat^\prime$ and $\jhat^\prime$ are the transformed unit vectors, and $M_t$ is the transformation matrix. It can also be observed that matrices have similar notation to vectors, and this is not a coincidence: matrices can be thought of as an extension of vectors (they are simply storing multiple vectors), and vectors can be thought of as matrices with only 1 column.
+
+Now that we have our transformation matrix, we can multiply it with a vector to apply the transformation. In simple terms, a vector notated as the set of its components $\vec{V} = \left\langle x, y\right\rangle $ tells us how much of each unit vector makes up the vector. For example, the vector $\left\langle 2, 1\right\rangle $ is is the sum of $2\ihat$ and $1\jhat$.
+
+Our matrix stores the information of the transformed unit vectors, so we can obtain the transformed vector by multiplying the transformed unit vectors by the scalar components of the original vector. In other words, the transformed vector, instead of being composed of scalar multiples of the unit vectors $\ihat$ and $\jhat$, is now composed of scalar multiples of $\ihat^\prime$ and $\jhat^\prime$ (Figure~\ref{figure:vectorTransformation}).
+\[
+\vec{V} =
+\begin{bmatrix}
+    a \\
+    b
+\end{bmatrix}
+\]
+\[
+M_t = 
+\begin{bmatrix}
+    \ihat^\prime_x & \jhat^\prime_x\\
+    \ihat^\prime_y & \jhat^\prime_y
+\end{bmatrix}
+\]
+\[
+\vec{V^\prime} = M_t \times \vec{V} =
+\begin{bmatrix}
+    a\ihat^\prime_x + b\jhat^\prime_x \\
+    a\ihat^\prime_y + b\jhat^\prime_y
+\end{bmatrix}
+\]
+It is also possible to multiply a matrix by another matrix, resulting in a matrix that combines the two transformations:
+\[
+\begin{bmatrix}
+    a & c \\
+    b & d \\
+\end{bmatrix}
+\times
+\begin{bmatrix}
+    e & g \\
+    f & h
+\end{bmatrix}
+=
+\begin{bmatrix}
+    ea + cf & ag + ch \\
+    eb + df & bg + dh
+\end{bmatrix}
+\]
+The resulting matrix describes the transformation of applying the left matrix, then the right matrix. Note that transformations are not commutative ($M_a \times M_b \neq M_b \times M_a$).
+
+Now that we have a method to transform vectors around a point (in the above examples, the origin point $O$), we can begin to implement functions to transform our model. First, we define a \mintinline{cpp}|matrix| class:
+
+\begin{code}
+    \begin{minted}[breaklines]{cpp}
+namespace Custom {
+    class Matrix {
+        public:
+            Matrix(size_t rows, size_t cols, const std::vector<double>& data = {})
+                : m_rows {rows}, m_cols {cols}, m_data (rows * cols)
+            {
+                if (data.size() != 0) {m_data = data;}
+            }
+
+            double& operator()(size_t row, size_t col);
+            double operator()(size_t row, size_t col) const;
+            Matrix getColumn(size_t col) const;
+            Matrix getRow(size_t row) const;
+            void setColumn(size_t col, Matrix colMatrix);
+            operator Point3() const;
+
+            friend constexpr Matrix operator*(const Matrix&, const Matrix&);
+            friend constexpr Matrix operator*(double scalar, const Matrix&);
+            friend constexpr Matrix operator+(const Matrix&, const Matrix&);
+            friend constexpr Matrix& operator+=(Matrix&, const Matrix&);
+
+            
+        private:
+            size_t m_rows {1};
+            size_t m_cols {1};
+            std::vector<double> m_data {};
+    };
+
+    constexpr Matrix operator+(const Matrix& rMatrix, const Matrix& lMatrix) {
+        assert(rMatrix.m_rows == lMatrix.m_rows and rMatrix.m_cols == lMatrix.m_cols);
+        Matrix retMatrix {rMatrix.m_rows, rMatrix.m_cols};
+
+        for (size_t row {0}; row < rMatrix.m_rows; ++row) {
+            for (size_t col {0}; col < rMatrix.m_cols; ++col) {
+                retMatrix(row, col) = rMatrix(row, col) + lMatrix(row, col);
+            }
+        }
+
+        return retMatrix;
+    }
+
+    constexpr Matrix& operator+=(Matrix& lMatrix, const Matrix& rMatrix) {
+        lMatrix = lMatrix + rMatrix;
+        return lMatrix;
+    }
+
+
+    constexpr Matrix operator*(const Matrix& lMatrix, const Matrix& rMatrix) {
+        assert(lMatrix.m_cols == rMatrix.m_rows);
+        Matrix retMatrix {lMatrix.m_rows, rMatrix.m_cols};
+        for (size_t rcol {0}; rcol < rMatrix.m_cols; ++rcol) {
+            Matrix currColumn {lMatrix.m_rows, 1};
+            for (size_t lrow {0}; lrow < lMatrix.m_rows; ++lrow) {
+                currColumn += rMatrix(lrow, rcol) * lMatrix.getColumn(lrow);
+            }
+            retMatrix.setColumn(rcol, currColumn);
+        }
+        return retMatrix;
+    };
+
+    constexpr Matrix operator*(double scalar, const Matrix& matrix) {
+        Matrix retMatrix {matrix.m_rows, matrix.m_cols};
+        for (size_t col {0}; col < matrix.m_cols; ++col) {
+            for (size_t row {0}; row < matrix.m_rows; ++row) {
+                retMatrix(row, col) = matrix(row, col) * scalar;
+            }
+        }
+        return retMatrix;
+    }
+}
+    \end{minted}
+\end{code}
+
+We can now add a \mintinline{cpp}|m_transform| matrix variable.
+\begin{code}
+    \begin{minted}[breaklines]{cpp}
+Custom::Matrix m_transform {m_scale * (m_rollTransform * m_pitchTransform * m_yawTransform)};
+    \end{minted}
+\end{code}
+
 
 % Rigorously defining matrices and their operations is outside the scope of this paper, but the concepts and operations useful to our rasterizer will be defined below.
 

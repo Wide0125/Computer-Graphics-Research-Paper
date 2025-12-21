@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.1)  10 DEC 2025 15:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.1)  17 DEC 2025 16:15
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1140,92 +1140,108 @@ Package hyperref Info: bookmark level for unknown todo defaults to 0 on input li
 \tf@toc=\write7
 \openout7 = `Paper.toc'.
 
-
+ (./Paper.lof
 
 [1
 
-{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}])
+\tf@lof=\write8
+\openout8 = `Paper.lof'.
+
+
 
 [2]
-Package svg Info: Last page of `./svg-inkscape/Figure-1_svg-tex.pdf' is 1 on input line 107.
+
+[3]
+Package svg Info: Last page of `./svg-inkscape/Figure-1_svg-tex.pdf' is 1 on input line 108.
  (./svg-inkscape/Figure-1_svg-tex.pdf_tex
-<./svg-inkscape/Figure-1_svg-tex.pdf, id=79, page=1, 281.56392pt x 281.56392pt>
+<./svg-inkscape/Figure-1_svg-tex.pdf, id=125, page=1, 281.56392pt x 281.56392pt>
 File: ./svg-inkscape/Figure-1_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Figure-1_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Figure-1_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 281.5639pt x 281.56322pt.
 )
-<Right-hand rule.png, id=81, 1606.0pt x 1328.965pt>
+<Right-hand rule.png, id=127, 1606.0pt x 1328.965pt>
 File: Right-hand rule.png Graphic file (type png)
 <use Right-hand rule.png>
-Package pdftex.def Info: Right-hand rule.png  used on input line 113.
+Package pdftex.def Info: Right-hand rule.png  used on input line 114.
 (pdftex.def)             Requested size: 321.19432pt x 265.78828pt.
 
 
-[3 <./svg-inkscape/Figure-1_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/Figure-3_svg-tex.pdf' is 1 on input line 123.
+[4 <./svg-inkscape/Figure-1_svg-tex.pdf>]
+Package svg Info: Last page of `./svg-inkscape/Figure-3_svg-tex.pdf' is 1 on input line 124.
  (./svg-inkscape/Figure-3_svg-tex.pdf_tex
-<./svg-inkscape/Figure-3_svg-tex.pdf, id=133, page=1, 281.56392pt x 281.56392pt>
+<./svg-inkscape/Figure-3_svg-tex.pdf, id=176, page=1, 281.56392pt x 281.56392pt>
 File: ./svg-inkscape/Figure-3_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Figure-3_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Figure-3_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 267.48485pt x 267.48419pt.
 )
-Package svg Info: Last page of `./svg-inkscape/Figure-4_svg-tex.pdf' is 1 on input line 143.
+Package svg Info: Last page of `./svg-inkscape/Figure-4_svg-tex.pdf' is 1 on input line 144.
  (./svg-inkscape/Figure-4_svg-tex.pdf_tex
-<./svg-inkscape/Figure-4_svg-tex.pdf, id=138, page=1, 281.56392pt x 281.56392pt>
+<./svg-inkscape/Figure-4_svg-tex.pdf, id=181, page=1, 281.56392pt x 281.56392pt>
 File: ./svg-inkscape/Figure-4_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Figure-4_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Figure-4_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 267.48485pt x 267.48419pt.
 )
 
-[4 <./Right-hand rule.png>]
+[5 <./Right-hand rule.png>]
 
-[5 <./svg-inkscape/Figure-3_svg-tex.pdf> <./svg-inkscape/Figure-4_svg-tex.pdf
+[6 <./svg-inkscape/Figure-3_svg-tex.pdf> <./svg-inkscape/Figure-4_svg-tex.pdf
 
 pdfTeX warning: pdflatex (file ./svg-inkscape/Figure-4_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Package svg Info: Last page of `./svg-inkscape/Figure-9_svg-tex.pdf' is 1 on input line 150.
+Package svg Info: Last page of `./svg-inkscape/Vector_addition_svg-tex.pdf' is 1 on input line 151.
+ (./svg-inkscape/Vector_addition_svg-tex.pdf_tex
+<./svg-inkscape/Vector_addition_svg-tex.pdf, id=306, page=1, 331.70734pt x 174.11087pt>
+File: ./svg-inkscape/Vector_addition_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/Vector_addition_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/Vector_addition_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 331.70732pt x 174.1184pt.
+)
+Package svg Info: Last page of `./svg-inkscape/Figure-9_svg-tex.pdf' is 1 on input line 155.
  (./svg-inkscape/Figure-9_svg-tex.pdf_tex
-<./svg-inkscape/Figure-9_svg-tex.pdf, id=265, page=1, 281.56392pt x 281.56392pt>
+<./svg-inkscape/Figure-9_svg-tex.pdf, id=308, page=1, 281.56392pt x 281.56392pt>
 File: ./svg-inkscape/Figure-9_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Figure-9_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Figure-9_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 281.5639pt x 281.56322pt.
 )
 
-[6 <./svg-inkscape/Figure-9_svg-tex.pdf>]
+[7 <./svg-inkscape/Vector_addition_svg-tex.pdf>]
 
-[7]
-Package svg Info: Last page of `./svg-inkscape/Figure-5_svg-tex.pdf' is 1 on input line 216.
+[8 <./svg-inkscape/Figure-9_svg-tex.pdf>]
+
+[9]
+Package svg Info: Last page of `./svg-inkscape/Figure-5_svg-tex.pdf' is 1 on input line 221.
  (./svg-inkscape/Figure-5_svg-tex.pdf_tex
-<./svg-inkscape/Figure-5_svg-tex.pdf, id=351, page=1, 281.56392pt x 281.56392pt>
+<./svg-inkscape/Figure-5_svg-tex.pdf, id=399, page=1, 281.56392pt x 281.56392pt>
 File: ./svg-inkscape/Figure-5_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Figure-5_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Figure-5_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 281.5639pt x 281.56322pt.
 )
 
-[8 <./svg-inkscape/Figure-5_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/Figure-6_svg-tex.pdf' is 1 on input line 227.
+[10 <./svg-inkscape/Figure-5_svg-tex.pdf>]
+Package svg Info: Last page of `./svg-inkscape/Figure-6_svg-tex.pdf' is 1 on input line 232.
  (./svg-inkscape/Figure-6_svg-tex.pdf_tex
-<./svg-inkscape/Figure-6_svg-tex.pdf, id=401, page=1, 281.56392pt x 281.56392pt>
+<./svg-inkscape/Figure-6_svg-tex.pdf, id=448, page=1, 281.56392pt x 281.56392pt>
 File: ./svg-inkscape/Figure-6_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Figure-6_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Figure-6_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 281.5639pt x 281.56322pt.
 )
 
-[9 <./svg-inkscape/Figure-6_svg-tex.pdf>]
-Package hyperref Info: bookmark level for unknown listing defaults to 0 on input line 239.
-\pydata@fh@_D0A662A5235ECDE30739FE50CF0DE830.data.minted=\write8
-\openout8 = `_D0A662A5235ECDE30739FE50CF0DE830.data.minted'.
+[11 <./svg-inkscape/Figure-6_svg-tex.pdf>]
+Package hyperref Info: bookmark level for unknown listing defaults to 0 on input line 244.
+\pydata@fh@_D0A662A5235ECDE30739FE50CF0DE830.data.minted=\write9
+\openout9 = `_D0A662A5235ECDE30739FE50CF0DE830.data.minted'.
 
-runsystem(latexminted config  --timestamp 20251210150641 D0A662A5235ECDE30739FE50CF0DE830)...executed.
+runsystem(latexminted config  --timestamp 20251217161503 D0A662A5235ECDE30739FE50CF0DE830)...executed.
 
  (./_D0A662A5235ECDE30739FE50CF0DE830.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20251210150641 D0A662A5235ECDE30739FE50CF0DE830)...executed.
+runsystem(latexminted cleanconfig  --timestamp 20251217161503 D0A662A5235ECDE30739FE50CF0DE830)...executed.
 
  (./_minted/default.style.minted) (./_minted/BBB88CEC1029BE750D3C1947FACF7310.highlight.minted
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 1.
@@ -1236,163 +1252,163 @@ LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 5.
 ) (./_minted/CDF798AFE4E9983F0061192E199DB52F.highlight.minted
 
-[10])
+[12])
 
-[11] (./_minted/0A74576F41E90F4F9AE24F19608F29A0.highlight.minted)
-Package svg Info: Last page of `./svg-inkscape/Figure-7_svg-tex.pdf' is 1 on input line 256.
+[13] (./_minted/0A74576F41E90F4F9AE24F19608F29A0.highlight.minted)
+Package svg Info: Last page of `./svg-inkscape/Figure-7_svg-tex.pdf' is 1 on input line 261.
  (./svg-inkscape/Figure-7_svg-tex.pdf_tex
-<./svg-inkscape/Figure-7_svg-tex.pdf, id=484, page=1, 438.134pt x 230.30058pt>
+<./svg-inkscape/Figure-7_svg-tex.pdf, id=531, page=1, 438.134pt x 230.30058pt>
 File: ./svg-inkscape/Figure-7_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Figure-7_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Figure-7_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 350.50851pt x 184.24422pt.
 )
-Overfull \hbox (5.50851pt too wide) in paragraph at lines 256--257
+Overfull \hbox (5.50851pt too wide) in paragraph at lines 261--262
 [][] 
  []
 
 (./_minted/56C3B5155CB7CE9B8A768CC7B2EC603A.highlight.minted) (./_minted/D7B72B8176D9CD0B326A66FF6DB22B73.highlight.minted) (./_minted/FF8B8C75829C19A6E05E39C459663FB0.highlight.minted)
 
-[12] (./_minted/12D2E01F877A8A3A527DE3F1581A0E65.highlight.minted)
-Package svg Info: Last page of `./svg-inkscape/Figure-8_svg-tex.pdf' is 1 on input line 281.
+[14] (./_minted/12D2E01F877A8A3A527DE3F1581A0E65.highlight.minted)
+Package svg Info: Last page of `./svg-inkscape/Figure-8_svg-tex.pdf' is 1 on input line 286.
  (./svg-inkscape/Figure-8_svg-tex.pdf_tex
-<./svg-inkscape/Figure-8_svg-tex.pdf, id=493, page=1, 281.56392pt x 281.56392pt>
+<./svg-inkscape/Figure-8_svg-tex.pdf, id=539, page=1, 281.56392pt x 281.56392pt>
 File: ./svg-inkscape/Figure-8_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Figure-8_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Figure-8_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 281.5639pt x 281.56322pt.
 )
 
-[13{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./svg-inkscape/Figure-7_svg-tex.pdf>]
+[15{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./svg-inkscape/Figure-7_svg-tex.pdf>]
 
-[14 <./svg-inkscape/Figure-8_svg-tex.pdf>] (./_minted/BD05B50835EA31028BE9667701502A02.highlight.minted) (./_minted/620F6371635B972B12B2C6DCB417F414.highlight.minted
+[16 <./svg-inkscape/Figure-8_svg-tex.pdf>] (./_minted/BD05B50835EA31028BE9667701502A02.highlight.minted) (./_minted/620F6371635B972B12B2C6DCB417F414.highlight.minted
 
-[15]) (./_minted/4A6089948D1CC59AF5B5BCD516D42E8A.highlight.minted) (./_minted/7129D5B0D2D0EFFD7B0A1A9719C75899.highlight.minted) (./_minted/CB2C84CF7F73E0BC9C2460E0BDBA4027.highlight.minted)
-<First Sphere Render.png, id=595, 1076.02pt x 686.565pt>
+[17]) (./_minted/4A6089948D1CC59AF5B5BCD516D42E8A.highlight.minted) (./_minted/7129D5B0D2D0EFFD7B0A1A9719C75899.highlight.minted) (./_minted/CB2C84CF7F73E0BC9C2460E0BDBA4027.highlight.minted)
+<First Sphere Render.png, id=640, 1076.02pt x 686.565pt>
 File: First Sphere Render.png Graphic file (type png)
 <use First Sphere Render.png>
-Package pdftex.def Info: First Sphere Render.png  used on input line 337.
+Package pdftex.def Info: First Sphere Render.png  used on input line 342.
 (pdftex.def)             Requested size: 355.0877pt x 226.56715pt.
 
-Overfull \hbox (10.0877pt too wide) in paragraph at lines 337--338
+Overfull \hbox (10.0877pt too wide) in paragraph at lines 342--343
 [][] 
  []
 
 
 
-[16] (./_minted/0A0E65E04083F19A081762CA2C6479DE.highlight.minted) (./_minted/0C336D308EF0DC9ABC51B3C029AB1F70.highlight.minted
+[18] (./_minted/0A0E65E04083F19A081762CA2C6479DE.highlight.minted) (./_minted/0C336D308EF0DC9ABC51B3C029AB1F70.highlight.minted
 
-[17 <./First Sphere Render.png>]
+[19 <./First Sphere Render.png>]
 
-[18]) (./_minted/185917754DEC27E3A314BC56DC5375CB.highlight.minted) (./_minted/3CF7209DAE88807730950E85A93FCA0D.highlight.minted) (./_minted/63F95730C95EFDB31482F23CAD4C8669.highlight.minted) (./_minted/F4006942CEE9D551A0C5C2A2668C59A4.highlight.minted) (./_minted/41ACF3A079F31B9A3E2E9D29731B319F.highlight.minted) (./_minted/F3E0AD891DE32AA326754CF6973266E0.highlight.minted) (./_minted/E42C306714D7E0EFA7600D2F4A1FDE07.highlight.minted) (./_minted/3775556CE90A9D5B546787AAFB2FFF7F.highlight.minted) (./_minted/E42C306714D7E0EFA7600D2F4A1FDE07.highlight.minted)
+[20]) (./_minted/185917754DEC27E3A314BC56DC5375CB.highlight.minted) (./_minted/3CF7209DAE88807730950E85A93FCA0D.highlight.minted) (./_minted/63F95730C95EFDB31482F23CAD4C8669.highlight.minted) (./_minted/F4006942CEE9D551A0C5C2A2668C59A4.highlight.minted) (./_minted/41ACF3A079F31B9A3E2E9D29731B319F.highlight.minted) (./_minted/F3E0AD891DE32AA326754CF6973266E0.highlight.minted) (./_minted/E42C306714D7E0EFA7600D2F4A1FDE07.highlight.minted) (./_minted/3775556CE90A9D5B546787AAFB2FFF7F.highlight.minted) (./_minted/E42C306714D7E0EFA7600D2F4A1FDE07.highlight.minted)
 
-[19] (./_minted/41ACF3A079F31B9A3E2E9D29731B319F.highlight.minted) (./_minted/2911E699A0F4A4810D36E28196B97A53.highlight.minted) (./_minted/7213D07E629A10E562EA0697D62F7C9D.highlight.minted) (./_minted/D2C788FD0DC851256B525A22BBC81A6B.highlight.minted)
-<Moving Camera Sphere Render.png, id=624, 1076.02pt x 686.565pt>
+[21] (./_minted/41ACF3A079F31B9A3E2E9D29731B319F.highlight.minted) (./_minted/2911E699A0F4A4810D36E28196B97A53.highlight.minted) (./_minted/7213D07E629A10E562EA0697D62F7C9D.highlight.minted) (./_minted/D2C788FD0DC851256B525A22BBC81A6B.highlight.minted)
+<Moving Camera Sphere Render.png, id=668, 1076.02pt x 686.565pt>
 File: Moving Camera Sphere Render.png Graphic file (type png)
 <use Moving Camera Sphere Render.png>
-Package pdftex.def Info: Moving Camera Sphere Render.png  used on input line 432.
+Package pdftex.def Info: Moving Camera Sphere Render.png  used on input line 437.
 (pdftex.def)             Requested size: 355.0877pt x 226.56715pt.
 
-Overfull \hbox (10.0877pt too wide) in paragraph at lines 432--433
+Overfull \hbox (10.0877pt too wide) in paragraph at lines 437--438
 [][] 
  []
 
 
 
-[20]
+[22]
 
-[21 <./Moving Camera Sphere Render.png>]
-<Dolphin_triangle_mesh.png, id=639, 636.3775pt x 392.46625pt>
+[23 <./Moving Camera Sphere Render.png>]
+<Dolphin_triangle_mesh.png, id=683, 636.3775pt x 392.46625pt>
 File: Dolphin_triangle_mesh.png Graphic file (type png)
 <use Dolphin_triangle_mesh.png>
-Package pdftex.def Info: Dolphin_triangle_mesh.png  used on input line 444.
+Package pdftex.def Info: Dolphin_triangle_mesh.png  used on input line 450.
 (pdftex.def)             Requested size: 318.18797pt x 196.23264pt.
-Package svg Info: Last page of `./svg-inkscape/Polygon Triangulation_svg-tex.pdf' is 1 on input line 450.
+Package svg Info: Last page of `./svg-inkscape/Polygon Triangulation_svg-tex.pdf' is 1 on input line 456.
  (./svg-inkscape/Polygon Triangulation_svg-tex.pdf_tex
-<./svg-inkscape/Polygon Triangulation_svg-tex.pdf, id=643, page=1, 66.57945pt x 122.48912pt>
+<./svg-inkscape/Polygon Triangulation_svg-tex.pdf, id=687, page=1, 66.57945pt x 122.48912pt>
 File: ./svg-inkscape/Polygon Triangulation_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Polygon Triangulation_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Polygon Triangulation_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 99.86916pt x 183.73508pt.
 )
 
-[22 <./Dolphin_triangle_mesh.png (PNG copy)> <./svg-inkscape/Polygon Triangulation_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/PP_svg-tex.pdf' is 1 on input line 459.
+[24 <./Dolphin_triangle_mesh.png (PNG copy)> <./svg-inkscape/Polygon Triangulation_svg-tex.pdf>]
+Package svg Info: Last page of `./svg-inkscape/PP_svg-tex.pdf' is 1 on input line 465.
  (./svg-inkscape/PP_svg-tex.pdf_tex
-<./svg-inkscape/PP_svg-tex.pdf, id=657, page=1, 281.56392pt x 281.56392pt>
+<./svg-inkscape/PP_svg-tex.pdf, id=699, page=1, 281.56392pt x 281.56392pt>
 File: ./svg-inkscape/PP_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PP_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/PP_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 281.5639pt x 281.56322pt.
 )
 
-[23 <./svg-inkscape/PP_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/projection_svg-tex.pdf' is 3 on input line 486.
+[25 <./svg-inkscape/PP_svg-tex.pdf>]
+Package svg Info: Last page of `./svg-inkscape/projection_svg-tex.pdf' is 3 on input line 492.
  (./svg-inkscape/projection_svg-tex.pdf_tex
-<./svg-inkscape/projection_svg-tex.pdf, id=704, page=1, 418.517pt x 365.2164pt>
+<./svg-inkscape/projection_svg-tex.pdf, id=746, page=1, 418.517pt x 365.2164pt>
 File: ./svg-inkscape/projection_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/projection_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/projection_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 313.88776pt x 273.91719pt.
-<./svg-inkscape/projection_svg-tex.pdf, id=705, page=2, 418.517pt x 365.2164pt>
+<./svg-inkscape/projection_svg-tex.pdf, id=747, page=2, 418.517pt x 365.2164pt>
 File: ./svg-inkscape/projection_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/projection_svg-tex.pdf, page 2>
 Package pdftex.def Info: ./svg-inkscape/projection_svg-tex.pdf , page2 used on input line 60.
 (pdftex.def)             Requested size: 313.88776pt x 273.91719pt.
-<./svg-inkscape/projection_svg-tex.pdf, id=706, page=3, 418.517pt x 365.2164pt>
+<./svg-inkscape/projection_svg-tex.pdf, id=748, page=3, 418.517pt x 365.2164pt>
 File: ./svg-inkscape/projection_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/projection_svg-tex.pdf, page 3>
 Package pdftex.def Info: ./svg-inkscape/projection_svg-tex.pdf , page3 used on input line 63.
 (pdftex.def)             Requested size: 313.88776pt x 273.91719pt.
 ) (./_minted/4A6089948D1CC59AF5B5BCD516D42E8A.highlight.minted)
 
-[24 <./svg-inkscape/projection_svg-tex.pdf> <./svg-inkscape/projection_svg-tex.pdf
+[26 <./svg-inkscape/projection_svg-tex.pdf> <./svg-inkscape/projection_svg-tex.pdf
 
 pdfTeX warning: pdflatex (file ./svg-inkscape/projection_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/projection_svg-tex.pdf
 
 pdfTeX warning: pdflatex (file ./svg-inkscape/projection_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./_minted/3F91F44AC86B491AD66CE1154CBA36D9.highlight.minted)
-<Disconnected Lines.jpg, id=721, 602.25pt x 602.25pt>
+<Disconnected Lines.jpg, id=763, 602.25pt x 602.25pt>
 File: Disconnected Lines.jpg Graphic file (type jpg)
 <use Disconnected Lines.jpg>
-Package pdftex.def Info: Disconnected Lines.jpg  used on input line 508.
+Package pdftex.def Info: Disconnected Lines.jpg  used on input line 514.
 (pdftex.def)             Requested size: 301.12425pt x 301.12425pt.
 
 
-[25 <./Disconnected Lines.jpg>] (./_minted/4A6089948D1CC59AF5B5BCD516D42E8A.highlight.minted) (./_minted/5431202FBE3D629CF35110EC4384E88A.highlight.minted) (./_minted/D40DA061D06B2EB71EFAD4BF8F7208DB.highlight.minted) (./_minted/DCC865D830AAF2F3FC75936E654BE36D.highlight.minted
+[27 <./Disconnected Lines.jpg>] (./_minted/4A6089948D1CC59AF5B5BCD516D42E8A.highlight.minted) (./_minted/5431202FBE3D629CF35110EC4384E88A.highlight.minted) (./_minted/D40DA061D06B2EB71EFAD4BF8F7208DB.highlight.minted) (./_minted/DCC865D830AAF2F3FC75936E654BE36D.highlight.minted
 
-[26]) (./_minted/AEDF002C80A5BC75EE611A4EDB08542F.highlight.minted)
-<Triangle Fill.png, id=734, 759.33687pt x 434.12187pt>
+[28]) (./_minted/AEDF002C80A5BC75EE611A4EDB08542F.highlight.minted)
+<Triangle Fill.png, id=774, 759.33687pt x 434.12187pt>
 File: Triangle Fill.png Graphic file (type png)
 <use Triangle Fill.png>
-Package pdftex.def Info: Triangle Fill.png  used on input line 572.
+Package pdftex.def Info: Triangle Fill.png  used on input line 578.
 (pdftex.def)             Requested size: 303.72935pt x 173.64566pt.
-Package svg Info: Last page of `./svg-inkscape/triangleEdges_svg-tex.pdf' is 1 on input line 578.
+Package svg Info: Last page of `./svg-inkscape/triangleEdges_svg-tex.pdf' is 1 on input line 584.
  (./svg-inkscape/triangleEdges_svg-tex.pdf_tex
-<./svg-inkscape/triangleEdges_svg-tex.pdf, id=739, page=1, 281.56392pt x 281.56392pt>
+<./svg-inkscape/triangleEdges_svg-tex.pdf, id=779, page=1, 281.56392pt x 281.56392pt>
 File: ./svg-inkscape/triangleEdges_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/triangleEdges_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/triangleEdges_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 267.48485pt x 267.48419pt.
 ) (./_minted/804DACCF0F176947F40255A6C9B5D20F.highlight.minted
 
-[27 <./Triangle Fill.png>]
+[29 <./Triangle Fill.png>]
 
-[28 <./svg-inkscape/triangleEdges_svg-tex.pdf>])
-<Filled Triangle.png, id=774, 1076.02pt x 686.565pt>
+[30 <./svg-inkscape/triangleEdges_svg-tex.pdf>])
+<Filled Triangle.png, id=812, 1076.02pt x 686.565pt>
 File: Filled Triangle.png Graphic file (type png)
 <use Filled Triangle.png>
-Package pdftex.def Info: Filled Triangle.png  used on input line 615.
+Package pdftex.def Info: Filled Triangle.png  used on input line 621.
 (pdftex.def)             Requested size: 355.0877pt x 226.56715pt.
 
-Overfull \hbox (10.0877pt too wide) in paragraph at lines 615--615
+Overfull \hbox (10.0877pt too wide) in paragraph at lines 621--621
 [][] 
  []
 
-(./_minted/D2B53D83F58EC595349EE2C34DB4BE80.highlight.minted
+(./_minted/4FD3B8E9E06564B4CE94D899089A564B.highlight.minted
 
-[29 <./Filled Triangle.png>]) (./_minted/8F37FEA60AFBF11ED148A15AB2401495.highlight.minted) (./_minted/9FB26D7583DFCFE9F8E665AD0E5BB506.highlight.minted
+[31 <./Filled Triangle.png>]) (./_minted/8F37FEA60AFBF11ED148A15AB2401495.highlight.minted) (./_minted/9FB26D7583DFCFE9F8E665AD0E5BB506.highlight.minted
 Overfull \hbox (1.4154pt too wide) in paragraph at lines 11--11
 []\T2A/cmtt/m/n/10 {[]static_cast[][]<[][]int[][]>[](std[]:[][]:[]round(px[]/[]camera.viewportWidth()[] 
  []
@@ -1404,29 +1420,43 @@ Overfull \hbox (6.66412pt too wide) in paragraph at lines 12--12
 
 ) (./_minted/9210B3F6A6F2705C6042055DF1795C78.highlight.minted)
 
-[30]
-Package svg Info: Last page of `./svg-inkscape/vectorUnits_svg-tex.pdf' is 1 on input line 687.
+[32]
+Package svg Info: Last page of `./svg-inkscape/vectorUnits_svg-tex.pdf' is 1 on input line 702.
  (./svg-inkscape/vectorUnits_svg-tex.pdf_tex
-<./svg-inkscape/vectorUnits_svg-tex.pdf, id=788, page=1, 281.56392pt x 294.3639pt>
+<./svg-inkscape/vectorUnits_svg-tex.pdf, id=826, page=1, 281.56392pt x 294.3639pt>
 File: ./svg-inkscape/vectorUnits_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/vectorUnits_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/vectorUnits_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 281.5639pt x 294.36317pt.
 )
+Package svg Info: Last page of `./svg-inkscape/vectorTransformation_svg-tex.pdf' is 1 on input line 707.
+ (./svg-inkscape/vectorTransformation_svg-tex.pdf_tex
+<./svg-inkscape/vectorTransformation_svg-tex.pdf, id=829, page=1, 281.56392pt x 282.94746pt>
+File: ./svg-inkscape/vectorTransformation_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/vectorTransformation_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/vectorTransformation_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 253.40579pt x 254.65034pt.
+)
 
-[31 <./svg-inkscape/vectorUnits_svg-tex.pdf>]
-Overfull \hbox (3.09361pt too wide) in paragraph at lines 744--744
+[33 <./svg-inkscape/vectorUnits_svg-tex.pdf>]
+
+[34 <./svg-inkscape/vectorTransformation_svg-tex.pdf>] (./_minted/8753A6BCCCF1801809A60179430C25A0.highlight.minted) (./_minted/868E0203C2A3A16E0DBF70789B9885B2.highlight.minted
+
+[35]) (./_minted/C86A4C6C7F7159F7742A9206E1C7B872.highlight.minted) (./_minted/F56018B2148B44971F5EB36C392E79D6.highlight.minted)
+
+[36]
+Overfull \hbox (3.09361pt too wide) in paragraph at lines 907--907
 [][]\T2A/cmr/m/n/10 Eldridge, Stephen. \T2A/cmr/m/it/10 Carte-sian co-or-di-nates\T2A/cmr/m/n/10 . 2023. \T2A/cmr/m/sc/10 url\T2A/cmr/m/n/10 : [][]$\T2A/cmtt/m/n/10 https : / / www . britannica .
  []
 
 
-Overfull \hbox (12.59235pt too wide) in paragraph at lines 744--744
+Overfull \hbox (12.59235pt too wide) in paragraph at lines 907--907
 [][]\T2A/cmr/m/n/10 imagecomputing.net. \T2A/cmr/m/it/10 Project ver-tices of tri-an-gles\T2A/cmr/m/n/10 . \T2A/cmr/m/sc/10 url\T2A/cmr/m/n/10 : [][]$\T2A/cmtt/m/n/10 https : / / imagecomputing .
  []
 
 
 
-[32] (./Paper.aux)
+[37] (./Paper.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1438,13 +1468,13 @@ Package logreq Info: Writing requests to 'Paper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37414 strings out of 473190
- 763453 string characters out of 5715800
- 1838738 words of memory out of 5000000
- 59822 multiletter control sequences out of 15000+600000
+ 37566 strings out of 473190
+ 768686 string characters out of 5715800
+ 1839664 words of memory out of 5000000
+ 59944 multiletter control sequences out of 15000+600000
  580261 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,21n,121p,1353b,2166s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,21n,121p,1485b,2267s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exist, replaced by a fixed one
 
@@ -1458,10 +1488,10 @@ pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist, replaced by a fixed one
 
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on Paper.pdf (32 pages, 1350251 bytes).
+Output written on Paper.pdf (37 pages, 1376098 bytes).
 PDF statistics:
- 987 PDF objects out of 1000 (max. 8388607)
- 708 compressed objects within 8 object streams
- 122 named destinations out of 1000 (max. 500000)
- 268 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1088 PDF objects out of 1200 (max. 8388607)
+ 786 compressed objects within 8 object streams
+ 131 named destinations out of 1000 (max. 500000)
+ 288 words of extra memory for PDF output out of 10000 (max. 10000000)
 

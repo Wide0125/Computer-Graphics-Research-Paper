@@ -20,16 +20,11 @@ ax.text(2.9, 0.025, '$x$', size='x-large')
 
 plt.arrow(0, 0, 2, 1, head_width=0.1, color='black', length_includes_head=True)
 
-y = np.linspace(0, 1, 100)
-x = np.full_like(y, 2)
-
-plt.plot(x, y, color='blue')
+plt.arrow(2, 0, 0, 1, color='blue', head_width=0.05, length_includes_head=True)
 plt.text(2.05, 0.5, "$1\hat{\jmath}$", color='blue', size='x-large')
 
-x = np.linspace(0, 2, 100)
-y = np.full_like(x, 0)
-
-plt.plot(x, y, color='red')
+plt.arrow(0, 0, 1, 0, color='red', head_width=0.05, length_includes_head=True)
+plt.arrow(1, 0, 1, 0, color='red', head_width=0.05, length_includes_head=True)
 plt.text(1, -0.2, "$2\hat{\imath}$", color='red', size='x-large')
 
 ax.set_axis_off()
