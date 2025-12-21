@@ -1,0 +1,26 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{Custom::ModelInstance::rotateX}\PYG{p}{(}\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{amount}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{Custom}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Matrix}\PYG{+w}{ }\PYG{n}{rollTransform}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}
+\PYG{+w}{    }\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{cos}\PYG{p}{(}\PYG{n}{Degree}\PYG{p}{\PYGZob{}}\PYG{n}{amount}\PYG{p}{\PYGZcb{}}\PYG{p}{.}\PYG{n}{radians}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{sin}\PYG{p}{(}\PYG{n}{Degree}\PYG{p}{\PYGZob{}}\PYG{n}{amount}\PYG{p}{\PYGZcb{}}\PYG{p}{.}\PYG{n}{radians}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{p}{,}
+\PYG{+w}{    }\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{sin}\PYG{p}{(}\PYG{n}{Degree}\PYG{p}{\PYGZob{}}\PYG{n}{amount}\PYG{p}{\PYGZcb{}}\PYG{p}{.}\PYG{n}{radians}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{cos}\PYG{p}{(}\PYG{n}{Degree}\PYG{p}{\PYGZob{}}\PYG{n}{amount}\PYG{p}{\PYGZcb{}}\PYG{p}{.}\PYG{n}{radians}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{m\PYGZus{}transform}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{rollTransform}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{m\PYGZus{}transform}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{Custom::ModelInstance::rotateY}\PYG{p}{(}\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{amount}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{Custom}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Matrix}\PYG{+w}{ }\PYG{n}{pitchTransform}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{cos}\PYG{p}{(}\PYG{n}{Degree}\PYG{p}{\PYGZob{}}\PYG{n}{amount}\PYG{p}{\PYGZcb{}}\PYG{p}{.}\PYG{n}{radians}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{sin}\PYG{p}{(}\PYG{n}{Degree}\PYG{p}{\PYGZob{}}\PYG{n}{amount}\PYG{p}{\PYGZcb{}}\PYG{p}{.}\PYG{n}{radians}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{p}{,}
+\PYG{+w}{    }\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}
+\PYG{+w}{    }\PYG{o}{\PYGZhy{}}\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{sin}\PYG{p}{(}\PYG{n}{Degree}\PYG{p}{\PYGZob{}}\PYG{n}{amount}\PYG{p}{\PYGZcb{}}\PYG{p}{.}\PYG{n}{radians}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{cos}\PYG{p}{(}\PYG{n}{Degree}\PYG{p}{\PYGZob{}}\PYG{n}{amount}\PYG{p}{\PYGZcb{}}\PYG{p}{.}\PYG{n}{radians}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{m\PYGZus{}transform}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{pitchTransform}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{m\PYGZus{}transform}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{Custom::ModelInstance::rotateZ}\PYG{p}{(}\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{amount}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{Custom}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Matrix}\PYG{+w}{ }\PYG{n}{yawTransform}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{cos}\PYG{p}{(}\PYG{n}{Degree}\PYG{p}{\PYGZob{}}\PYG{n}{amount}\PYG{p}{\PYGZcb{}}\PYG{p}{.}\PYG{n}{radians}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{sin}\PYG{p}{(}\PYG{n}{Degree}\PYG{p}{\PYGZob{}}\PYG{n}{amount}\PYG{p}{\PYGZcb{}}\PYG{p}{.}\PYG{n}{radians}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{sin}\PYG{p}{(}\PYG{n}{Degree}\PYG{p}{\PYGZob{}}\PYG{n}{amount}\PYG{p}{\PYGZcb{}}\PYG{p}{.}\PYG{n}{radians}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{cos}\PYG{p}{(}\PYG{n}{Degree}\PYG{p}{\PYGZob{}}\PYG{n}{amount}\PYG{p}{\PYGZcb{}}\PYG{p}{.}\PYG{n}{radians}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}
+\PYG{+w}{    }\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{m\PYGZus{}transform}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{yawTransform}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{m\PYGZus{}transform}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{MintedVerbatim}

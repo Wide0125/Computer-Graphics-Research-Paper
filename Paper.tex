@@ -105,12 +105,14 @@ $n$-dimension spaces require $n$ sets of coordinates to represent. As such, a $3
 A \textbf{point} is a single position in space, represented by a set of coordinates, and notated by $(C_{1} , C_{2}, C_{3}, \ldots, C_{n})$. A $3$D cartesian coordinate system places the center, or the origin point at $(0, 0, 0)$. Each dimension, represented through an axis, has a direction: traveling towards the direction of an axis is known as traveling positively, while traveling against the direction of an axis is known as traveling negatively, with the corresponding coordinates increasing or decreasing appropriately.\autocite{Eldridge2023}
 
 \begin{figure}[htp]
+    \centering
     \includesvg{Figure-1.svg}
     \caption{The point (1, 1, 1) in a 3D cartesian coordinate system}\label{figure:point111}
 \end{figure}
 
 The directions of each axis in relation to each other can be remembered using the right hand rule (Figure~\ref{figure:righthandrule}).
 \begin{figure}[htp]
+    \centering
     \includegraphics[scale=0.2]{Right-hand rule.png}
     \caption{Right-hand rule}\label{figure:righthandrule}
 \end{figure}
@@ -121,6 +123,7 @@ Axis configurations corresponding to the left hand also exist, however the right
 \textbf{Vector}s are the differences between points. Vectors can be used to represent many things, such as motion and direction. At its simplest, a vector can be intuitively thought of as a set of components that represent a certain magnitude of motion in a certain direction. It can also be thought of as the concept of a slope used in $2$D cartesian coordinate systems expanded for $n$-dimensions. Visually, it is a line connecting two points in space (Figure~\ref{figure:v000to111}).
 
 \begin{figure}[htp]
+    \centering
     \includesvg[scale=0.95]{Figure-3}
     \caption{A vector from point $(0, 0, 0)$ to $(1, 1, 1)$}\label{figure:v000to111}
 \end{figure}
@@ -141,6 +144,7 @@ $n$-dimension vectors can be notated as a set of $n$ components:
 Much like the slope of a line in $2$ dimensions, vectors can be thought of as the ratio between each of the components’ deltas (differences in magnitude). For example, take the $3$D vector $\langle 1, 2, 3 \rangle$: when $x$ is increased by $1$, $y$ is increased by $2$, and $z$ is increased by $3$ (Figure~\ref{figure:vectorcomponents}).\autocite{BritannicaVector2004}
 
 \begin{figure}[htp]
+    \centering
     \includesvg[scale=0.95]{Figure-4.svg}
     \caption{The vector $\langle 1, 2, 3 \rangle$ broken down into its $x$, $y$, and $z$ components}\label{figure:vectorcomponents}
 \end{figure}
@@ -148,11 +152,13 @@ Much like the slope of a line in $2$ dimensions, vectors can be thought of as th
 Arithmetic operations can also be performed on vectors. Vector addition is done by summing together each respective component. For example, the resulting vector of adding vectors $\langle A_{x}, A_{y}, A_{z} \rangle$ and $\langle B_{x}, B_{y}, B_{z} \rangle$ together is vector $\langle A_{x} + B_{x}, A_{y} + B_{y}, A_{z} + B_{z} \rangle$. Visually, adding two vectors involves putting the beginning of a vector at the end of another (Figure~\ref{figure:vectorAddition}). Additionally, two types of vector multiplication exist: the \textbf{dot product} and the \textbf{cross product}. The dot product (denoted as $\vec{A} \cdot \vec{B}$) is used to find how similar two vectors are to each other, and results in a scalar\footnote{A scalar is a value that possesses only magnitude. It differs from a vector value in that vectors possess both magnitude and direction.} value representing similarity. A vector dot product with itself produces a scalar square of its magnitude. The cross product (denoted as $\vec{A} \times \vec{B}$) by contrast is used to find a vector that is the most different to the vectors it operates on. The cross product of two vectors results in a vector perpendicular to the plane created by the two vectors (Figure~\ref{v011&111crossproduct}). Formulas for the dot product (\ref{equation:dotproduct}) and the cross product (\ref{equation:crossproduct}) are listed below.
 
 \begin{figure}[htp]
+    \centering
     \includesvg{Vector_addition.svg}\caption{}\label{figure:vectorAddition}
 \end{figure}
 
 \begin{figure}[htp]
-    \includesvg{Figure-9}
+    \centering
+    \includesvg[scale=0.9]{Figure-9}
     \caption{The cross product of two vectors $\langle 0, 1, 1 \rangle$ and $\langle 1, 1, 1 \rangle$}\label{v011&111crossproduct}
 \end{figure}
 
@@ -218,6 +224,7 @@ This metaphor is useful in that it can be applied to computers. Computers displa
 A rectangle referred to as the \textbf{viewport} is placed in the world space, the equivalent to the square net. Then a camera is placed behind the viewport, the equivalent to the person's eyes (Figure-\ref{figure:viewport}).
 
 \begin{figure}[htp]
+    \centering
     \includesvg{Figure-5}
     \caption{A viewport of a 16:9 screen with its center located at $(0, 0, 1)$}\label{figure:viewport}
 \end{figure}
@@ -229,6 +236,7 @@ A \textbf{ray} is a collection of points arranged in a straight path extending i
 In practice, this means that we compute shooting a light ray from the camera to a pixel's equivalent location on the viewport, and if it intersects with an object, color in that pixel on the screen with the color of the object. We repeat this for every pixel until every pixel on the screen is correctly colored in. This technique is known as \textbf{ray tracing}.
 
 \begin{figure}[htp]
+    \centering
     \includesvg{Figure-6}
     \caption{A vector from camera to pixel $(0, 0)$'s equivalent location on viewport}\label{figure:raytopixelonviewport}
 \end{figure}
@@ -258,6 +266,7 @@ First, we must define a point, vector, and camera object (\CC{} class type).
 Next, we must define a function to convert pixel coordinates to equivalent in-world coordinates on the viewport. For now, we will assume the viewport center to be at $(0, 0, 1)$ and the camera to be at the origin $(0, 0, 0)$ for the sake of simplicity. Pixels on the screen are usually represented with a $2$D cartesian coordinate system with an inverted Y-Axis (Figure-\ref{figure:figure7}).
 
 \begin{figure}[htp]
+    \centering
     \includesvg[scale=0.8]{Figure-7}
     \caption{Coordinate ranges for pixels on a $1920\cdot1080$ screen}\label{figure:figure7}
 \end{figure}
@@ -339,6 +348,7 @@ A main function is used to tie in all the functions:
 \end{code}
 We have successfully ray traced a sphere to a $2$D screen.
 \begin{figure}[htp]
+    \centering
     \includegraphics[scale=0.33]{First Sphere Render.png}
 \end{figure}
 Source code for this version can be found at \url{https://github.com/Wide0125/Raytracer-Version-1}.
@@ -434,6 +444,7 @@ camera.addElevation(-mouseMovement.y/50);
 As no more functions require further updating, our upgraded raytracer implementation is now complete. Source code for this version can be found at \url{https://github.com/Wide0125/Raytracer-Version-2}.
 
 \begin{figure}[htp]
+    \centering
     \includegraphics[scale=0.33]{Moving Camera Sphere Render.png}
 \end{figure}
 
@@ -443,17 +454,20 @@ Although ray tracing is useful in allowing us to represent 3-dimensional objects
 
 \section{Rasterization}
 \subsection{Polygon Projection}
+To implement our rasterizer, code from the raytracer will be reused where applicable. This includes the \mintinline{cpp}|Degree|, \mintinline{cpp}|Camera|, \mintinline{cpp}|Point|, and \mintinline{cpp}|Vector| classes.
 
 Rasterization is a technique that involves approximating any 3D object into a collection of 2D polygons, commonly triangles. Triangles are commonly used as they are the simplest $n$-sided polygon, which every other polygon can be split into.
 
 \begin{figure}[htp]
-    \includegraphics[scale = 0.5]{Dolphin_triangle_mesh.png}\autocite{DolphinMesh}
+    \centering
+    \includegraphics[scale = 0.5]{Dolphin_triangle_mesh.png}
     \caption{A 3D model approximated into triangles}
 \end{figure}
 
 \begin{figure}[htp]
     \centering
-    \includesvg[scale = 1.5]{Polygon Triangulation.svg}\autocite{PolygonTriangulation}
+    \centering
+    \includesvg[scale = 1.5]{Polygon Triangulation.svg}
     \caption{A demonstration of polygon triangulation}
 \end{figure}
 
@@ -489,7 +503,8 @@ We can convert the world space coordinates of $P'$ into screen space coordinate 
 Now that we have a method to obtain the $P'$ coordinate of every point on the triangle $P$, all that is left is to fill in the rest of the triangle onto the screen. It can be noted that straight lines in 3D space remain straight even when projected onto a 2D surface; therefore, connecting the three points drawn onto the screen results in the correctly projected triangle.
 
 \begin{figure}[htp]
-    \includesvg[scale=0.75]{projection.svg}\autocite{TriangleProjection}
+    \centering
+    \includesvg[scale=0.75]{projection.svg}
     \caption{Projection of a 3D triangle onto a 2D viewport}
 \end{figure}
 
@@ -511,6 +526,7 @@ for (int x {x1}; x <= x2; ++x) {
 
 However, a problem occurs when the slope of the line is greater than $1$. Since we are drawing one pixel for every $x$ coordinate, the algorithm results in disconnected lines (Figure~\ref{figure:disconnectedlines}).
 \begin{figure}[htp]
+    \centering
     \includegraphics[scale=0.5]{Disconnected Lines.jpg}\caption{Disconnected lines}\label{figure:disconnectedlines}
 \end{figure}
 This happens because screen spaces are integer approximations of real numbers, and since the slope is greater than 1, for every 1 pixel difference in $x$, the $y$ coordinate increases by more than 1, leaving gaps. As such, for lines with a slope greater than 1, instead of drawing 1 pixel for every $x$ coordinate, we need to draw 1 pixel for every $y$ coordinate, filling in the gaps. To accomplish this, instead of iterating over every $x$ value between the two points, we instead iterate over every $y$ value between the two points and derive the $x$ coordinate from the $y$ values instead. This ensures that the drawn line remains connected.
@@ -575,12 +591,14 @@ With our \mintinline{cpp}|drawLine()| function and linear interpolation function
 We can go about accomplishing this in many ways, but one of the most straightforward methods is to imagine the process as painting in a horizontal strip of the triangle from the left edge all the way to the right edge, then working your way down and repeating until everything is painted in.
 
 \begin{figure}[htp]
+    \centering
     \includegraphics[scale=0.4]{Triangle Fill.png}\autocite{TriangleFill}
 \end{figure}
 
 By sorting the 3 vertices of the triangle in terms of their $y$ coordinates in descending order, we can designate two `edges' that will serve as the left and right borders for our horizontal strips. One edge is the geometric edge between the highest point and the lowest point. The other edge is the combination of two geometric edges, the edge connecting the highest point with the middle point and the edge connecting the middle point with the lowest point. Which edge becomes the left edge and which edge becomes the right edge depends on the configuration of the points (Figure~\ref{Figure:trianglevertices}).
 
 \begin{figure}[htp]
+    \centering
     \includesvg[scale=0.95]{triangleEdges.svg}\caption{}\label{Figure:trianglevertices}
 \end{figure}
 
@@ -618,12 +636,13 @@ void draw() const {
 \end{code}
 
 \begin{figure}[htp]
+    \centering
     \includegraphics[scale=0.33]{Filled Triangle.png}\caption{Our filled triangle result}
 \end{figure}
 
 \subsection{Model Transformation}
 
-Let's say we would like to illustrate a scene, an ocean full of dolphins. In this case, we need to be able to render multiple dolphins in the scene, all with their own distinct positions, orientations, and sizes. This calls for the need to separately designate \textbf{models} and \textbf{model instances}. A model is an object containing all the information about its vertices and which ones connect to form triangles, and a model instance is an object that contains a model object, with additional member variables denoting its rotation, scale, and position.
+Let's say we would like to illustrate a scene, an ocean full of dolphins. In this case, we need to be able to render multiple dolphins in the scene, all with their own distinct positions, orientations, and sizes. This calls for the need to separately designate \textbf{models} and \textbf{model instances}. A model is an object containing all the information about its vertices and which ones connect to form triangles, and a model instance is an object that contains a model object, with additional member variables denoting its rotation, scale, and position. This also means that models exist in their own \textbf{model space} before being transformed into its world space coordinates depending on a model instance's member variables.
 
 We first define a primitive version of our model and model instance class objects:
 \begin{code}
@@ -699,12 +718,14 @@ A vector is composed of scalar multiples of the unit vectors. A \textbf{unit vec
 \end{bmatrix}
 \]
 \begin{figure}[htp]
+    \centering
     \includesvg{vectorUnits.svg}\caption{The vector $2\ihat + 1\jhat$}
 \end{figure}
-Using the 2 unit vectors $\ihat$ and $\jhat$, every possible vector can be expressed. Extending the concept, we can say that space itself is defined with a combination of scalar multiples of the unit vectors serving as the basis; in other words, every possible point in space can be defined as a vector made up of scalar multiples of the unit vectors. Going back to our use case, we can take advantage of the fact that transforming the unit vectors composing a vector also applies that same transformation to the vector itself (Figure~\ref{figure:vectorTransformation}).
+Using the 2 unit vectors $\ihat$ and $\jhat$, every possible vector can be expressed. Extending the concept, we can say that space itself is defined with a combination of scalar multiples of the unit vectors serving as the basis; in other words, every possible point in space can be defined as a vector made up of scalar multiples of the unit vectors. This works because points and vectors are similar to the point of being nearly interchangeable. Any point can be swapped out for a vector going from the origin point to that point, and any computations involving that point also work with its equivalent vector; even the contents of their notations are conveniently similar. Going back to our use case, we can take advantage of the fact that transforming the unit vectors composing a vector also applies that same transformation to the vector itself (Figure~\ref{figure:vectorTransformation}), then apply this for the points on our model.
 
 \begin{figure}[htp]
-    \includesvg[scale=0.9]{vectorTransformation.svg}\caption{}\label{figure:vectorTransformation}
+    \centering
+    \includesvg[scale=0.9]{vectorTransformation.svg}\caption{The angle between $\vec{V}$ and $\vec{V\prime}$ is equal to the angle between $\ihat$ and $\ihat\prime$}\label{figure:vectorTransformation}
 \end{figure}
 
 As such, we can store the information of the transformed unit vectors using a matrix. A \textbf{matrix} is a rectangular array of numbers, composed of rows and columns, useful for a variety of mathematical applications. In our case, we can use matrices to perform coordinate transformations.
@@ -771,7 +792,9 @@ It is also possible to multiply a matrix by another matrix, resulting in a matri
     eb + df & bg + dh
 \end{bmatrix}
 \]
-The resulting matrix describes the transformation of applying the left matrix, then the right matrix. Note that transformations are not commutative ($M_a \times M_b \neq M_b \times M_a$).
+The resulting matrix describes the transformation of multiplying with the left matrix, then the right matrix. Note that transformations are not commutative ($M_a \times M_b \neq M_b \times M_a$).
+
+Matrices are a much more complex topic and foundational to the field of linear algebra, but matrix concepts outside those relevant to our use case are outside the scope of this paper. As such, this paper will be adhering to only explaining and laying the groundwork for matrix operations useful for our rasterizer.
 
 Now that we have a method to transform vectors around a point (in the above examples, the origin point $O$), we can begin to implement functions to transform our model. First, we define a \mintinline{cpp}|matrix| class:
 
@@ -850,58 +873,105 @@ namespace Custom {
     \end{minted}
 \end{code}
 
-We can now add a \mintinline{cpp}|m_transform| matrix variable.
+We can now add an \mintinline{cpp}|m_transform| matrix variable.
 \begin{code}
     \begin{minted}[breaklines]{cpp}
 Custom::Matrix m_transform {m_scale * (m_rollTransform * m_pitchTransform * m_yawTransform)};
     \end{minted}
 \end{code}
 
+For convenience, all our \mintinline{cpp}|model| objects will have their center coordinates at the origin point of their model space, meaning any rotations will happen around the origin point of their model space. This streamlines the rotation process and allows us to avoid additional complexity in defining our rotation matrices.
 
-% Rigorously defining matrices and their operations is outside the scope of this paper, but the concepts and operations useful to our rasterizer will be defined below.
+To briefly summarize, the process of transforming a \mintinline{cpp}|model| object's coordinates into its \mintinline{cpp}|modelInstance| world space coordinates is as follows: we iterate through every single point in the model, applying a transformation matrix that is the rotation and scale matrices multiplied, then apply the translation by adding the value of its position coordinates.
 
-% Matrix addition can be performed between matrices of the exact same shape. For example, a $3 \times 2$ matrix can only be added to another $3 \times 2$ matrix.
+This calls for the need to add a new matrix member variable \mintinline{cpp}|m_transform| in the \mintinline{cpp}|modelInstance| class.
+\begin{code}
+    \begin{minted}{cpp}
+Custom::Matrix m_transform {3, 3, {
+    m_scale, 0, 0,
+    0, m_scale, 0,
+    0, 0, m_scale
+}};
+    \end{minted}
+\end{code}
+In 3 dimensions, 3 angles, known as Euler Angles, are needed to define every possible orientation of an object in 3D space. This is because there are 3 different combinations of the $x, y$ and $z$ axes that make a 2D plane. In 2 dimensions, as there is only 1 possible combination of the $x$ and $y$ axes, only 1 angle is needed.
 
-% \[
-% \begin{bmatrix}
-%     i_a & l_a \\
-%     j_a & m_a \\
-%     k_a & n_a
-% \end{bmatrix}
-% +
-% \begin{bmatrix}
-%     i_b & l_b \\
-%     j_b & m_b \\
-%     k_b & n_b
-% \end{bmatrix}
-% =
-% \begin{bmatrix}
-%     i_a + i_b & l_a + l_b \\
-%     j_a + j_b & m_a + m_b \\
-%     k_a + k_b & n_a + n_b
-% \end{bmatrix}
-% \]
+Rotation matrices for rotations around each of the axes are as follows:
+\[
+{\displaystyle {\begin{alignedat}{1}R_{x}(\theta )&={\begin{bmatrix}1&0&0\\0&\cos \theta &-\sin \theta \\[3pt]0&\sin \theta &\cos \theta \\[3pt]\end{bmatrix}}\\[6pt]R_{y}(\theta )&={\begin{bmatrix}\cos \theta &0&\sin \theta \\[3pt]0&1&0\\[3pt]-\sin \theta &0&\cos \theta \\\end{bmatrix}}\\[6pt]R_{z}(\theta )&={\begin{bmatrix}\cos \theta &-\sin \theta &0\\[3pt]\sin \theta &\cos \theta &0\\[3pt]0&0&1\\\end{bmatrix}}\end{alignedat}}}
+\]
 
-% Matrix multiplication can be performed between two matrices; additionally, the number of columns in the first matrix must equal the number of rows in the second matrix.
+As such, in order to be able to achieve every possible orientation in 3D space, an object must be able to rotate in 3 different planes, or in other words, around the 3 axes. Therefore, our rasterizer program will imitate the object rotation mechanism used in the open source 3D software Blender (Figure~\ref{figure:blenderPreview}).
 
-% \[
-% \begin{bmatrix}
-%     a & d \\
-%     b & e \\
-%     c & f
-% \end{bmatrix}
-% \times
-% \begin{bmatrix}
-%     g & i & k \\
-%     h & j & l
-% \end{bmatrix}
-% =
-% \begin{bmatrix}
-%     ag + dh & ia + dj & ak + dl \\
-%     bg + eh & ib + ej & bk + el \\
-%     cg + fh & ic + fj & ck + fl
-% \end{bmatrix}
-% \]
+\begin{figure}
+    \includegraphics[width=\textwidth]{Blender Window}\caption{A preview of the rotation mechanism in Blender}\label{figure:blenderPreview}
+\end{figure}
+
+We can achieve this by implementing three new functions:
+\begin{code}
+    \begin{minted}[breaklines]{cpp}
+void Custom::ModelInstance::rotateX(double amount) {
+    Custom::Matrix rollTransform = {3, 3, {
+    1, 0, 0, 
+    0, std::cos(Degree{amount}.radians()), -std::sin(Degree{amount}.radians()),
+    0, std::sin(Degree{amount}.radians()), std::cos(Degree{amount}.radians())}
+    };
+    m_transform = rollTransform * m_transform;
+}
+void Custom::ModelInstance::rotateY(double amount) {
+    Custom::Matrix pitchTransform = {3, 3, {
+    std::cos(Degree{amount}.radians()), 0, std::sin(Degree{amount}.radians()), 
+    0, 1, 0,
+    -std::sin(Degree{amount}.radians()), 0, std::cos(Degree{amount}.radians())}
+    };
+    m_transform = pitchTransform * m_transform;
+}
+void Custom::ModelInstance::rotateZ(double amount) {
+    Custom::Matrix yawTransform = {3, 3, {
+    std::cos(Degree{amount}.radians()), -std::sin(Degree{amount}.radians()), 0, 
+    std::sin(Degree{amount}.radians()), std::cos(Degree{amount}.radians()), 0,
+    0, 0, 1}
+    };
+    m_transform = yawTransform * m_transform;
+}
+    \end{minted}
+\end{code}
+We then create a \mintinline{cpp}|transform| function that takes in a point as input and multiplies it by the \mintinline{cpp}|m_transform| matrix (treating the point as a vector from the origin to that point), and then also applies the translation afterwards.
+\begin{code}
+    \begin{minted}[breaklines]{cpp}
+Point3& Custom::ModelInstance::transform(Point3& modelPoint) const {
+    modelPoint = m_transform * modelPoint;
+    
+    modelPoint.x += m_position.x - m_model.center.x;
+    modelPoint.y += m_position.y - m_model.center.y;
+    modelPoint.z += m_position.z - m_model.center.z;
+        
+    return modelPoint;
+}
+    \end{minted}
+\end{code}
+We then add a line of code to our \mintinline{cpp}|draw()| function inside the first \mintinline{cpp}|for| loop to transform every single point in the model.
+\begin{code}
+    \begin{minted}{cpp}
+a = transform(a);
+    \end{minted}
+\end{code}
+
+Lastly, just like with the raytracer, we need to implement camera movement. It should be noted that when the camera's viewport rotates by a certain angle, from the perspective of the camera, the object rotates around the camera in the opposite direction by that angle amount instead. Imitating this, instead of moving the camera in the world space like with the raytracer, we instead define a camera space where the camera is always at $(0, 0, 0)$ and the viewport is always centered at $(0, 0, 1)$. After that, we calculate how much the camera's coordinates and the viewport's orientation in relation to the camera in the world space deviate from their configurations in camera space. Then, we apply the reverse of that deviation onto every object before placing them into our camera space to be displayed on the screen.
+
+Although this sounds complicated, in reality, this is as simple as adding a single line of code. If we assume the camera never moves from the origin point for the sake of simplicity, we can add the following line in our \mintinline{cpp}|transform()| function after the rotation and translation happen to ensure that camera movement is applied correctly.
+\begin{code}
+    \begin{minted}[breaklines]{cpp}
+modelPoint = camera.m_azimuthTransform * (camera.m_elevationTransform * modelPoint);
+    \end{minted}
+\end{code}
+It should be noted that the object is rotated by the elevation angle before the azimuth angle, due to how our viewport angles are configured.
+
+With our rasterizer, it is possible to display objects with more complex geometry.
+
+\begin{figure}
+    
+\end{figure}
 
 \newpage
 \printbibliography{}

@@ -1,0 +1,11 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n}{Point3}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n+nf}{Custom::ModelInstance::transform}\PYG{p}{(}\PYG{n}{Point3}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{modelPoint}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{modelPoint}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{m\PYGZus{}transform}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{modelPoint}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{n}{modelPoint}\PYG{p}{.}\PYG{n}{x}\PYG{+w}{ }\PYG{o}{+}\PYG{o}{=}\PYG{+w}{ }\PYG{n}{m\PYGZus{}position}\PYG{p}{.}\PYG{n}{x}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{m\PYGZus{}model}\PYG{p}{.}\PYG{n}{center}\PYG{p}{.}\PYG{n}{x}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{modelPoint}\PYG{p}{.}\PYG{n}{y}\PYG{+w}{ }\PYG{o}{+}\PYG{o}{=}\PYG{+w}{ }\PYG{n}{m\PYGZus{}position}\PYG{p}{.}\PYG{n}{y}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{m\PYGZus{}model}\PYG{p}{.}\PYG{n}{center}\PYG{p}{.}\PYG{n}{y}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{modelPoint}\PYG{p}{.}\PYG{n}{z}\PYG{+w}{ }\PYG{o}{+}\PYG{o}{=}\PYG{+w}{ }\PYG{n}{m\PYGZus{}position}\PYG{p}{.}\PYG{n}{z}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{m\PYGZus{}model}\PYG{p}{.}\PYG{n}{center}\PYG{p}{.}\PYG{n}{z}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{modelPoint}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{MintedVerbatim}
