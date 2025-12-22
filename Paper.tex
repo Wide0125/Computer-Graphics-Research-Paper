@@ -967,12 +967,14 @@ modelPoint = camera.m_azimuthTransform * (camera.m_elevationTransform * modelPoi
 \end{code}
 It should be noted that the object is rotated by the elevation angle before the azimuth angle, due to how our viewport angles are configured.
 
-With our rasterizer, it is possible to display objects with more complex geometry.
+With our rasterizer, it is possible to display objects with more complex geometry (Figure~\ref{figure:treeModelRaster}).
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[scale=0.33]{Rasterizer Tree.png}\caption{A model of a tree rendered with our rasterizer}
+    \includegraphics[scale=0.33]{Rasterizer Tree.png}\caption{A model of a tree rendered with our rasterizer}\label{figure:treeModelRaster}
 \end{figure}
+
+Source code for the rasterizer is available at \url{https://github.com/Wide0125/rasterizer}.
 
 \newpage
 \section{Conclusion}
