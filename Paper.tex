@@ -973,8 +973,13 @@ Source code for the rasterizer is available at \url{https://github.com/Wide0125/
 
 \newpage
 \section{Conclusion}
-This paper was a foray into the techniques that constitute the foundations of modern computer graphics
+Ray tracing and rasterization are two different approaches to illustrating 3D scenes onto a 2D plane. In ray tracing, a more closer-to-reality approach is used, tracing the path of light rays that hit the camera in reverse and using mathematical definitions of rays and objects to determine the property of the projected light. In rasterization, objects are approximated into triangles, optimizing the process of drawing a scene by reducing the number of computations required; instead of having to trace a ray for every pixel, we instead compute for every point of a model instead, and take advantage of the property of projected triangles to connect the points into a polygon. This approach drastically improves the performance of the rendering process.
 
-\newpage
+A ray tracer is proficient at rendering physically accurate objects in a simple and intuitive process. It is also superior to rasterizers when it comes to lighting, as it is modeled as closely as possible after real world light behaviors. However, a ray tracer falls short when it comes to performance; having to perform computationally intensive calculations many times every frame, ray tracing drastically decreases the number of frames able to computed each second. However, as hardware continually improves in performance capabilities, this drawback is expected to become less of a problem.
+
+A rasterizer is proficient at using clever geometry and approximation methods to simplify the process of rendering objects computationally. This means that a rasterizer can quite easily render a scene with thousands of triangles. However, a rasterizer falls short in terms of accuracy, as it is only an approximation of the real world. It can also be very complicated to implement, with a rasterizer relying on abstract mathematical concepts rather than ones much more closely based in real world physics.
+
+Overall, both techniques have their use cases. Although today, the wide variety of ready-made graphics libraries and 3D software make knowledge of the underlying mechanics behind these techniques seemingly obsolete, knowledge of the fundamentals is evidently still crucial in further improving hardware and computer visuals. This paper seeks to make such knowledge more accessible to a general audience, giving readers the tools and skills they need in order to further improve the world of 3D computer graphics.
+
 \printbibliography{}
 \end{document}
