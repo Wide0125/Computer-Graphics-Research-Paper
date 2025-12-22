@@ -74,7 +74,7 @@
 \maketitle
 
 \begin{abstract}
-    \todo{Add abstract}
+    A view of the world with human eyes, and approximations of 3D spaces on computer screens are both 2-dimensional. In both cases, the interaction of light with objects, and the subsequent projection of that light onto a surface is what makes up the 2D view of a 3D space. This paper will seek to computationally and programmatically implement and simulate these real world physical interactions, in order to help readers gain a deeper and fuller understanding of the techniques that underlie modern 3D computer graphics, specifically ray tracing and rasterization. A full description of the concepts and implementation process will be provided, with the aim of providing readers with intuitive understanding of the methods used.
 \end{abstract}
 
 \tableofcontents
@@ -86,11 +86,11 @@
 \section{Introduction}
 The world is $3$-dimensional. In contrast, visual perceptions of the world are $2$-dimensional, and yet, recognizable as of a $3$D space. Additionally, through this view, one can still perceive the depth of the image, retrieving some of the information lost in the process of flattening the view into $2$ dimensions. This phenomenon reveals the possibility of projecting a $3$D space onto a $2$D plane, allowing us to emulate the existence of a $3$D space behind a $2$D plane (much like looking through a window to look at the outside world; a detailed enough $2$D image on the window would be indistinguishable from a view of the outside).
 
-Furthermore, this possibility is taken advantage of to form the foundations of modern computer graphics. When it comes to video games, computer generated imagery, or $3$D animation, computers must simulate all the physical processes of the real world that produce the light and resulting image that reaches your eyes. Although the entirety of the physical world cannot possibly be simulated within the constraints of modern computing capabilities, mathematical and physical abstractions can be made in order to simplify this process and produce near true to life results. These abstractions form the basis of $3$D Computer Graphics.
+Furthermore, this possibility is taken advantage of to form the foundations of modern computer graphics. When it comes to video games, computer generated imagery, or $3$D animation, computers must simulate all the physical processes of the real world that produce the light and resulting image that reaches your eyes. Although the entirety of the physical world cannot possibly be simulated within the constraints of modern computing capabilities, mathematical and physical abstractions can be made in order to simplify this process and produce near true to life results. These abstractions form the basis of $3$D computer graphics.
 
-In modern computing, it is unnecessary to know the fundamental concepts and processes behind projecting a $3$D image; with the release of many software solutions and libraries that aid in the development of appropriate visuals, the modern day developer does not need to grasp the underlying mechanics behind $3$D Computer Graphics in order to produce satisfactory results. However, the benefits of learning the fundamental process behind this widespread field are essential for those who wish to become experts not tied down by any specific engine or library. Factors such as performance, scalability, and customizability justify the process of learning the fundamentals.\todo{Add real-world examples of mentioned advantages} Above all else, those who understand are better equipped to take advantage of and develop graphical toolkits. As such, it is imperative to understand the foundations that make up $3$D Computer Graphics for those who wish to become true masters of the field.
+In modern computing, it is unnecessary to know the fundamental concepts and processes behind projecting a $3$D image; with the release of many software solutions and libraries that aid in the development of appropriate visuals, the modern day developer does not need to grasp the underlying mechanics behind $3$D computer graphics in order to produce satisfactory results. However, the benefits of learning the fundamental process behind this widespread field are essential for those who wish to become experts not tied down by any specific engine or library. Factors such as performance, scalability, and customizability justify the process of learning the fundamentals. Above all else, those who understand are better equipped to take advantage of and develop graphical toolkits. As such, it is imperative to understand the foundations that make up $3$D computer graphics for those who wish to become true masters of the field.
 
-This paper sets out to document the process of learning the fundamentals of $3$D Computer Graphics, with real code examples mapping out the learning process. As such, it aims to serve as a useful guide that directs readers to explore the bare-bones fundamentals of $3$D Computer Graphics. However, it will not contribute anything of substantial originality to the field, and will be written from the perspective of a novice learner.
+This paper sets out to document the process of learning the fundamentals of $3$D computer graphics, with real code examples mapping out the learning process. As such, it aims to serve as a useful guide that directs readers to explore the bare-bones fundamentals of $3$D computer graphics.
 
 \newpage
 \section{3 Dimensional Space}
@@ -359,8 +359,6 @@ Our implementation allows us to render a sphere, but the calculations presume a 
 
 The position of the viewport is always a fixed distance away from the camera. As such, two angles are used to define all possible positions of the viewport, azimuth and elevation.
 
-\todo{add figure visualizing azimuth and elevation.}
-
 By increasing or decreasing either of these angles, we can essentially `turn' the camera to face any possible direction. Using sine and cosine values, we can then obtain the vector pointing from the camera to the center of the viewport. Afterwards, adjusting our functions to account for a dynamic camera-to-viewport-center vector makes facing different directions with the camera possible.
 
 First, we create a \mintinline{cpp}|Degree| class object.
@@ -402,11 +400,8 @@ void addElevation(double amount) {
 }
 \end{minted}
 \end{code}
-\todo{add figure visualizing the camera-to-viewport-center vector}
 
-Our \mintinline{cpp}|getPixelLine| function also needs updating to account for different viewport positions. Instead of offsetting the line vector from the camera-to-viewport-center vector by  \mintinline{cpp}|DistanceFromCenter| in a fixed direction, now that the camera-to-viewport-center vector is dynamic, we must dynamically adjust the offset direction based on the direction of the camera-to-viewport-center vector. As the viewport is a rectangle, and the pixel positions map to a grid formation on the viewport, the offset vectors can be defined as illustrated below.
-\todo{add figure visualizing the offset vectors}
-It can be noted that the \mintinline{cpp}|xVector| is orthogonal to the camera-to-viewport-center vector and the $y$ axis, and the \mintinline{cpp}|yVector| is orthogonal to the \mintinline{cpp}|xVector| and the camera-to-viewport-center vector.
+Our \mintinline{cpp}|getPixelLine| function also needs updating to account for different viewport positions. Instead of offsetting the line vector from the camera-to-viewport-center vector by  \mintinline{cpp}|DistanceFromCenter| in a fixed direction, now that the camera-to-viewport-center vector is dynamic, we must dynamically adjust the offset direction based on the direction of the camera-to-viewport-center vector. As the viewport is a rectangle, and the pixel positions map to a grid formation on the viewport, the offset vectors can be defined as illustrated in Figure~\ref{figure:lightray}. It can be noted that the \mintinline{cpp}|xVector| is orthogonal to the camera-to-viewport-center vector and the $y$ axis, and the \mintinline{cpp}|yVector| is orthogonal to the \mintinline{cpp}|xVector| and the camera-to-viewport-center vector.
 
 \mintinline{cpp}|getPixelLine| can be updated as such:
 \begin{code}
@@ -882,7 +877,7 @@ Custom::Matrix m_transform {m_scale * (m_rollTransform * m_pitchTransform * m_ya
 
 For convenience, all our \mintinline{cpp}|model| objects will have their center coordinates at the origin point of their model space, meaning any rotations will happen around the origin point of their model space. This streamlines the rotation process and allows us to avoid additional complexity in defining our rotation matrices.
 
-To briefly summarize, the process of transforming a \mintinline{cpp}|model| object's coordinates into its \mintinline{cpp}|modelInstance| world space coordinates is as follows: we iterate through every single point in the model, applying a transformation matrix that is the rotation and scale matrices multiplied, then apply the translation by adding the value of its position coordinates.
+To briefly summarize, the process of transforming a \mintinline{cpp}|model| object's model space coordinates into its \mintinline{cpp}|modelInstance| world space coordinates is as follows: we iterate through every single point in the model, applying a transformation matrix that is the rotation and scale matrices multiplied, then apply the translation by adding the value of its position coordinates.
 
 This calls for the need to add a new matrix member variable \mintinline{cpp}|m_transform| in the \mintinline{cpp}|modelInstance| class.
 \begin{code}
@@ -978,6 +973,7 @@ Source code for the rasterizer is available at \url{https://github.com/Wide0125/
 
 \newpage
 \section{Conclusion}
+This paper was a foray into the techniques that constitute the foundations of modern computer graphics
 
 \newpage
 \printbibliography{}

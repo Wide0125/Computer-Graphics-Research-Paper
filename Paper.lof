@@ -1,22 +1,22 @@
 \babel@toc {english}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces The point (1, 1, 1) in a 3D cartesian coordinate system}}{4}{figure.caption.5}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Right-hand rule}}{5}{figure.caption.6}%
-\contentsline {figure}{\numberline {3}{\ignorespaces A vector from point $(0, 0, 0)$ to $(1, 1, 1)$}}{6}{figure.caption.7}%
-\contentsline {figure}{\numberline {4}{\ignorespaces The vector $\langle 1, 2, 3 \rangle $ broken down into its $x$, $y$, and $z$ components}}{6}{figure.caption.8}%
-\contentsline {figure}{\numberline {5}{\ignorespaces \relax }}{7}{figure.caption.9}%
-\contentsline {figure}{\numberline {6}{\ignorespaces The cross product of two vectors $\langle 0, 1, 1 \rangle $ and $\langle 1, 1, 1 \rangle $}}{8}{figure.caption.10}%
-\contentsline {figure}{\numberline {7}{\ignorespaces A viewport of a 16:9 screen with its center located at $(0, 0, 1)$}}{9}{figure.caption.11}%
-\contentsline {figure}{\numberline {8}{\ignorespaces A vector from camera to pixel $(0, 0)$'s equivalent location on viewport}}{10}{figure.caption.12}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Coordinate ranges for pixels on a $1920\cdot 1080$ screen}}{14}{figure.caption.16}%
-\contentsline {figure}{\numberline {10}{\ignorespaces \relax }}{15}{figure.caption.19}%
-\contentsline {figure}{\numberline {11}{\ignorespaces A 3D model approximated into triangles}}{23}{figure.caption.34}%
-\contentsline {figure}{\numberline {12}{\ignorespaces A demonstration of polygon triangulation}}{23}{figure.caption.35}%
-\contentsline {figure}{\numberline {13}{\ignorespaces A side ($yz$ plane) view of an arbitrary point $P$}}{24}{figure.caption.36}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Projection of a 3D triangle onto a 2D viewport}}{25}{figure.caption.37}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Disconnected lines}}{26}{figure.caption.38}%
-\contentsline {figure}{\numberline {16}{\ignorespaces \relax }}{29}{figure.caption.42}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Our filled triangle result}}{30}{figure.caption.44}%
-\contentsline {figure}{\numberline {18}{\ignorespaces The vector $2\hat {\imath }+ 1\hat {\jmath }$}}{32}{figure.caption.47}%
-\contentsline {figure}{\numberline {19}{\ignorespaces The angle between $\vec {V}$ and $\vec {V\prime }$ is equal to the angle between $\hat {\imath }$ and $\hat {\imath }\prime $}}{33}{figure.caption.48}%
-\contentsline {figure}{\numberline {20}{\ignorespaces A preview of the rotation mechanism in Blender}}{37}{figure.caption.52}%
-\contentsline {figure}{\numberline {21}{\ignorespaces A model of a tree rendered with our rasterizer}}{39}{figure.caption.57}%
+\contentsline {figure}{\numberline {1}{\ignorespaces The point (1, 1, 1) in a 3D cartesian coordinate system}}{4}{figure.caption.3}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Right-hand rule}}{5}{figure.caption.4}%
+\contentsline {figure}{\numberline {3}{\ignorespaces A vector from point $(0, 0, 0)$ to $(1, 1, 1)$}}{6}{figure.caption.5}%
+\contentsline {figure}{\numberline {4}{\ignorespaces The vector $\langle 1, 2, 3 \rangle $ broken down into its $x$, $y$, and $z$ components}}{6}{figure.caption.6}%
+\contentsline {figure}{\numberline {5}{\ignorespaces \relax }}{7}{figure.caption.7}%
+\contentsline {figure}{\numberline {6}{\ignorespaces The cross product of two vectors $\langle 0, 1, 1 \rangle $ and $\langle 1, 1, 1 \rangle $}}{8}{figure.caption.8}%
+\contentsline {figure}{\numberline {7}{\ignorespaces A viewport of a 16:9 screen with its center located at $(0, 0, 1)$}}{9}{figure.caption.9}%
+\contentsline {figure}{\numberline {8}{\ignorespaces A vector from camera to pixel $(0, 0)$'s equivalent location on viewport}}{10}{figure.caption.10}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Coordinate ranges for pixels on a $1920\cdot 1080$ screen}}{14}{figure.caption.14}%
+\contentsline {figure}{\numberline {10}{\ignorespaces \relax }}{15}{figure.caption.17}%
+\contentsline {figure}{\numberline {11}{\ignorespaces A 3D model approximated into triangles}}{23}{figure.caption.29}%
+\contentsline {figure}{\numberline {12}{\ignorespaces A demonstration of polygon triangulation}}{23}{figure.caption.30}%
+\contentsline {figure}{\numberline {13}{\ignorespaces A side ($yz$ plane) view of an arbitrary point $P$}}{24}{figure.caption.31}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Projection of a 3D triangle onto a 2D viewport}}{25}{figure.caption.32}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Disconnected lines}}{26}{figure.caption.33}%
+\contentsline {figure}{\numberline {16}{\ignorespaces \relax }}{29}{figure.caption.37}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Our filled triangle result}}{30}{figure.caption.39}%
+\contentsline {figure}{\numberline {18}{\ignorespaces The vector $2\hat {\imath }+ 1\hat {\jmath }$}}{32}{figure.caption.42}%
+\contentsline {figure}{\numberline {19}{\ignorespaces The angle between $\vec {V}$ and $\vec {V\prime }$ is equal to the angle between $\hat {\imath }$ and $\hat {\imath }\prime $}}{33}{figure.caption.43}%
+\contentsline {figure}{\numberline {20}{\ignorespaces A preview of the rotation mechanism in Blender}}{37}{figure.caption.47}%
+\contentsline {figure}{\numberline {21}{\ignorespaces A model of a tree rendered with our rasterizer}}{39}{figure.caption.52}%

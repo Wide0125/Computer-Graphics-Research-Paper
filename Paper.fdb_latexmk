@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber Paper"] 1766363127.0356 "Paper.bcf" "Paper.bbl" "Paper" 1766363877.66111 0
-  "Paper.bcf" 1766363877.42984 108830 6294124876c77fb5664043703706de26 "pdflatex"
+["biber Paper"] 1766390877.20414 "Paper.bcf" "Paper.bbl" "Paper" 1766391486.45864 0
+  "Paper.bcf" 1766391486.22161 108830 6294124876c77fb5664043703706de26 "pdflatex"
   "references.bib" 1766326559.74861 2231 853ccff3a73044196ba7894b17bf9a87 ""
   (generated)
   "Paper.bbl"
   "Paper.blg"
   (rewritten before read)
-["pdflatex"] 1766363872.26259 "/Users/brianpark/Documents/Math Research Paper/Paper.tex" "Paper.pdf" "Paper" 1766363877.66155 0
-  "/Users/brianpark/Documents/Math Research Paper/Paper.tex" 1766363869.86967 55359 5f1dbc4a25fc27df33e484bf1f9e24a2 ""
+["pdflatex"] 1766391481.29316 "/Users/brianpark/Documents/Math Research Paper/Paper.tex" "Paper.pdf" "Paper" 1766391486.459 0
+  "/Users/brianpark/Documents/Math Research Paper/Paper.tex" 1766391477.60557 55839 6c23de4328ff81c25138badc96cf3a35 ""
   "/Users/brianpark/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/labx0500.tfm" 1764129934.93239 3320 a430f046d61f34970b99e53711dc6a65 ""
   "/Users/brianpark/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/labx0900.tfm" 1764129895.35728 3308 0e40fe47c68a93146385123973edfb65 ""
   "/Users/brianpark/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/labx1000.tfm" 1764129907.13505 3300 6abb8e321227ead2a8e929e5abc72bd3 ""
@@ -71,6 +71,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb" 1215737283 162624 9dcc92cd3b1dfe2ecc80e6da7f2eb6bd ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb" 1215737283 154599 ded6d7c21788a8930eadc7fef7518942 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb" 1215737283 164227 3df942b4ff2124425d8fb1b6d3e01c7a ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb" 1215737283 149037 995a6f1e12c1d647b99b1cf55db78699 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb" 1215737283 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb" 1215737283 136101 f533469f523533d38317ab5729d00c8a ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb" 1215737283 131438 3aa300b3e40e5c8ba7b4e5c6cebc5dd6 ""
@@ -274,13 +275,13 @@
   "First Sphere Render.png" 1761113827.76186 344446 3ae4999bbd387f7b81da086e50cae416 ""
   "Moving Camera Sphere Render.png" 1762925175.29036 344794 899e8174fc92863e4a0bf83ee57af5a8 ""
   "PP.svg" 1765342177.12306 27176 28c216670029e22ff7d863242870c75a ""
-  "Paper.aux" 1766363877.42324 11042 cf23822c0496eb47675d71490e0c3efe "pdflatex"
-  "Paper.bbl" 1766363148.81219 9616 1b9d2f8bb1d9022260ae28a2b3797987 "biber Paper"
-  "Paper.lof" 1766363877.43083 2699 e8ef3f745dcdfb2c8c58bd7c676ac51c "pdflatex"
-  "Paper.out" 1766363877.42628 1528 b44ee5cfafaed707f9163f11a554d1df "pdflatex"
-  "Paper.run.xml" 1766363877.43067 2351 99ce50ed3d46f4104ad8edaa9349d32f "pdflatex"
-  "Paper.tex" 1766363869.86967 55359 5f1dbc4a25fc27df33e484bf1f9e24a2 ""
-  "Paper.toc" 1766363877.43077 898 4386ea23531f9de5a8c97d8a9cb1dc41 "pdflatex"
+  "Paper.aux" 1766391486.21511 9760 a1f7bf8b914f1124606840866f41e95a "pdflatex"
+  "Paper.bbl" 1766390879.23345 9616 1b9d2f8bb1d9022260ae28a2b3797987 "biber Paper"
+  "Paper.lof" 1766391486.22261 2697 e3b0032c09dd422f6bb2685ca08d96d3 "pdflatex"
+  "Paper.out" 1766391486.218 1528 b44ee5cfafaed707f9163f11a554d1df "pdflatex"
+  "Paper.run.xml" 1766391486.22249 2351 99ce50ed3d46f4104ad8edaa9349d32f "pdflatex"
+  "Paper.tex" 1766391477.60557 55839 6c23de4328ff81c25138badc96cf3a35 ""
+  "Paper.toc" 1766391486.22257 898 4386ea23531f9de5a8c97d8a9cb1dc41 "pdflatex"
   "Polygon Triangulation.svg" 1764116547.10442 12037 4e08dccd95cdf7655f9b12e422253052 ""
   "Rasterizer Tree.png" 1766363126.65733 360947 5475a81433e3c434bff7e9cd51b22fb7 ""
   "Right-hand rule.png" 1760316513.49636 197057 521c53eeeef72e2c893702133a3df14e ""
